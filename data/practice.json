@@ -1,0 +1,84 @@
+{
+ "practice": [
+  {
+   "row": "practice_1",
+   "instruction": "Copy the file 'notes.txt' into the 'backup' folder.",
+   "history": [
+    {"kind": "user", "text": "Copy the file 'notes.txt' into the 'backup' folder."}
+   ],
+   "candidates": [
+    {"id": "p1_backup", "action": "cp(source='notes.txt', destination='backup')"},
+    {"id": "p1_drafts", "action": "cp(source='notes.txt', destination='drafts')"}
+   ],
+   "answer": "p1_backup",
+   "explanation": "The instruction names the 'backup' folder, so the action that copies into 'backup' is the one called for. The other action copies into 'drafts', which the instruction never mentions."
+  },
+  {
+   "row": "practice_2",
+   "instruction": "Book the cheapest of the available hotels in Lisbon for the night of June 3.",
+   "history": [
+    {"kind": "agent", "step": 0, "action": "search_hotels({\"city\": \"Lisbon\", \"date\": \"2027-06-03\"})",
+     "observation": "[\n  {\"hotel_id\": \"H11\", \"name\": \"Rio Azul\", \"price_per_night\": 142, \"available\": true},\n  {\"hotel_id\": \"H27\", \"name\": \"Casa Lume\", \"price_per_night\": 98, \"available\": true},\n  {\"hotel_id\": \"H35\", \"name\": \"Alfama Loft\", \"price_per_night\": 87, \"available\": false},\n  {\"hotel_id\": \"H40\", \"name\": \"Porto Novo\", \"price_per_night\": 119, \"available\": true}\n]"}
+   ],
+   "candidates": [
+    {"id": "p2_h35", "action": "book_hotel({\"hotel_id\": \"H35\", \"date\": \"2027-06-03\"})"},
+    {"id": "p2_h27", "action": "book_hotel({\"hotel_id\": \"H27\", \"date\": \"2027-06-03\"})"}
+   ],
+   "answer": "p2_h27",
+   "explanation": "The answer comes from the tool output, not from the instruction text. H35 is cheaper, but it is not available, so the cheapest AVAILABLE hotel is H27 (98 per night)."
+  },
+  {
+   "row": "practice_3",
+   "instruction": "Set a reminder to call the dentist tomorrow at 9AM.",
+   "history": [
+    {"kind": "agent", "step": 0, "action": "get_current_timestamp()", "observation": "1804710725.0"}
+   ],
+   "candidates": [
+    {"id": "p3_day12", "action": "add_reminder(content='call the dentist', year=2027, month=3, day=12, hour=9, minute=0)"},
+    {"id": "p3_day11", "action": "add_reminder(content='call the dentist', year=2027, month=3, day=11, hour=9, minute=0)"}
+   ],
+   "answer": "p3_day11",
+   "explanation": "The current time is a Unix timestamp. Pasting 1804710725 into the timestamp converter shows Wednesday, March 10, 2027, so 'tomorrow' is March 11."
+  },
+  {
+   "row": "practice_4",
+   "instruction": "Book the hotel in Lisbon with the highest guest rating for the night of June 3.",
+   "history": [
+    {"kind": "agent", "step": 0, "action": "search_hotels({\"city\": \"Lisbon\", \"date\": \"2027-06-03\"})",
+     "observation": "[\n  {\"hotel_id\": \"H11\", \"name\": \"Rio Azul\", \"price_per_night\": 142, \"available\": true},\n  {\"hotel_id\": \"H27\", \"name\": \"Casa Lume\", \"price_per_night\": 98, \"available\": true}\n]"}
+   ],
+   "candidates": [
+    {"id": "p4_h11", "action": "book_hotel({\"hotel_id\": \"H11\", \"date\": \"2027-06-03\"})"},
+    {"id": "p4_h27", "action": "book_hotel({\"hotel_id\": \"H27\", \"date\": \"2027-06-03\"})"}
+   ],
+   "answer": "cannot_tell",
+   "explanation": "The tool output lists prices but no guest ratings, so the history does not contain what you need to decide. In such cases choose 'Cannot be determined from the history' and say what is missing in the note."
+  }
+ ],
+ "attention": [
+  {
+   "row": "attention_1",
+   "instruction": "ATTENTION CHECK. This item checks that you are reading carefully. For the first question, please select \"Neither action\". Answer the remaining questions however you like.",
+   "history": [
+    {"kind": "agent", "step": 0, "action": "list_files(folder='reports')", "observation": "{\n  \"files\": [\"q1.pdf\", \"q2.pdf\", \"q3.pdf\"]\n}"}
+   ],
+   "candidates": [
+    {"id": "att1_a", "action": "open_file(name='q1.pdf')"},
+    {"id": "att1_b", "action": "open_file(name='q3.pdf')"}
+   ],
+   "answer": "neither"
+  },
+  {
+   "row": "attention_2",
+   "instruction": "ATTENTION CHECK. To show that you are reading the instructions, please select \"Both actions are acceptable\" for the first question. Answer the remaining questions however you like.",
+   "history": [
+    {"kind": "user", "text": "Please show me the weather."}
+   ],
+   "candidates": [
+    {"id": "att2_a", "action": "get_weather(city='Boston')"},
+    {"id": "att2_b", "action": "get_weather(city='Denver')"}
+   ],
+   "answer": "both"
+  }
+ ]
+}

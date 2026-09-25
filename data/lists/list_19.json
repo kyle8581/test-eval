@@ -1,0 +1,577 @@
+{
+ "list": 19,
+ "rows": [
+  {
+   "row": "2cd48dbdd9",
+   "instruction": "For your upcoming trip from ATL to PHL, you want to change for the latest departing flight in Economy cabin class (not Basic Economy) and for the day after the original reservation. Your name is Aarav Garcia.\n\nYour user id is aarav_garcia_1177. You are happy with original payment for refund.",
+   "history": [
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "search_direct_flight({\"origin\": \"ATL\", \"destination\": \"PHL\", \"date\": \"2024-05-24\"})",
+     "observation": "[]"
+    },
+    {
+     "kind": "agent",
+     "step": 1,
+     "action": "search_onestop_flight({\"origin\": \"ATL\", \"destination\": \"PHL\", \"date\": \"2024-05-24\"})",
+     "observation": "[\n  [{\"flight_number\": \"HAT110\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 9, \"business\": 16}, \"prices\": {\"basic_economy\": 62, \"economy\": 105, \"business\": 496}}, {\"flight_number\": \"HAT132\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"18:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 16, \"economy\": 8, \"business\": 10}, \"prices\": {\"basic_economy\": 61, \"economy\": 190, \"business\": 287}}],\n  [{\"flight_number\": \"HAT110\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 9, \"business\": 16}, \"prices\": {\"basic_economy\": 62, \"economy\": 105, \"business\": 496}}, {\"flight_number\": \"HAT172\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"23:00:00\", \"scheduled_arrival_time_est\": \"00:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 2, \"business\": 15}, \"prices\": {\"basic_economy\": 79, \"economy\": 102, \"business\": 360}}],\n  [{\"flight_number\": \"HAT110\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 9, \"business\": 16}, \"prices\": {\"basic_economy\": 62, \"economy\": 105, \"business\": 496}}, {\"flight_number\": \"HAT206\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"18:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 6, \"economy\": 19, \"business\": 2}, \"prices\": {\"basic_economy\": 98, \"economy\": 145, \"business\": 465}}],\n  [{\"flight_number\": \"HAT110\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 9, \"business\": 16}, \"prices\": {\"basic_economy\": 62, \"economy\": 105, \"business\": 496}}, {\"flight_number\": \"HAT264\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"23:00:00\", \"scheduled_arrival_time_est\": \"00:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 19, \"economy\": 17, \"business\": 18}, \"prices\": {\"basic_economy\": 62, \"economy\": 156, \"business\": 201}}],\n  [{\"flight_number\": \"HAT164\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 11}, \"prices\": {\"basic_economy\": 65, \"economy\": 145, \"business\": 224}}, {\"flight_number\": \"HAT132\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"18:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 16, \"economy\": 8, \"business\": 10}, \"prices\": {\"basic_economy\": 61, \"economy\": 190, \"business\": 287}}],\n  [{\"flight_number\": \"HAT164\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 11}, \"prices\": {\"basic_economy\": 65, \"economy\": 145, \"business\": 224}}, {\"flight_number\": \"HAT172\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"23:00:00\", \"scheduled_arrival_time_est\": \"00:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 2, \"business\": 15}, \"prices\": {\"basic_economy\": 79, \"economy\": 102, \"business\": 360}}],\n  [{\"flight_number\": \"HAT164\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 11}, \"prices\": {\"basic_economy\": 65, \"economy\": 145, \"business\": 224}}, {\"flight_number\": \"HAT206\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"18:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 6, \"economy\": 19, \"business\": 2}, \"prices\": {\"basic_economy\": 98, \"economy\": 145, \"business\": 465}}],\n  [{\"flight_number\": \"HAT164\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 11}, \"prices\": {\"basic_economy\": 65, \"economy\": 145, \"business\": 224}}, {\"flight_number\": \"HAT264\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"23:00:00\", \"scheduled_arrival_time_est\": \"00:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 19, \"economy\": 17, \"business\": 18}, \"prices\": {\"basic_economy\": 62, \"economy\": 156, \"business\": 201}}],\n  [{\"flight_number\": \"HAT227\", \"origin\": \"ATL\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 14, \"economy\": 5, \"business\": 6}, \"prices\": {\"basic_economy\": 69, \"economy\": 112, \"business\": 365}}, {\"flight_number\": \"HAT139\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 19, \"economy\": 10, \"business\": 20}, \"prices\": {\"basic_economy\": 71, \"economy\": 104, \"business\": 267}}],\n  [{\"flight_number\": \"HAT227\", \"origin\": \"ATL\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 14, \"economy\": 5, \"business\": 6}, \"prices\": {\"basic_economy\": 69, \"economy\": 112, \"business\": 365}}, {\"flight_number\": \"HAT271\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"19:00:00\", \"scheduled_arrival_time_est\": \"21:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 14, \"business\": 1}, \"prices\": {\"basic_economy\": 75, \"economy\": 138, \"business\": 292}}]\n]"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "f29cdb7f",
+     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT164\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT132\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})"
+    },
+    {
+     "id": "390486b6",
+     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT110\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT132\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})"
+    }
+   ]
+  },
+  {
+   "row": "febe9c122d",
+   "instruction": "You want to change your upcoming reservation P22235 (ORD to LAS on May 24) to the earliest departing flight on the same day, in the same cabin. Your user id is harper_wilson_8866. If there is a fare difference, pay it with your credit card ending in 2730. You do not want to change anything else about the reservation.",
+   "history": [
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "get_reservation_details({\"reservation_id\": \"P22235\"})",
+     "observation": "{\n  \"reservation_id\": \"P22235\",\n  \"user_id\": \"harper_wilson_8866\",\n  \"origin\": \"ORD\",\n  \"destination\": \"LAS\",\n  \"flight_type\": \"one_way\",\n  \"cabin\": \"economy\",\n  \"flights\": [{\"flight_number\": \"HAT093\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"date\": \"2024-05-24\", \"price\": 125}, {\"flight_number\": \"HAT102\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"date\": \"2024-05-24\", \"price\": 125}],\n  \"passengers\": [{\"first_name\": \"Harper\", \"last_name\": \"Wilson\", \"dob\": \"1971-01-02\"}, {\"first_name\": \"Yusuf\", \"last_name\": \"Lee\", \"dob\": \"1967-09-25\"}],\n  \"payment_history\": [{\"payment_id\": \"gift_card_2397458\", \"amount\": 500}],\n  \"created_at\": \"2024-05-07T21:02:03\",\n  \"total_baggages\": 2,\n  \"nonfree_baggages\": 0,\n  \"insurance\": \"no\",\n  \"status\": null\n}"
+    },
+    {
+     "kind": "agent",
+     "step": 1,
+     "action": "search_direct_flight({\"origin\": \"ORD\", \"destination\": \"LAS\", \"date\": \"2024-05-24\"})",
+     "observation": "[]"
+    },
+    {
+     "kind": "agent",
+     "step": 2,
+     "action": "search_onestop_flight({\"origin\": \"ORD\", \"destination\": \"LAS\", \"date\": \"2024-05-24\"})",
+     "observation": "[\n  [{\"flight_number\": \"HAT093\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 7, \"business\": 3}, \"prices\": {\"basic_economy\": 70, \"economy\": 178, \"business\": 364}}, {\"flight_number\": \"HAT102\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"21:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 9, \"economy\": 1, \"business\": 20}, \"prices\": {\"basic_economy\": 80, \"economy\": 110, \"business\": 254}}],\n  [{\"flight_number\": \"HAT093\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 7, \"business\": 3}, \"prices\": {\"basic_economy\": 70, \"economy\": 178, \"business\": 364}}, {\"flight_number\": \"HAT178\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"08:00:00\", \"scheduled_arrival_time_est\": \"12:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 3, \"business\": 19}, \"prices\": {\"basic_economy\": 68, \"economy\": 192, \"business\": 210}}],\n  [{\"flight_number\": \"HAT093\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 7, \"business\": 3}, \"prices\": {\"basic_economy\": 70, \"economy\": 178, \"business\": 364}}, {\"flight_number\": \"HAT281\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"02:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 5, \"business\": 2}, \"prices\": {\"basic_economy\": 62, \"economy\": 169, \"business\": 244}}],\n  [{\"flight_number\": \"HAT118\", \"origin\": \"ORD\", \"destination\": \"DEN\", \"status\": \"available\", \"scheduled_departure_time_est\": \"04:00:00\", \"scheduled_arrival_time_est\": \"06:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 3, \"economy\": 11, \"business\": 8}, \"prices\": {\"basic_economy\": 94, \"economy\": 200, \"business\": 330}}, {\"flight_number\": \"HAT229\", \"origin\": \"DEN\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 11, \"business\": 15}, \"prices\": {\"basic_economy\": 87, \"economy\": 121, \"business\": 247}}],\n  [{\"flight_number\": \"HAT118\", \"origin\": \"ORD\", \"destination\": \"DEN\", \"status\": \"available\", \"scheduled_departure_time_est\": \"04:00:00\", \"scheduled_arrival_time_est\": \"06:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 3, \"economy\": 11, \"business\": 8}, \"prices\": {\"basic_economy\": 94, \"economy\": 200, \"business\": 330}}, {\"flight_number\": \"HAT290\", \"origin\": \"DEN\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 15, \"business\": 7}, \"prices\": {\"basic_economy\": 61, \"economy\": 171, \"business\": 476}}],\n  [{\"flight_number\": \"HAT147\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"09:00:00\", \"scheduled_arrival_time_est\": \"11:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 2, \"business\": 12}, \"prices\": {\"basic_economy\": 93, \"economy\": 118, \"business\": 220}}, {\"flight_number\": \"HAT112\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 11, \"business\": 19}, \"prices\": {\"basic_economy\": 54, \"economy\": 135, \"business\": 404}}],\n  [{\"flight_number\": \"HAT147\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"09:00:00\", \"scheduled_arrival_time_est\": \"11:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 2, \"business\": 12}, \"prices\": {\"basic_economy\": 93, \"economy\": 118, \"business\": 220}}, {\"flight_number\": \"HAT131\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"18:00:00\", \"scheduled_arrival_time_est\": \"21:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 7, \"business\": 11}, \"prices\": {\"basic_economy\": 79, \"economy\": 184, \"business\": 228}}],\n  [{\"flight_number\": \"HAT147\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"09:00:00\", \"scheduled_arrival_time_est\": \"11:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 2, \"business\": 12}, \"prices\": {\"basic_economy\": 93, \"economy\": 118, \"business\": 220}}, {\"flight_number\": \"HAT286\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 3, \"economy\": 6, \"business\": 11}, \"prices\": {\"basic_economy\": 60, \"economy\": 114, \"business\": 399}}],\n  [{\"flight_number\": \"HAT165\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 11, \"business\": 13}, \"prices\": {\"basic_economy\": 52, \"economy\": 147, \"business\": 419}}, {\"flight_number\": \"HAT112\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 11, \"business\": 19}, \"prices\": {\"basic_economy\": 54, \"economy\": 135, \"business\": 404}}],\n  [{\"flight_number\": \"HAT165\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 11, \"business\": 13}, \"prices\": {\"basic_economy\": 52, \"economy\": 147, \"business\": 419}}, {\"flight_number\": \"HAT131\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"18:00:00\", \"scheduled_arrival_time_est\": \"21:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 7, \"business\": 11}, \"prices\": {\"basic_economy\": 79, \"economy\": 184, \"business\": 228}}],\n  [{\"flight_number\": \"HAT165\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 11, \"business\": 13}, \"prices\": {\"basic_economy\": 52, \"economy\": 147, \"business\": 419}}, {\"flight_number\": \"HAT286\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 3, \"economy\": 6, \"business\": 11}, \"prices\": {\"basic_economy\": 60, \"economy\": 114, \"business\": 399}}],\n  [{\"flight_number\": \"HAT223\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 9}, \"prices\": {\"basic_economy\": 89, \"economy\": 146, \"business\": 276}}, {\"flight_number\": \"HAT102\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"21:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 9, \"economy\": 1, \"business\": 20}, \"prices\": {\"basic_economy\": 80, \"economy\": 110, \"business\": 254}}],\n  [{\"flight_number\": \"HAT223\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 9}, \"prices\": {\"basic_economy\": 89, \"economy\": 146, \"business\": 276}}, {\"flight_number\": \"HAT281\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"02:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 5, \"business\": 2}, \"prices\": {\"basic_economy\": 62, \"economy\": 169, \"business\": 244}}],\n  [{\"flight_number\": \"HAT238\", \"origin\": \"ORD\", \"destination\": \"DEN\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 13, \"business\": 3}, \"prices\": {\"basic_economy\": 53, \"economy\": 185, \"business\": 286}}, {\"flight_number\": \"HAT084\", \"origin\": \"DEN\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"04:00:00\", \"scheduled_arrival_time_est\": \"06:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 16, \"business\": 0}, \"prices\": {\"basic_economy\": 88, \"economy\": 179, \"business\": 274}}],\n  [{\"flight_number\": \"HAT238\", \"origin\": \"ORD\", \"destination\": \"DEN\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 13, \"business\": 3}, \"prices\": {\"basic_economy\": 53, \"economy\": 185, \"business\": 286}}, {\"flight_number\": \"HAT229\", \"origin\": \"DEN\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 11, \"business\": 15}, \"prices\": {\"basic_economy\": 87, \"economy\": 121, \"business\": 247}}],\n  [{\"flight_number\": \"HAT238\", \"origin\": \"ORD\", \"destination\": \"DEN\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 13, \"business\": 3}, \"prices\": {\"basic_economy\": 53, \"economy\": 185, \"business\": 286}}, {\"flight_number\": \"HAT290\", \"origin\": \"DEN\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 15, \"business\": 7}, \"prices\": {\"basic_economy\": 61, \"economy\": 171, \"business\": 476}}]\n]"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "d9f42456",
+     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT147\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT286\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})"
+    },
+    {
+     "id": "2faf7515",
+     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT165\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT112\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})"
+    }
+   ]
+  },
+  {
+   "row": "e77f8c5634",
+   "instruction": "Turn 0: I've recently compiled an extensive log of outcomes from my latest scientific experiment into a file titled 'experiment_log.txt'. Your task is to extract any line that features the term 'Anomaly' from this document, as these could potentially indicate critical observations that need our attention.\nTurn 1: Following this, I need you to draw a comparison between 'experiment_log.txt' and 'previous_study_log.txt' to pinpoint any deviations or novel discoveries that could potentially influence our hypothesis.\nTurn 2: Please share the verbatim results of diff as the body of the post by posting a summary on my Twitter account so it can be reviewed by my fellow researchers. My user name is dr_smith, and my password is securePass123\nTurn 3: When you post the tweet, add a supportive comment 'Cheers!'",
+   "history": [
+    {
+     "kind": "user",
+     "text": "I've recently compiled an extensive log of outcomes from my latest scientific experiment into a file titled 'experiment_log.txt'. Your task is to extract any line that features the term 'Anomaly' from this document, as these could potentially indicate critical observations that need our attention."
+    },
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "grep(file_name='experiment_log.txt',pattern='Anomaly')",
+     "observation": "{\n  \"matching_lines\": [\"Observation 1: Normal Observation 2: Anomaly detected Observation 3: Normal Observation 4: Anomaly detected \"]\n}"
+    },
+    {
+     "kind": "user",
+     "text": "Following this, I need you to draw a comparison between 'experiment_log.txt' and 'previous_study_log.txt' to pinpoint any deviations or novel discoveries that could potentially influence our hypothesis."
+    },
+    {
+     "kind": "agent",
+     "step": 1,
+     "action": "diff(file_name1='experiment_log.txt', file_name2='previous_study_log.txt')",
+     "observation": "{\n  \"diff_lines\": \"- Observation 1: Normal Observation 2: Anomaly detected Observation 3: Normal Observation 4: Anomaly detected \\n+ Observation A: Normal Observation B: Normal Observation C: Anomaly detected\"\n}"
+    },
+    {
+     "kind": "user",
+     "text": "Please share the verbatim results of diff as the body of the post by posting a summary on my Twitter account so it can be reviewed by my fellow researchers. My user name is dr_smith, and my password is securePass123"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "a6915f56",
+     "action": "authenticate_twitter(username='dr_smith', password='securePass123'); post_tweet(content='- Observation 1: Normal Observation 2: Anomaly detected Observation 3: Normal Observation 4: Anomaly detected \\n+ Observation A: Normal Observation B: Normal Observation C: Anomaly detected')"
+    },
+    {
+     "id": "b37b43cc",
+     "action": "authenticate_twitter(username='john', password='securePass123'); post_tweet(content='- Observation 1: Normal Observation 2: Anomaly detected Observation 3: Normal Observation 4: Anomaly detected \\n+ Observation A: Normal Observation B: Normal Observation C: Anomaly detected')"
+    }
+   ]
+  },
+  {
+   "row": "532d50502c",
+   "instruction": "Turn 0: I remember I should have a document called 'FinalReport.txt' in the 'Documentation' folder. \nTurn 1: Make a copy of 'FinalReport.txt' to the 'Archives' directory inside the 'Documentation' folder, while ensuring the duplicate is preserved as 'IdeasArchive.txt'.\nTurn 2: Methodically arrange and sort the inaugural line of the 'IdeasArchive.txt' in a seamless alphabetical order to verify clarity and sequence.",
+   "history": [
+    {
+     "kind": "user",
+     "text": "I remember I should have a document called 'FinalReport.txt' in the 'Documentation' folder. "
+    },
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "cd(folder='Documentation')",
+     "observation": "{\n  \"current_working_directory\": \"Documentation\"\n}"
+    },
+    {
+     "kind": "user",
+     "text": "Make a copy of 'FinalReport.txt' to the 'Archives' directory inside the 'Documentation' folder, while ensuring the duplicate is preserved as 'IdeasArchive.txt'."
+    }
+   ],
+   "candidates": [
+    {
+     "id": "f8c1b82a",
+     "action": "cp(source='FinalReport.txt',destination='Archives'); cd(folder='Archives'); mv(source='FinalReport.txt',destination='ArchivedFinalReport2024.txt')"
+    },
+    {
+     "id": "039d1c8c",
+     "action": "cp(source='FinalReport.txt',destination='Archives'); cd(folder='Archives'); mv(source='FinalReport.txt',destination='IdeasArchive.txt')"
+    }
+   ]
+  },
+  {
+   "row": "2b2192f6f9",
+   "instruction": "Turn 0: I've noticed that some of my car doors are slightly ajar while others seem to be securely locked. Would you be able to verify and make sure all doors are properly locked for safety?\nTurn 1: I'm all set to start my drive. Would you initiate the engine's ignition in START mode?\nTurn 2: Before setting off, I'm keen to ensure my tire pressures are as they should be. Could you provide an update on the current tire pressure status? If it's below 40, point me to nearest tire shop.\nTurn 3: I'd appreciate it if you could send a quick message 'I am on my way to your place.' to my cousin (user id USR003), updating them my status. If you need, my user id is USR001.",
+   "history": [
+    {
+     "kind": "user",
+     "text": "I've noticed that some of my car doors are slightly ajar while others seem to be securely locked. Would you be able to verify and make sure all doors are properly locked for safety?"
+    },
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "lockDoors(unlock=False, door=['driver', 'passenger', 'rear_left', 'rear_right'])",
+     "observation": "{\n  \"lockStatus\": \"locked\",\n  \"remainingUnlockedDoors\": 0\n}"
+    },
+    {
+     "kind": "user",
+     "text": "I'm all set to start my drive. Would you initiate the engine's ignition in START mode?"
+    },
+    {
+     "kind": "agent",
+     "step": 1,
+     "action": "pressBrakePedal(pedalPosition=1.0); startEngine(ignitionMode='START')",
+     "observation": "{\"brakePedalStatus\": \"pressed\", \"brakePedalForce\": 1000.0}; {\"engineState\": \"running\", \"fuelLevel\": 15.5, \"batteryVoltage\": 12.8}"
+    },
+    {
+     "kind": "user",
+     "text": "Before setting off, I'm keen to ensure my tire pressures are as they should be. Could you provide an update on the current tire pressure status? If it's below 40, point me to nearest tire shop."
+    },
+    {
+     "kind": "agent",
+     "step": 2,
+     "action": "check_tire_pressure(); find_nearest_tire_shop()",
+     "observation": "{\"frontLeftTirePressure\": 35.0, \"frontRightTirePressure\": 35.0, \"rearLeftTirePressure\": 33.0, \"rearRightTirePressure\": 33.0, \"healthy_tire_pressure\": true, \"car_info\": {}}; {\"shopLocation\": \"456 Oakwood Avenue, Rivermist, 83214\"}"
+    },
+    {
+     "kind": "user",
+     "text": "I'd appreciate it if you could send a quick message 'I am on my way to your place.' to my cousin (user id USR003), updating them my status. If you need, my user id is USR001."
+    }
+   ],
+   "candidates": [
+    {
+     "id": "8704205e",
+     "action": "message_login('USR001'); send_message(receiver_id='USR002', message='I am on my way to your place.')"
+    },
+    {
+     "id": "09b0dac8",
+     "action": "message_login('USR001'); send_message(receiver_id='USR003', message='I am on my way to your place.')"
+    }
+   ]
+  },
+  {
+   "row": "b241fb84f3",
+   "instruction": "Turn 0: Would you be able to increase my current fuel reserve to twice its size?\nTurn 1: Since we've topped up the fuel, let's ignite the engine and assess the battery's condition for our journey.\nTurn 2: Verify the tire pressure to guarantee they're accurately inflated for our lengthy expedition.\nTurn 3: I need to inform my friend David about the road trip itinerary; please dispatch them a note saying 'Road trip itinerary update.'. If that helps, my user id is 'USR005'.\nTurn 4: Simultaneously, might you show me all the messages I have send so far? I want to make sure I notified all the folks I want to contact.",
+   "history": [
+    {
+     "kind": "user",
+     "text": "Would you be able to increase my current fuel reserve to twice its size?"
+    },
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "fillFuelTank(fuelAmount=10.0)",
+     "observation": "{\n  \"fuelLevel\": 20.0\n}"
+    },
+    {
+     "kind": "user",
+     "text": "Since we've topped up the fuel, let's ignite the engine and assess the battery's condition for our journey."
+    },
+    {
+     "kind": "agent",
+     "step": 1,
+     "action": "lockDoors(unlock=False, door=['driver', 'passenger', 'rear_left', 'rear_right']); pressBrakePedal(pedalPosition=1.0); startEngine(ignitionMode='START')",
+     "observation": "{\"lockStatus\": \"locked\", \"remainingUnlockedDoors\": 0}; {\"brakePedalStatus\": \"pressed\", \"brakePedalForce\": 1000.0}; {\"engineState\": \"running\", \"fuelLevel\": 20.0, \"batteryVoltage\": 12.6}"
+    },
+    {
+     "kind": "user",
+     "text": "Verify the tire pressure to guarantee they're accurately inflated for our lengthy expedition."
+    },
+    {
+     "kind": "agent",
+     "step": 2,
+     "action": "check_tire_pressure()",
+     "observation": "{\n  \"frontLeftTirePressure\": 32.0,\n  \"frontRightTirePressure\": 32.0,\n  \"rearLeftTirePressure\": 30.0,\n  \"rearRightTirePressure\": 30.0,\n  \"healthy_tire_pressure\": true,\n  \"car_info\": {}\n}"
+    },
+    {
+     "kind": "user",
+     "text": "I need to inform my friend David about the road trip itinerary; please dispatch them a note saying 'Road trip itinerary update.'. If that helps, my user id is 'USR005'."
+    }
+   ],
+   "candidates": [
+    {
+     "id": "36d8b88a",
+     "action": "message_login(user_id='USR005'); send_message(receiver_id='USR007', message='Road trip itinerary update.')"
+    },
+    {
+     "id": "b9485187",
+     "action": "message_login(user_id='USR001'); send_message(receiver_id='USR007', message='Road trip itinerary update.')"
+    }
+   ]
+  },
+  {
+   "row": "ad66638722",
+   "instruction": "Turn 0: Hi there! I've noticed Nvidia's stocks have been slipping more than I'd like. Would you be able to pull up their stock information for a quick review and also make sure it's no longer on my watchlist?\nTurn 1: Could you compile a list of all the stocks currently on my watchlist? I'm aiming to get a better grip on my portfolio management.\nTurn 2: I think it would be wise to let my friend know about the changes I'm making, specifically regarding Nvidia. Please send a note to my friend's user ID USR003 stating, 'I've decided to drop those dipping stocks from my line-up.' My user id is 'USR002'.\nTurn 3: Would you mind showing me any recent messages I've sent?\nTurn 4: My friend mentioned something quite irrelevant and outdated in one of the messages. Can you help me by delete message id: 67410?",
+   "history": [
+    {
+     "kind": "user",
+     "text": "Hi there! I've noticed Nvidia's stocks have been slipping more than I'd like. Would you be able to pull up their stock information for a quick review and also make sure it's no longer on my watchlist?"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "c87a99a0",
+     "action": "remove_stock_from_watchlist(symbol='ZETA')"
+    },
+    {
+     "id": "1adcfa8f",
+     "action": "remove_stock_from_watchlist(symbol='NVDA')"
+    }
+   ]
+  },
+  {
+   "row": "862e21df03",
+   "instruction": "Turn 0: I'm in the process of scheduling a journey from San Francisco to Chicago on the 15th of the year 2026's eleventh month. It's important the travel is in first class. Before booking, I really can't afford a ticket that is over $5000. If everything is good, then please proceed to book it using my credit card with ID 144756014165 and access token 'secureAccessToken12345'. My personal details should be integrated into the reservation.\nTurn 1: After reconsideration, the flight planned for London on the 15th is no longer necessary. I require the cancellation of this booking immediately.\nTurn 2: Concerning the flight cancellation, it is crucial to alert customer service without delay. Kindly generate a high-priority ticket named 'Flight Cancellation Alert,' detailing the reservation specifics 'Request to cancel.'. My ticket username is `mthompson` and password is `securePass123",
+   "history": [
+    {
+     "kind": "user",
+     "text": "I'm in the process of scheduling a journey from San Francisco to Chicago on the 15th of the year 2026's eleventh month. It's important the travel is in first class. Before booking, I really can't afford a ticket that is over $5000. If everything is good, then please proceed to book it using my credit card with ID 144756014165 and access token 'secureAccessToken12345'. My personal details should be integrated into the reservation."
+    }
+   ],
+   "candidates": [
+    {
+     "id": "4b1fb63e",
+     "action": "get_flight_cost(travel_from='SFO', travel_to='ORD', travel_date='2026-11-15', travel_class='first'); book_flight(access_token='secureAccessToken12345',card_id='144756014165', travel_date='2026-11-15', travel_from='SFO', travel_to='ORD', travel_class='first')"
+    },
+    {
+     "id": "ab982219",
+     "action": "get_flight_cost(travel_from='SFO', travel_to='ORD', travel_date='2026-11-15', travel_class='business'); book_flight(access_token='secureAccessToken12345',card_id='144756014165', travel_date='2026-11-15', travel_from='SFO', travel_to='ORD', travel_class='business')"
+    }
+   ]
+  },
+  {
+   "row": "5c67b3719a",
+   "instruction": "Turn 0: For trip id flight_001, it seems that I booked my flight from Rome to New York without considering travel protection, especially given the uncertainties of winter travel. Would you assist in registering my new credit card, with access token 'abc123xyz' and card number 2345-6789-1234-5678, expiring in December 2028 and a CVV of 465, to facilitate the purchase of a comprehensive travel insurance at the price $200 for this journey? My last name is Smith, first name is Michael.\nTurn 1: I need to verify the specifics and total costs of the travel insurance and booking I recently arranged, as the details escape me at the moment. Is it possible for you to provide me with the invoice linked to the insurance purchase?\nTurn 2: I’ve encountered some problems requiring immediate help regarding my upcoming trip to New York. Could you facilitate fast contact with customer support to address these insurance-related issues that haven’t been resolved?\nTurn 3: The response from customer support didn't resolve my issues, and I'm quite frustrated with the assistance I received. Would you mind drafting a formal complaint titled 'Unsatisfactory Customer Support' outlining the shortcomings of their service? My ticket username is msmith, password is SecurePass123. Left ticket description as empty string.\nTurn 4: I’ve reached the decision to cancel my New York trip due to unforeseen personal circumstances. Could you proceed with the cancellation process as soon as possible?",
+   "history": [
+    {
+     "kind": "user",
+     "text": "For trip id flight_001, it seems that I booked my flight from Rome to New York without considering travel protection, especially given the uncertainties of winter travel. Would you assist in registering my new credit card, with access token 'abc123xyz' and card number 2345-6789-1234-5678, expiring in December 2028 and a CVV of 465, to facilitate the purchase of a comprehensive travel insurance at the price $200 for this journey? My last name is Smith, first name is Michael."
+    }
+   ],
+   "candidates": [
+    {
+     "id": "1f695212",
+     "action": "register_credit_card(access_token='abc123xyz', card_number='4012888888881881', expiration_date='12/2028', card_verification_number=465, cardholder_name='Michael Smith'); purchase_insurance(access_token='abc123xyz', insurance_type='comprehensive', booking_id='flight_001', insurance_cost=200.0, card_id='262919693687')"
+    },
+    {
+     "id": "866f4976",
+     "action": "register_credit_card(access_token='abc123xyz', card_number='2345-6789-1234-5678', expiration_date='12/2028', card_verification_number=465, cardholder_name='Michael Smith'); purchase_insurance(access_token='abc123xyz', insurance_type='comprehensive', booking_id='flight_001', insurance_cost=200.0, card_id='262919693687')"
+    }
+   ]
+  },
+  {
+   "row": "bf54f94542",
+   "instruction": "Turn 0: As a high-ranking government official residing in Rivermist, I require assistance in determining the cost of first-class travel from my local airport to LAX International Airport on the 15th of December, 2026. I need the most competitive price available so I want to get the fight cost to double check.\nTurn 1: After ascertaining the flight costs, secure a booking for me utilizing my secured access and charge it to my card with id card_4526 and access code secure_access_token_987654321, ensuring all the details align perfectly with my professional profile.\nTurn 2: Please retrieve the invoice from the flight booking recently made; I need to verify that all entries are correct before my departure.\nTurn 3: There has been a problem with my booking and I previously reached out to support without any feedback yet. Kindly contact customer support on my behalf, emphasizing the smooth facilitation of my travel arrangements.\nTurn 4: Due to unforeseen changes in my schedule, I am contemplating cancelling my flight. Initiate the cancellation and ensure this procedure is executed faultlessly and promptly.\nTurn 5: Lastly, draft and publish a tweet on my official account with username 'john' and password 'john1234' notifying the postponement of my plans, with tweet 'Postponing my plans.' Incorporate hashtags such as #Travel, #PlansChanged, and mention @AirlineSupport for expedited assistance.",
+   "history": [
+    {
+     "kind": "user",
+     "text": "As a high-ranking government official residing in Rivermist, I require assistance in determining the cost of first-class travel from my local airport to LAX International Airport on the 15th of December, 2026. I need the most competitive price available so I want to get the fight cost to double check."
+    }
+   ],
+   "candidates": [
+    {
+     "id": "8922484e",
+     "action": "get_flight_cost(travel_from='RMS', travel_to='JFK', travel_date='2026-12-15', travel_class='first')"
+    },
+    {
+     "id": "542ec5cf",
+     "action": "get_flight_cost(travel_from='RMS', travel_to='LAX', travel_date='2026-12-15', travel_class='first')"
+    }
+   ]
+  },
+  {
+   "row": "75c25dfeb1",
+   "instruction": "Turn 0: Planning an incredible journey from NYC to Tokyo on December 24th 2026 in first class! I have my credit card ready with the id card_5678, which is expiring soon, and I'd like to allocate business expenses wisely. The cardholder's name matches mine, Michael Thompson, and I can provide the CVV when needed, which is 456. Just double check how much the flight costs for me and then could you make the booking using access token 'abc123xyz'?\nTurn 1: After sorting out my travel plans, draft a tweet about how flexible and adaptable my itinerary turned out to be, including a tag to my favorite travel blog '#TravelBlog' and mention my adventure-loving friend '@Spontaneity'. You may use my account with username 'john' and password 'john1234'. The tweet should read 'Flexibility is key! Plans changed, but the adventure continues.'\nTurn 2: Can you amplify the message by retweeting my recent post about the itinerary that you just posted, highlighting our spontaneity with travel plans to reach a larger audience?",
+   "history": [
+    {
+     "kind": "user",
+     "text": "Planning an incredible journey from NYC to Tokyo on December 24th 2026 in first class! I have my credit card ready with the id card_5678, which is expiring soon, and I'd like to allocate business expenses wisely. The cardholder's name matches mine, Michael Thompson, and I can provide the CVV when needed, which is 456. Just double check how much the flight costs for me and then could you make the booking using access token 'abc123xyz'?"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "5802adef",
+     "action": "get_flight_cost(travel_from='JFK',travel_to='HND',travel_date='2026-12-24',travel_class='first'); book_flight(access_token='abc123xyz', card_id='card_5678', travel_date='2026-12-24', travel_from='JFK', travel_to='HND', travel_class='first')"
+    },
+    {
+     "id": "6000c008",
+     "action": "get_flight_cost(travel_from='JFK',travel_to='HND',travel_date='2026-12-24',travel_class='economy'); book_flight(access_token='abc123xyz', card_id='card_5678', travel_date='2026-12-24', travel_from='JFK', travel_to='HND', travel_class='economy')"
+    }
+   ]
+  },
+  {
+   "row": "7f6401d96b",
+   "instruction": "Remind me to buy chocolate milk tomorrow 5PM",
+   "history": [
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "chatcmpl_tool_49079ed62360df1c_parameters = {}\nchatcmpl_tool_49079ed62360df1c_response = get_current_timestamp(**chatcmpl_tool_49079ed62360df1c_parameters)\nprint(repr(chatcmpl_tool_49079ed62360df1c_response))",
+     "observation": "1789637472.641033"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "aa940aed",
+     "action": "chatcmpl_tool_172bec07d8a96944_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_172bec07d8a96944_response = datetime_info_to_timestamp(**chatcmpl_tool_172bec07d8a96944_parameters)\nprint(repr(chatcmpl_tool_172bec07d8a96944_response))"
+    },
+    {
+     "id": "baedde2c",
+     "action": "chatcmpl_tool_172bec07d8a96944_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 8, 'minute': 0, 'second': 0}\nchatcmpl_tool_172bec07d8a96944_response = datetime_info_to_timestamp(**chatcmpl_tool_172bec07d8a96944_parameters)\nprint(repr(chatcmpl_tool_172bec07d8a96944_response))"
+    }
+   ]
+  },
+  {
+   "row": "49b5fc7616",
+   "instruction": "You want to modify your laptop order to your NYC address (you don't want to reveal it yourself but the address should be in your orders profile). You also want to modify the laptop to item number 2216662955. You also want to change your watch for one with black dial color but keeping the leather strap. You name is Yara Silva and your zip code is 77159. You do not remember your email address You are sad and cautious. You like to say things piecewise.",
+   "history": [
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "modify_pending_order_items({\"order_id\": \"#W9810810\", \"item_ids\": [\"1355937109\"], \"new_item_ids\": [\"9949163720\"], \"payment_method_id\": \"gift_card_7252880\"})",
+     "observation": "{\n  \"order_id\": \"#W9810810\",\n  \"user_id\": \"yara_silva_7567\",\n  \"address\": {\"address1\": \"116 Laurel Lane\", \"address2\": \"Suite 319\", \"city\": \"Houston\", \"country\": \"USA\", \"state\": \"TX\", \"zip\": \"77159\"},\n  \"items\": [{\"name\": \"Electric Kettle\", \"product_id\": \"1075968781\", \"item_id\": \"2698416822\", \"price\": 149.45, \"options\": {\"capacity\": \"1.5L\", \"material\": \"plastic\", \"color\": \"white\"}}, {\"name\": \"Wristwatch\", \"product_id\": \"6066914160\", \"item_id\": \"9949163720\", \"price\": 1908.15, \"options\": {\"strap material\": \"leather\", \"dial color\": \"black\"}}, {\"name\": \"Bookshelf\", \"product_id\": \"8600330539\", \"item_id\": \"3778705663\", \"price\": 473.48, \"options\": {\"material\": \"metal\", \"color\": \"black\", \"height\": \"6 ft\"}}],\n  \"status\": \"pending (item modified)\",\n  \"fulfillments\": [],\n  \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 2608.23, \"payment_method_id\": \"gift_card_7252880\"}, {\"transaction_type\": \"refund\", \"amount\": 77.14999999999986, \"payment_method_id\": \"gift_card_7252880\"}],\n  \"cancel_reason\": null,\n  \"exchange_items\": null,\n  \"exchange_new_items\": null,\n  \"exchange_payment_method_id\": null,\n  \"exchange_price_difference\": null,\n  \"return_items\": null,\n  \"return_payment_method_id\": null\n}"
+    },
+    {
+     "kind": "agent",
+     "step": 1,
+     "action": "modify_pending_order_address({\"order_id\": \"#W3730488\", \"address1\": \"555 Highland Drive\", \"address2\": \"Suite 872\", \"city\": \"New York\", \"country\": \"USA\", \"state\": \"NY\", \"zip\": \"10116\"})",
+     "observation": "{\n  \"order_id\": \"#W3730488\",\n  \"user_id\": \"yara_silva_7567\",\n  \"address\": {\"address1\": \"555 Highland Drive\", \"address2\": \"Suite 872\", \"city\": \"New York\", \"country\": \"USA\", \"state\": \"NY\", \"zip\": \"10116\"},\n  \"items\": [{\"name\": \"Espresso Machine\", \"product_id\": \"4354588079\", \"item_id\": \"6200867091\", \"price\": 2955.17, \"options\": {\"pressure\": \"19 bar\", \"capacity\": \"1L\", \"type\": \"capsule\"}}, {\"name\": \"Laptop\", \"product_id\": \"4760268021\", \"item_id\": \"2913673670\", \"price\": 2701.89, \"options\": {\"screen size\": \"15-inch\", \"processor\": \"i9\", \"ram\": \"32GB\", \"storage\": \"512GB SSD\", \"color\": \"black\"}}],\n  \"status\": \"pending\",\n  \"fulfillments\": [],\n  \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 5657.06, \"payment_method_id\": \"gift_card_7252880\"}],\n  \"cancel_reason\": null,\n  \"exchange_items\": null,\n  \"exchange_new_items\": null,\n  \"exchange_payment_method_id\": null,\n  \"exchange_price_difference\": null,\n  \"return_items\": null,\n  \"return_payment_method_id\": null\n}"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "8dfab35b",
+     "action": "modify_pending_order_items({\"order_id\": \"#W3730488\", \"item_ids\": [\"2913673670\"], \"new_item_ids\": [\"9844888101\"], \"payment_method_id\": \"gift_card_7252880\"})"
+    },
+    {
+     "id": "027897e8",
+     "action": "modify_pending_order_items({\"order_id\": \"#W3730488\", \"item_ids\": [\"2913673670\"], \"new_item_ids\": [\"2216662955\"], \"payment_method_id\": \"gift_card_7252880\"})"
+    }
+   ]
+  },
+  {
+   "row": "a9de3d014a",
+   "instruction": "Turn 0: Wonderful, in light of the prevailing market landscape, could we dive into the Technology sector for a bit? Compiling a list of stock symbols would be incredibly useful.\nTurn 1: With those Technology sector symbols in hand, let's delve deeper. Could you provide a comprehensive breakdown of the last stock on the list?\nTurn 2: Turning to the horizon of future investments, analyzing a bit of history would be strategic. Would you mind canceling my pending order associated with the most recent order ID?\nTurn 3: Before any further financial maneuvers, a quick financial health check is due. Could you review my account details to ensure everything is shipshape?",
+   "history": [
+    {
+     "kind": "user",
+     "text": "Wonderful, in light of the prevailing market landscape, could we dive into the Technology sector for a bit? Compiling a list of stock symbols would be incredibly useful."
+    },
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "get_available_stocks(sector='Technology')",
+     "observation": "{\n  \"stock_list\": [\"AAPL\", \"GOOG\", \"MSFT\", \"NVDA\"]\n}"
+    },
+    {
+     "kind": "user",
+     "text": "With those Technology sector symbols in hand, let's delve deeper. Could you provide a comprehensive breakdown of the last stock on the list?"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "d1728978",
+     "action": "get_stock_info(symbol='NVDA')"
+    },
+    {
+     "id": "a581574a",
+     "action": "get_stock_info(symbol='MSFT')"
+    }
+   ]
+  },
+  {
+   "row": "b736c6b098",
+   "instruction": "Turn 0: Wonderful, in light of the prevailing market landscape, could we dive into the Technology sector for a bit? Compiling a list of stock symbols would be incredibly useful.\nTurn 1: With those Technology sector symbols in hand, let's delve deeper. Could you provide a comprehensive breakdown of the last stock on the list?\nTurn 2: Turning to the horizon of future investments, analyzing a bit of history would be strategic. Would you mind canceling my pending order associated with the most recent order ID?\nTurn 3: Before any further financial maneuvers, a quick financial health check is due. Could you review my account details to ensure everything is shipshape?",
+   "history": [
+    {
+     "kind": "user",
+     "text": "Wonderful, in light of the prevailing market landscape, could we dive into the Technology sector for a bit? Compiling a list of stock symbols would be incredibly useful."
+    },
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "get_available_stocks(sector='Technology')",
+     "observation": "{\n  \"stock_list\": [\"AAPL\", \"GOOG\", \"MSFT\", \"NVDA\"]\n}"
+    },
+    {
+     "kind": "user",
+     "text": "With those Technology sector symbols in hand, let's delve deeper. Could you provide a comprehensive breakdown of the last stock on the list?"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "1f02d534",
+     "action": "get_stock_info(symbol='NVDA')"
+    },
+    {
+     "id": "3da67f97",
+     "action": "get_stock_info(symbol='GOOG')"
+    }
+   ]
+  },
+  {
+   "row": "6482c03bfd",
+   "instruction": "Turn 0: Imagine planning a trip and you're curious about the flight costs between various airports. Opt to fly from the first airport to the second one in the system's list. Could you provide the expected fare for an economy class ticket on the date 2026-11-15?\nTurn 1: Good news! You've discovered a fare that won't break the bank. Next, let's arrange a flight from San Francisco International (SFO) to Los Angeles International (LAX). Utilize a distinctive access token 'abc123xyz', the credit card with id 'card_3456', and the traveler details of our intrepid voyager, Elizabeth Montgomery.\nTurn 2: Finally, Elizabeth seeks some tranquility during her adventure. Please acquire travel insurance for this booked flight, selecting a plan that offers up to $500 coverage. You are welcome to use the same credit card and access token for this purchase.",
+   "history": [
+    {
+     "kind": "user",
+     "text": "Imagine planning a trip and you're curious about the flight costs between various airports. Opt to fly from the first airport to the second one in the system's list. Could you provide the expected fare for an economy class ticket on the date 2026-11-15?"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "ddb92ce2",
+     "action": "list_all_airports(); get_flight_cost(travel_from='RMS', travel_to='SBK', travel_date='2026-11-15', travel_class='economy')"
+    },
+    {
+     "id": "5ec6c0e3",
+     "action": "list_all_airports(); get_flight_cost(travel_from='BOS', travel_to='SBK', travel_date='2026-11-15', travel_class='economy')"
+    }
+   ]
+  },
+  {
+   "row": "ef97532ef5",
+   "instruction": "Turn 0: As I'm mapping out the logistics for my forthcoming business class journey, I require an estimate for airfare traveling from the first to the last airport in your inventory, all set for December 15th, 2026. My travel funds should not exceed $2000, and I'll use my designated access code, 12345-67890. Could you retrieve this information for me?\nTurn 1: Relating to the travel itinerary I'm arranging, I would like to secure travel insurance with a fee of $300 linked to booking code d184e2c0-2ebb-4f39-a525-d5e01b67dc6c. I'd prefer to utilize the payment method associated with card ID '0001'. Kindly finalize this with my access code 12345-67890.\nTurn 2: Could you assist by procuring the invoice for my reservation? I need to review the specifics to confirm precision, tapping into my access code 12345-67890 for verification.",
+   "history": [
+    {
+     "kind": "user",
+     "text": "As I'm mapping out the logistics for my forthcoming business class journey, I require an estimate for airfare traveling from the first to the last airport in your inventory, all set for December 15th, 2026. My travel funds should not exceed $2000, and I'll use my designated access code, 12345-67890. Could you retrieve this information for me?"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "db555934",
+     "action": "list_all_airports(); get_flight_cost(travel_from='RMS', travel_to='SBK', travel_date='2026-12-15', travel_class='business'); set_budget_limit(access_token='12345-67890', budget_limit=2000.0)"
+    },
+    {
+     "id": "8b572175",
+     "action": "list_all_airports(); get_flight_cost(travel_from='RMS', travel_to='BOS', travel_date='2026-12-15', travel_class='business'); set_budget_limit(access_token='12345-67890', budget_limit=2000.0)"
+    }
+   ]
+  },
+  {
+   "row": "a46c215a26",
+   "instruction": "Add a todo to buy chocolate milk next Friday 5PM",
+   "history": [
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "chatcmpl_tool_91df8bfa51137cdf_parameters = {}\nchatcmpl_tool_91df8bfa51137cdf_response = get_current_timestamp(**chatcmpl_tool_91df8bfa51137cdf_parameters)\nprint(repr(chatcmpl_tool_91df8bfa51137cdf_response))",
+     "observation": "1789578015.485001"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "b00f2f39",
+     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))"
+    },
+    {
+     "id": "504f9580",
+     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 18, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))"
+    }
+   ]
+  },
+  {
+   "row": "ff5d4cdae4",
+   "instruction": "Postpone my most recent reminder to tomorrow 5PM.",
+   "history": [
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "chatcmpl_tool_ac2c6b68176e3c1b_parameters = {}\nchatcmpl_tool_ac2c6b68176e3c1b_response = search_reminder(**chatcmpl_tool_ac2c6b68176e3c1b_parameters)\nprint(repr(chatcmpl_tool_ac2c6b68176e3c1b_response))",
+     "observation": "ValueError: No search criteria are given. At least one search criteria should be provided among ('reminder_id', 'content', 'creation_timestamp', 'creation_timestamp', 'reminder_timestamp', 'reminder_timestamp', 'latitude', 'longitude')"
+    },
+    {
+     "kind": "agent",
+     "step": 1,
+     "action": "chatcmpl_tool_b2e9d9e941620a6c_parameters = {}\nchatcmpl_tool_b2e9d9e941620a6c_response = get_current_timestamp(**chatcmpl_tool_b2e9d9e941620a6c_parameters)\nprint(repr(chatcmpl_tool_b2e9d9e941620a6c_response))",
+     "observation": "1789578018.549393"
+    },
+    {
+     "kind": "agent",
+     "step": 2,
+     "action": "chatcmpl_tool_a00fdbe121b3c7cd_parameters = {'creation_timestamp_lowerbound': 0}\nchatcmpl_tool_a00fdbe121b3c7cd_response = search_reminder(**chatcmpl_tool_a00fdbe121b3c7cd_parameters)\nprint(repr(chatcmpl_tool_a00fdbe121b3c7cd_response))",
+     "observation": "ValueError: Parameter 'creation_timestamp_lowerbound' is smaller than its valid range minimum of 315529200.0."
+    },
+    {
+     "kind": "agent",
+     "step": 3,
+     "action": "chatcmpl_tool_a74f8c51de012909_parameters = {'creation_timestamp_lowerbound': 315529200}\nchatcmpl_tool_a74f8c51de012909_response = search_reminder(**chatcmpl_tool_a74f8c51de012909_parameters)\nprint(repr(chatcmpl_tool_a74f8c51de012909_response))",
+     "observation": "[{'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'content': 'Look for Company SF tickets', 'creation_timestamp': 1789318800.328383, 'reminder_timestamp': 1789491600.32839, 'latitude': None, 'longitude': None}, {'reminder_id': 'da2b856e-9390-511f-bcbe-7005f72cbf5e', 'content': 'Buy tickets for Merrily next week', 'creation_timestamp': 1789491600.328399, 'reminder_timestamp': 1789577940.328401, 'latitude': None, 'longitude': None}, {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'content': 'Buy a nice rich navy bathing dress', 'creation_timestamp': 1789574400.328407, 'reminder_timestamp': 1789581600.328409, 'latitude': 37.3237926356735, 'longitude': -122.03961770355414}]"
+    },
+    {
+     "kind": "agent",
+     "step": 4,
+     "action": "chatcmpl_tool_bacb7b2c35b6c6a5_parameters = {'timestamp': 1789564904.9}\nchatcmpl_tool_bacb7b2c35b6c6a5_response = timestamp_to_datetime_info(**chatcmpl_tool_bacb7b2c35b6c6a5_parameters)\nprint(repr(chatcmpl_tool_bacb7b2c35b6c6a5_response))",
+     "observation": "{'year': 2026, 'month': 9, 'day': 16, 'hour': 8, 'minute': 21, 'second': 44, 'isoweekday': 3}"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "97f2c7c5",
+     "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))"
+    },
+    {
+     "id": "465113c0",
+     "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 11, 'minute': 0, 'second': 0}\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))"
+    }
+   ]
+  },
+  {
+   "row": "c581e28b86",
+   "instruction": "What's the reminder I created three days ago?",
+   "history": [
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "now_params = {}\nnow_response = get_current_timestamp(**now_params)\nprint(repr(now_response))",
+     "observation": "1789578014.595057"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "63c3846d",
+     "action": "day_params = {'timestamp': now_response, 'days': -1}\nday_response = shift_timestamp(**day_params)\nprint(repr(day_response))"
+    },
+    {
+     "id": "1b4a9af3",
+     "action": "day_params = {'timestamp': now_response, 'days': -3}\nday_response = shift_timestamp(**day_params)\nprint(repr(day_response))"
+    }
+   ]
+  }
+ ]
+}
