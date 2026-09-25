@@ -93,13 +93,16 @@
         <li>When an action picks one option from a list (a flight, a product, a reminder), you also get a table of
         <b>all listed options</b> with their prices, times and features; click a column header to sort it (for example, by price).
         The rows the two actions pick are labelled, and their original entries are copied under each action in a yellow box.</li>
+        <li>If several options are equally good for what the instruction asks (for example, two flights leave at the same earliest time),
+        an action that picks any one of them does what the instruction asks.</li>
         <li>Some tool calls are written as short computer code with long random IDs (like <code>chatcmpl_tool_91df…</code>). Ignore the IDs; look at the values.</li>
         <li>The assistant's clock gives the time as a <b>Unix timestamp</b> (a number such as 1789578016). Each timestamp is followed by its
-        date and time in square brackets, e.g. <code>1789578016 [= Wed Sep 16 2026, 11:20:16 AM]</code>.
+        date and time in square brackets, e.g. <code>1789578016 [= Wed Sep 16 2026, 11:20:16 AM]</code>; dates written as
+        year/month/day also show their weekday.
         A timestamp converter and a calculator are on the right if you need them.</li>
         <li>Judge whether the action does what the <b>user asked for</b>. Ignore politeness, formatting, and company rules.</li>
         <li>The two actions appear in random order. Nothing on the page tells you which is intended.</li></ul>`),
-      page(`<h1>Before you start</h1><p>Next come three short questions about these instructions, then four practice items with feedback,
+      page(`<h1>Before you start</h1><p>Next come three short questions about these instructions, then ${extra.practice.length} practice items with feedback,
         then the main items (about ${list.rows.length}). Two items check attention: they tell you exactly what to answer.</p>`),
     ],
   };
@@ -130,7 +133,7 @@
   // ---------- items ----------
   const rowTrial = (row, mode, extraParams = {}) => ({ type: jsPsychAuditRow, row, mode, time_zone: cfg.CLOCK_TIME_ZONE, ...extraParams });
   const practice = extra.practice.map((p, i) => rowTrial(p, "practice", { answer: p.answer, explanation: p.explanation, progress: `Practice ${i + 1} of ${extra.practice.length}` }));
-  const practiceIntro = { type: jsPsychHtmlButtonResponse, choices: ["Start practice"], stimulus: page("<h1>Practice</h1><p>Four practice items. After each one you will see the expected answer.</p>") };
+  const practiceIntro = { type: jsPsychHtmlButtonResponse, choices: ["Start practice"], stimulus: page(`<h1>Practice</h1><p>${extra.practice.length} practice items. After each one you will see the expected answer.</p>`) };
   const mainIntro = { type: jsPsychHtmlButtonResponse, choices: ["Start"], stimulus: page(`<h1>Main items</h1><p>You will now see ${list.rows.length + extra.attention.length} items without feedback. Take the time you need.</p>`) };
 
   const main = jsPsych.randomization.shuffle(list.rows.slice()).map((r) => ({ row: r, mode: "main" }));

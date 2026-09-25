@@ -45,8 +45,8 @@
     "columns": [
      "Flights (route)",
      "Stops",
-     "Departs (EST)",
-     "Arrives (EST)",
+     "Departs (date, EST)",
+     "Arrives (date, EST)",
      "Duration incl. stopover",
      "Total price, economy",
      "Seats left, economy",
@@ -62,131 +62,141 @@
       "cells": [
        "HAT110 (ATL–LGA) → HAT132 (LGA–PHL)",
        1,
-       "14:00",
-       "18:00",
+       "2024-05-24 14:00",
+       "2024-05-24 18:00",
        "4h00m",
        295,
        8,
        "available"
       ],
-      "cand": "c166c6e4"
+      "cand": "c166c6e4",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT110 (ATL–LGA) → HAT172 (LGA–PHL)",
        1,
-       "14:00",
-       "00:00 (+1 day)",
+       "2024-05-24 14:00",
+       "2024-05-25 00:00",
        "10h00m",
        207,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT110 (ATL–LGA) → HAT206 (LGA–PHL)",
        1,
-       "14:00",
-       "19:00",
+       "2024-05-24 14:00",
+       "2024-05-24 19:00",
        "5h00m",
        250,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT110 (ATL–LGA) → HAT264 (LGA–PHL)",
        1,
-       "14:00",
-       "00:00 (+1 day)",
+       "2024-05-24 14:00",
+       "2024-05-25 00:00",
        "10h00m",
        261,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT132 (LGA–PHL)",
        1,
-       "11:00",
-       "18:00",
+       "2024-05-24 11:00",
+       "2024-05-24 18:00",
        "7h00m",
        335,
        8,
        "available"
       ],
-      "cand": "c2f06a8b"
+      "cand": "c2f06a8b",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT172 (LGA–PHL)",
        1,
-       "11:00",
-       "00:00 (+1 day)",
+       "2024-05-24 11:00",
+       "2024-05-25 00:00",
        "13h00m",
        247,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT206 (LGA–PHL)",
        1,
-       "11:00",
-       "19:00",
+       "2024-05-24 11:00",
+       "2024-05-24 19:00",
        "8h00m",
        290,
        15,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT264 (LGA–PHL)",
        1,
-       "11:00",
-       "00:00 (+1 day)",
+       "2024-05-24 11:00",
+       "2024-05-25 00:00",
        "13h00m",
        301,
        15,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT227 (ATL–ORD) → HAT139 (ORD–PHL)",
        1,
-       "11:00",
-       "19:00",
+       "2024-05-24 11:00",
+       "2024-05-24 19:00",
        "8h00m",
        216,
        5,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT227 (ATL–ORD) → HAT271 (ORD–PHL)",
        1,
-       "11:00",
-       "21:00",
+       "2024-05-24 11:00",
+       "2024-05-24 21:00",
        "10h00m",
        250,
        5,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      }
     ]
    }
@@ -235,8 +245,8 @@
     "columns": [
      "Flights (route)",
      "Stops",
-     "Departs (EST)",
-     "Arrives (EST)",
+     "Departs (date, EST)",
+     "Arrives (date, EST)",
      "Duration incl. stopover",
      "Total price, economy",
      "Seats left, economy",
@@ -252,131 +262,141 @@
       "cells": [
        "HAT110 (ATL–LGA) → HAT132 (LGA–PHL)",
        1,
-       "14:00",
-       "18:00",
+       "2024-05-24 14:00",
+       "2024-05-24 18:00",
        "4h00m",
        295,
        8,
        "available"
       ],
-      "cand": "beaf9a60"
+      "cand": "beaf9a60",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT110 (ATL–LGA) → HAT172 (LGA–PHL)",
        1,
-       "14:00",
-       "00:00 (+1 day)",
+       "2024-05-24 14:00",
+       "2024-05-25 00:00",
        "10h00m",
        207,
        2,
        "available"
       ],
-      "cand": "ca8a54db"
+      "cand": "ca8a54db",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT110 (ATL–LGA) → HAT206 (LGA–PHL)",
        1,
-       "14:00",
-       "19:00",
+       "2024-05-24 14:00",
+       "2024-05-24 19:00",
        "5h00m",
        250,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT110 (ATL–LGA) → HAT264 (LGA–PHL)",
        1,
-       "14:00",
-       "00:00 (+1 day)",
+       "2024-05-24 14:00",
+       "2024-05-25 00:00",
        "10h00m",
        261,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT132 (LGA–PHL)",
        1,
-       "11:00",
-       "18:00",
+       "2024-05-24 11:00",
+       "2024-05-24 18:00",
        "7h00m",
        335,
        8,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT172 (LGA–PHL)",
        1,
-       "11:00",
-       "00:00 (+1 day)",
+       "2024-05-24 11:00",
+       "2024-05-25 00:00",
        "13h00m",
        247,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT206 (LGA–PHL)",
        1,
-       "11:00",
-       "19:00",
+       "2024-05-24 11:00",
+       "2024-05-24 19:00",
        "8h00m",
        290,
        15,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT264 (LGA–PHL)",
        1,
-       "11:00",
-       "00:00 (+1 day)",
+       "2024-05-24 11:00",
+       "2024-05-25 00:00",
        "13h00m",
        301,
        15,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT227 (ATL–ORD) → HAT139 (ORD–PHL)",
        1,
-       "11:00",
-       "19:00",
+       "2024-05-24 11:00",
+       "2024-05-24 19:00",
        "8h00m",
        216,
        5,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT227 (ATL–ORD) → HAT271 (ORD–PHL)",
        1,
-       "11:00",
-       "21:00",
+       "2024-05-24 11:00",
+       "2024-05-24 21:00",
        "10h00m",
        250,
        5,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      }
     ]
    }
@@ -425,8 +445,8 @@
     "columns": [
      "Flights (route)",
      "Stops",
-     "Departs (EST)",
-     "Arrives (EST)",
+     "Departs (date, EST)",
+     "Arrives (date, EST)",
      "Duration incl. stopover",
      "Total price, economy",
      "Seats left, economy",
@@ -442,131 +462,141 @@
       "cells": [
        "HAT110 (ATL–LGA) → HAT132 (LGA–PHL)",
        1,
-       "14:00",
-       "18:00",
+       "2024-05-24 14:00",
+       "2024-05-24 18:00",
        "4h00m",
        295,
        8,
        "available"
       ],
-      "cand": "54c12d0d"
+      "cand": "54c12d0d",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT110 (ATL–LGA) → HAT172 (LGA–PHL)",
        1,
-       "14:00",
-       "00:00 (+1 day)",
+       "2024-05-24 14:00",
+       "2024-05-25 00:00",
        "10h00m",
        207,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT110 (ATL–LGA) → HAT206 (LGA–PHL)",
        1,
-       "14:00",
-       "19:00",
+       "2024-05-24 14:00",
+       "2024-05-24 19:00",
        "5h00m",
        250,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT110 (ATL–LGA) → HAT264 (LGA–PHL)",
        1,
-       "14:00",
-       "00:00 (+1 day)",
+       "2024-05-24 14:00",
+       "2024-05-25 00:00",
        "10h00m",
        261,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT132 (LGA–PHL)",
        1,
-       "11:00",
-       "18:00",
+       "2024-05-24 11:00",
+       "2024-05-24 18:00",
        "7h00m",
        335,
        8,
        "available"
       ],
-      "cand": "429ffbe5"
+      "cand": "429ffbe5",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT172 (LGA–PHL)",
        1,
-       "11:00",
-       "00:00 (+1 day)",
+       "2024-05-24 11:00",
+       "2024-05-25 00:00",
        "13h00m",
        247,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT206 (LGA–PHL)",
        1,
-       "11:00",
-       "19:00",
+       "2024-05-24 11:00",
+       "2024-05-24 19:00",
        "8h00m",
        290,
        15,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT164 (ATL–LGA) → HAT264 (LGA–PHL)",
        1,
-       "11:00",
-       "00:00 (+1 day)",
+       "2024-05-24 11:00",
+       "2024-05-25 00:00",
        "13h00m",
        301,
        15,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT227 (ATL–ORD) → HAT139 (ORD–PHL)",
        1,
-       "11:00",
-       "19:00",
+       "2024-05-24 11:00",
+       "2024-05-24 19:00",
        "8h00m",
        216,
        5,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT227 (ATL–ORD) → HAT271 (ORD–PHL)",
        1,
-       "11:00",
-       "21:00",
+       "2024-05-24 11:00",
+       "2024-05-24 21:00",
        "10h00m",
        250,
        5,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      }
     ]
    }
@@ -621,8 +651,8 @@
     "columns": [
      "Flights (route)",
      "Stops",
-     "Departs (EST)",
-     "Arrives (EST)",
+     "Departs (date, EST)",
+     "Arrives (date, EST)",
      "Duration incl. stopover",
      "Total price, economy",
      "Seats left, economy",
@@ -638,183 +668,197 @@
       "cells": [
        "HAT030 (LAX–ORD) → HAT139 (ORD–PHL)",
        1,
-       "20:00",
-       "19:00",
+       "2024-05-17 20:00",
+       "2024-05-18 19:00",
        "23h00m",
        369,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT030 (LAX–ORD) → HAT271 (ORD–PHL)",
        1,
-       "20:00",
-       "21:00",
-       "1h00m",
+       "2024-05-17 20:00",
+       "2024-05-18 21:00",
+       "25h00m",
        346,
        14,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT030 (LAX–ORD) → HAT289 (ORD–PHL)",
        1,
-       "20:00",
-       "07:00",
+       "2024-05-17 20:00",
+       "2024-05-18 07:00",
        "11h00m",
        309,
        1,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT090 (LAX–ORD) → HAT139 (ORD–PHL)",
        1,
-       "01:00",
-       "19:00",
+       "2024-05-17 01:00",
+       "2024-05-17 19:00",
        "18h00m",
        237,
        7,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT090 (LAX–ORD) → HAT271 (ORD–PHL)",
        1,
-       "01:00",
-       "21:00",
+       "2024-05-17 01:00",
+       "2024-05-17 21:00",
        "20h00m",
        229,
        14,
        "available"
       ],
-      "cand": "4e90e6e5"
+      "cand": "4e90e6e5",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT090 (LAX–ORD) → HAT289 (ORD–PHL)",
        1,
-       "01:00",
-       "07:00",
+       "2024-05-17 01:00",
+       "2024-05-17 07:00",
        "6h00m",
        279,
        11,
        "available"
       ],
-      "cand": "00b46d29"
+      "cand": "00b46d29",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT094 (LAX–SFO) → HAT042 (SFO–PHL)",
        1,
-       "04:00",
-       "12:00",
+       "2024-05-17 04:00",
+       "2024-05-17 12:00",
        "8h00m",
        332,
        4,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT103 (LAX–ORD) → HAT139 (ORD–PHL)",
        1,
-       "02:00",
-       "19:00",
+       "2024-05-17 02:00",
+       "2024-05-17 19:00",
        "17h00m",
        239,
        7,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT103 (LAX–ORD) → HAT271 (ORD–PHL)",
        1,
-       "02:00",
-       "21:00",
+       "2024-05-17 02:00",
+       "2024-05-17 21:00",
        "19h00m",
        231,
        14,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT104 (LAX–ORD) → HAT139 (ORD–PHL)",
        1,
-       "10:00",
-       "19:00",
+       "2024-05-17 10:00",
+       "2024-05-17 19:00",
        "9h00m",
        297,
        7,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT104 (LAX–ORD) → HAT271 (ORD–PHL)",
        1,
-       "10:00",
-       "21:00",
+       "2024-05-17 10:00",
+       "2024-05-17 21:00",
        "11h00m",
        289,
        14,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT109 (LAX–ORD) → HAT139 (ORD–PHL)",
        1,
-       "00:00",
-       "19:00",
+       "2024-05-17 00:00",
+       "2024-05-17 19:00",
        "19h00m",
        306,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT109 (LAX–ORD) → HAT271 (ORD–PHL)",
        1,
-       "00:00",
-       "21:00",
+       "2024-05-17 00:00",
+       "2024-05-17 21:00",
        "21h00m",
        298,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT109 (LAX–ORD) → HAT289 (ORD–PHL)",
        1,
-       "00:00",
-       "07:00",
+       "2024-05-17 00:00",
+       "2024-05-17 07:00",
        "7h00m",
        348,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      }
     ]
    }
@@ -869,8 +913,8 @@
     "columns": [
      "Flights (route)",
      "Stops",
-     "Departs (EST)",
-     "Arrives (EST)",
+     "Departs (date, EST)",
+     "Arrives (date, EST)",
      "Duration incl. stopover",
      "Total price, economy",
      "Seats left, economy",
@@ -886,235 +930,253 @@
       "cells": [
        "HAT040 (LAS–SEA) → HAT011 (SEA–SFO)",
        1,
-       "00:00",
-       "15:00",
+       "2024-05-19 00:00",
+       "2024-05-19 15:00",
        "15h00m",
        278,
        13,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT040 (LAS–SEA) → HAT107 (SEA–SFO)",
        1,
-       "00:00",
-       "11:00",
+       "2024-05-19 00:00",
+       "2024-05-19 11:00",
        "11h00m",
        360,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT040 (LAS–SEA) → HAT258 (SEA–SFO)",
        1,
-       "00:00",
-       "19:00",
+       "2024-05-19 00:00",
+       "2024-05-19 19:00",
        "19h00m",
        339,
        15,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT040 (LAS–SEA) → HAT274 (SEA–SFO)",
        1,
-       "00:00",
-       "22:00",
+       "2024-05-19 00:00",
+       "2024-05-19 22:00",
        "22h00m",
        281,
        18,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT047 (LAS–SEA) → HAT258 (SEA–SFO)",
        1,
-       "13:00",
-       "19:00",
+       "2024-05-19 13:00",
+       "2024-05-19 19:00",
        "6h00m",
        348,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT047 (LAS–SEA) → HAT274 (SEA–SFO)",
        1,
-       "13:00",
-       "22:00",
+       "2024-05-19 13:00",
+       "2024-05-19 22:00",
        "9h00m",
        290,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT095 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "17:00",
-       "22:00",
+       "2024-05-19 17:00",
+       "2024-05-19 22:00",
        "5h00m",
        276,
        14,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT242 (LAS–PHX) → HAT009 (PHX–SFO)",
        1,
-       "11:00",
-       "19:00",
+       "2024-05-19 11:00",
+       "2024-05-19 19:00",
        "8h00m",
        303,
        17,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT242 (LAS–PHX) → HAT159 (PHX–SFO)",
        1,
-       "11:00",
-       "16:00",
+       "2024-05-19 11:00",
+       "2024-05-19 16:00",
        "5h00m",
        324,
        14,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT242 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "11:00",
-       "22:00",
+       "2024-05-19 11:00",
+       "2024-05-19 22:00",
        "11h00m",
        239,
        17,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT009 (PHX–SFO)",
        1,
-       "10:00",
-       "19:00",
+       "2024-05-19 10:00",
+       "2024-05-19 19:00",
        "9h00m",
        293,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT032 (PHX–SFO)",
        1,
-       "10:00",
-       "13:00",
+       "2024-05-19 10:00",
+       "2024-05-19 13:00",
        "3h00m",
        235,
        2,
        "available"
       ],
-      "cand": "ab00d5f4"
+      "cand": "ab00d5f4",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT159 (PHX–SFO)",
        1,
-       "10:00",
-       "16:00",
+       "2024-05-19 10:00",
+       "2024-05-19 16:00",
        "6h00m",
        314,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "10:00",
-       "22:00",
+       "2024-05-19 10:00",
+       "2024-05-19 22:00",
        "12h00m",
        229,
        2,
        "available"
       ],
-      "cand": "8badfb2e"
+      "cand": "8badfb2e",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT009 (PHX–SFO)",
        1,
-       "03:00",
-       "19:00",
+       "2024-05-19 03:00",
+       "2024-05-19 19:00",
        "16h00m",
        318,
        4,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT032 (PHX–SFO)",
        1,
-       "03:00",
-       "13:00",
+       "2024-05-19 03:00",
+       "2024-05-19 13:00",
        "10h00m",
        260,
        3,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT159 (PHX–SFO)",
        1,
-       "03:00",
-       "16:00",
+       "2024-05-19 03:00",
+       "2024-05-19 16:00",
        "13h00m",
        339,
        4,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "03:00",
-       "22:00",
+       "2024-05-19 03:00",
+       "2024-05-19 22:00",
        "19h00m",
        254,
        4,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      }
     ]
    }
@@ -1133,12 +1195,12 @@
    "candidates": [
     {
      "id": "d798a20f",
-     "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))",
+     "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0} [= Thu Sep 17 2026, 5:00 PM]\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))",
      "evidence": []
     },
     {
      "id": "d072a76c",
-     "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))",
+     "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0} [= Fri Sep 18 2026, 5:00 PM]\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))",
      "evidence": []
     }
    ],
@@ -1158,12 +1220,12 @@
    "candidates": [
     {
      "id": "0823bfae",
-     "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))",
+     "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0} [= Fri Sep 18 2026, 5:00 PM]\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))",
      "evidence": []
     },
     {
      "id": "1351febc",
-     "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 19, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))",
+     "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 19, 'hour': 17, 'minute': 0, 'second': 0} [= Sat Sep 19 2026, 5:00 PM]\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))",
      "evidence": []
     }
    ],

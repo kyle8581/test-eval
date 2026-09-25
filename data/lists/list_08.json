@@ -72,7 +72,8 @@
      "Filter Type",
      "Room Size",
      "Available",
-     "Price"
+     "Price",
+     "Already purchased?"
     ],
     "numeric": [
      5
@@ -85,9 +86,11 @@
        "HEPA",
        "large",
        "yes",
-       547.55
+       547.55,
+       "the item being replaced, in order #W4284542"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
@@ -96,9 +99,11 @@
        "HEPA",
        "small",
        "yes",
-       502.7
+       502.7,
+       "—"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
@@ -107,9 +112,11 @@
        "ionic",
        "small",
        "yes",
-       543.68
+       543.68,
+       "—"
       ],
-      "cand": "e2e0aea9"
+      "cand": "e2e0aea9",
+      "unavailable": false
      },
      {
       "cells": [
@@ -118,9 +125,11 @@
        "HEPA",
        "large",
        "no",
-       523.31
+       523.31,
+       "—"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": true
      },
      {
       "cells": [
@@ -129,9 +138,11 @@
        "HEPA",
        "medium",
        "no",
-       504.19
+       504.19,
+       "—"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": true
      },
      {
       "cells": [
@@ -140,9 +151,11 @@
        "carbon",
        "medium",
        "no",
-       506.15
+       506.15,
+       "—"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": true
      },
      {
       "cells": [
@@ -151,9 +164,11 @@
        "HEPA",
        "medium",
        "yes",
-       535.97
+       535.97,
+       "—"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
@@ -162,9 +177,11 @@
        "HEPA",
        "small",
        "yes",
-       518.31
+       518.31,
+       "—"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
@@ -173,9 +190,11 @@
        "HEPA",
        "medium",
        "yes",
-       492.65
+       492.65,
+       "—"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
@@ -184,9 +203,11 @@
        "ionic",
        "large",
        "yes",
-       473.43
+       473.43,
+       "—"
       ],
-      "cand": "62cfeead"
+      "cand": "62cfeead",
+      "unavailable": false
      },
      {
       "cells": [
@@ -195,9 +216,11 @@
        "carbon",
        "medium",
        "yes",
-       489.5
+       489.5,
+       "—"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      }
     ]
    }
@@ -234,12 +257,12 @@
      "kind": "agent",
      "step": 4,
      "action": "chatcmpl_tool_bacb7b2c35b6c6a5_parameters = {'timestamp': 1789564904.9 [= Wed Sep 16 2026, 8:21:44 AM]}\nchatcmpl_tool_bacb7b2c35b6c6a5_response = timestamp_to_datetime_info(**chatcmpl_tool_bacb7b2c35b6c6a5_parameters)\nprint(repr(chatcmpl_tool_bacb7b2c35b6c6a5_response))",
-     "observation": "{'year': 2026, 'month': 9, 'day': 16, 'hour': 8, 'minute': 21, 'second': 44, 'isoweekday': 3}"
+     "observation": "{'year': 2026, 'month': 9, 'day': 16, 'hour': 8, 'minute': 21, 'second': 44, 'isoweekday': 3} [= Wed Sep 16 2026, 8:21 AM]"
     },
     {
      "kind": "agent",
      "step": 5,
-     "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))",
+     "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0} [= Thu Sep 17 2026, 5:00 PM]\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))",
      "observation": "1789682400.0 [= Thu Sep 17 2026, 5:00:00 PM]"
     }
    ],
@@ -284,7 +307,8 @@
        "2026-09-15 Tue 12:00",
        "no"
       ],
-      "cand": "d9487063"
+      "cand": "d9487063",
+      "unavailable": false
      },
      {
       "cells": [
@@ -294,7 +318,8 @@
        "2026-09-16 Wed 11:59",
        "no"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
@@ -304,7 +329,8 @@
        "2026-09-16 Wed 13:00",
        "yes"
       ],
-      "cand": "7ccea85d"
+      "cand": "7ccea85d",
+      "unavailable": false
      }
     ]
    }
@@ -341,12 +367,12 @@
      "kind": "agent",
      "step": 4,
      "action": "chatcmpl_tool_bacb7b2c35b6c6a5_parameters = {'timestamp': 1789564904.9 [= Wed Sep 16 2026, 8:21:44 AM]}\nchatcmpl_tool_bacb7b2c35b6c6a5_response = timestamp_to_datetime_info(**chatcmpl_tool_bacb7b2c35b6c6a5_parameters)\nprint(repr(chatcmpl_tool_bacb7b2c35b6c6a5_response))",
-     "observation": "{'year': 2026, 'month': 9, 'day': 16, 'hour': 8, 'minute': 21, 'second': 44, 'isoweekday': 3}"
+     "observation": "{'year': 2026, 'month': 9, 'day': 16, 'hour': 8, 'minute': 21, 'second': 44, 'isoweekday': 3} [= Wed Sep 16 2026, 8:21 AM]"
     },
     {
      "kind": "agent",
      "step": 5,
-     "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))",
+     "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0} [= Thu Sep 17 2026, 5:00 PM]\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))",
      "observation": "1789682400.0 [= Thu Sep 17 2026, 5:00:00 PM]"
     }
    ],
@@ -391,7 +417,8 @@
        "2026-09-15 Tue 12:00",
        "no"
       ],
-      "cand": "77939747"
+      "cand": "77939747",
+      "unavailable": false
      },
      {
       "cells": [
@@ -401,7 +428,8 @@
        "2026-09-16 Wed 11:59",
        "no"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
@@ -411,7 +439,8 @@
        "2026-09-16 Wed 13:00",
        "yes"
       ],
-      "cand": "3a54968b"
+      "cand": "3a54968b",
+      "unavailable": false
      }
     ]
    }
@@ -466,8 +495,8 @@
     "columns": [
      "Flights (route)",
      "Stops",
-     "Departs (EST)",
-     "Arrives (EST)",
+     "Departs (date, EST)",
+     "Arrives (date, EST)",
      "Duration incl. stopover",
      "Total price, economy",
      "Seats left, economy",
@@ -483,235 +512,253 @@
       "cells": [
        "HAT040 (LAS–SEA) → HAT011 (SEA–SFO)",
        1,
-       "00:00",
-       "15:00",
+       "2024-05-19 00:00",
+       "2024-05-19 15:00",
        "15h00m",
        278,
        13,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT040 (LAS–SEA) → HAT107 (SEA–SFO)",
        1,
-       "00:00",
-       "11:00",
+       "2024-05-19 00:00",
+       "2024-05-19 11:00",
        "11h00m",
        360,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT040 (LAS–SEA) → HAT258 (SEA–SFO)",
        1,
-       "00:00",
-       "19:00",
+       "2024-05-19 00:00",
+       "2024-05-19 19:00",
        "19h00m",
        339,
        15,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT040 (LAS–SEA) → HAT274 (SEA–SFO)",
        1,
-       "00:00",
-       "22:00",
+       "2024-05-19 00:00",
+       "2024-05-19 22:00",
        "22h00m",
        281,
        18,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT047 (LAS–SEA) → HAT258 (SEA–SFO)",
        1,
-       "13:00",
-       "19:00",
+       "2024-05-19 13:00",
+       "2024-05-19 19:00",
        "6h00m",
        348,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT047 (LAS–SEA) → HAT274 (SEA–SFO)",
        1,
-       "13:00",
-       "22:00",
+       "2024-05-19 13:00",
+       "2024-05-19 22:00",
        "9h00m",
        290,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT095 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "17:00",
-       "22:00",
+       "2024-05-19 17:00",
+       "2024-05-19 22:00",
        "5h00m",
        276,
        14,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT242 (LAS–PHX) → HAT009 (PHX–SFO)",
        1,
-       "11:00",
-       "19:00",
+       "2024-05-19 11:00",
+       "2024-05-19 19:00",
        "8h00m",
        303,
        17,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT242 (LAS–PHX) → HAT159 (PHX–SFO)",
        1,
-       "11:00",
-       "16:00",
+       "2024-05-19 11:00",
+       "2024-05-19 16:00",
        "5h00m",
        324,
        14,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT242 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "11:00",
-       "22:00",
+       "2024-05-19 11:00",
+       "2024-05-19 22:00",
        "11h00m",
        239,
        17,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT009 (PHX–SFO)",
        1,
-       "10:00",
-       "19:00",
+       "2024-05-19 10:00",
+       "2024-05-19 19:00",
        "9h00m",
        293,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT032 (PHX–SFO)",
        1,
-       "10:00",
-       "13:00",
+       "2024-05-19 10:00",
+       "2024-05-19 13:00",
        "3h00m",
        235,
        2,
        "available"
       ],
-      "cand": "ab00d5f4"
+      "cand": "ab00d5f4",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT159 (PHX–SFO)",
        1,
-       "10:00",
-       "16:00",
+       "2024-05-19 10:00",
+       "2024-05-19 16:00",
        "6h00m",
        314,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "10:00",
-       "22:00",
+       "2024-05-19 10:00",
+       "2024-05-19 22:00",
        "12h00m",
        229,
        2,
        "available"
       ],
-      "cand": "8badfb2e"
+      "cand": "8badfb2e",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT009 (PHX–SFO)",
        1,
-       "03:00",
-       "19:00",
+       "2024-05-19 03:00",
+       "2024-05-19 19:00",
        "16h00m",
        318,
        4,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT032 (PHX–SFO)",
        1,
-       "03:00",
-       "13:00",
+       "2024-05-19 03:00",
+       "2024-05-19 13:00",
        "10h00m",
        260,
        3,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT159 (PHX–SFO)",
        1,
-       "03:00",
-       "16:00",
+       "2024-05-19 03:00",
+       "2024-05-19 16:00",
        "13h00m",
        339,
        4,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "03:00",
-       "22:00",
+       "2024-05-19 03:00",
+       "2024-05-19 22:00",
        "19h00m",
        254,
        4,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      }
     ]
    }
@@ -766,8 +813,8 @@
     "columns": [
      "Flights (route)",
      "Stops",
-     "Departs (EST)",
-     "Arrives (EST)",
+     "Departs (date, EST)",
+     "Arrives (date, EST)",
      "Duration incl. stopover",
      "Total price, economy",
      "Seats left, economy",
@@ -783,235 +830,253 @@
       "cells": [
        "HAT040 (LAS–SEA) → HAT011 (SEA–SFO)",
        1,
-       "00:00",
-       "15:00",
+       "2024-05-19 00:00",
+       "2024-05-19 15:00",
        "15h00m",
        278,
        13,
        "available"
       ],
-      "cand": "ca720670"
+      "cand": "ca720670",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT040 (LAS–SEA) → HAT107 (SEA–SFO)",
        1,
-       "00:00",
-       "11:00",
+       "2024-05-19 00:00",
+       "2024-05-19 11:00",
        "11h00m",
        360,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT040 (LAS–SEA) → HAT258 (SEA–SFO)",
        1,
-       "00:00",
-       "19:00",
+       "2024-05-19 00:00",
+       "2024-05-19 19:00",
        "19h00m",
        339,
        15,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT040 (LAS–SEA) → HAT274 (SEA–SFO)",
        1,
-       "00:00",
-       "22:00",
+       "2024-05-19 00:00",
+       "2024-05-19 22:00",
        "22h00m",
        281,
        18,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT047 (LAS–SEA) → HAT258 (SEA–SFO)",
        1,
-       "13:00",
-       "19:00",
+       "2024-05-19 13:00",
+       "2024-05-19 19:00",
        "6h00m",
        348,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT047 (LAS–SEA) → HAT274 (SEA–SFO)",
        1,
-       "13:00",
-       "22:00",
+       "2024-05-19 13:00",
+       "2024-05-19 22:00",
        "9h00m",
        290,
        9,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT095 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "17:00",
-       "22:00",
+       "2024-05-19 17:00",
+       "2024-05-19 22:00",
        "5h00m",
        276,
        14,
        "available"
       ],
-      "cand": "9ddbca69"
+      "cand": "9ddbca69",
+      "unavailable": false
      },
      {
       "cells": [
        "HAT242 (LAS–PHX) → HAT009 (PHX–SFO)",
        1,
-       "11:00",
-       "19:00",
+       "2024-05-19 11:00",
+       "2024-05-19 19:00",
        "8h00m",
        303,
        17,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT242 (LAS–PHX) → HAT159 (PHX–SFO)",
        1,
-       "11:00",
-       "16:00",
+       "2024-05-19 11:00",
+       "2024-05-19 16:00",
        "5h00m",
        324,
        14,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT242 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "11:00",
-       "22:00",
+       "2024-05-19 11:00",
+       "2024-05-19 22:00",
        "11h00m",
        239,
        17,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT009 (PHX–SFO)",
        1,
-       "10:00",
-       "19:00",
+       "2024-05-19 10:00",
+       "2024-05-19 19:00",
        "9h00m",
        293,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT032 (PHX–SFO)",
        1,
-       "10:00",
-       "13:00",
+       "2024-05-19 10:00",
+       "2024-05-19 13:00",
        "3h00m",
        235,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT159 (PHX–SFO)",
        1,
-       "10:00",
-       "16:00",
+       "2024-05-19 10:00",
+       "2024-05-19 16:00",
        "6h00m",
        314,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT244 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "10:00",
-       "22:00",
+       "2024-05-19 10:00",
+       "2024-05-19 22:00",
        "12h00m",
        229,
        2,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT009 (PHX–SFO)",
        1,
-       "03:00",
-       "19:00",
+       "2024-05-19 03:00",
+       "2024-05-19 19:00",
        "16h00m",
        318,
        4,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT032 (PHX–SFO)",
        1,
-       "03:00",
-       "13:00",
+       "2024-05-19 03:00",
+       "2024-05-19 13:00",
        "10h00m",
        260,
        3,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT159 (PHX–SFO)",
        1,
-       "03:00",
-       "16:00",
+       "2024-05-19 03:00",
+       "2024-05-19 16:00",
        "13h00m",
        339,
        4,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      },
      {
       "cells": [
        "HAT284 (LAS–PHX) → HAT283 (PHX–SFO)",
        1,
-       "03:00",
-       "22:00",
+       "2024-05-19 03:00",
+       "2024-05-19 22:00",
        "19h00m",
        254,
        4,
        "available"
       ],
-      "cand": null
+      "cand": null,
+      "unavailable": false
      }
     ]
    }
@@ -1030,12 +1095,12 @@
    "candidates": [
     {
      "id": "b3cd279f",
-     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))",
+     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0} [= Fri Sep 18 2026, 5:00 PM]\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))",
      "evidence": []
     },
     {
      "id": "f0957203",
-     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 19, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))",
+     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 19, 'hour': 17, 'minute': 0, 'second': 0} [= Sat Sep 19 2026, 5:00 PM]\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))",
      "evidence": []
     }
    ],

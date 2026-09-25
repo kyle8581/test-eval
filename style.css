@@ -58,3 +58,5 @@ table.opts th { cursor: pointer; background: #f1f4f2; position: sticky; top: 0; 
 table.opts th .sort { color: var(--muted); font-size: 11px; }
 table.opts tr.picked td { background: #fffbea; font-weight: 600; }
 table.opts td.pick { color: var(--accent); font-weight: 700; }
+table.opts tr.unavail td { color: #9aa39f; }
+.unavail-key { color: #9aa39f; font-weight: 600; }

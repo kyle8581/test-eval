@@ -75,12 +75,13 @@ var jsPsychAuditRow = (function (jspsych) {
     if (!o) return "";
     const lab = (id) => id === order[0].id ? "Action 1" : id === order[1].id ? "Action 2" : "";
     const head = o.columns.map((c, j) => `<th data-col="${j}" title="Click to sort">${esc(c)} <span class="sort">⇅</span></th>`).join("");
-    const body = o.rows.map((r) => `<tr class="${r.cand ? "picked" : ""}"><td class="pick">${lab(r.cand)}</td>` +
+    const body = o.rows.map((r) => `<tr class="${r.cand ? "picked" : ""} ${r.unavailable ? "unavail" : ""}"><td class="pick">${lab(r.cand)}</td>` +
       r.cells.map((c) => `<td>${esc(c)}</td>`).join("") + "</tr>").join("");
     return `<section class="card"><h2>All listed options</h2>
       <p class="muted small">Every option from the tool output, one per row, with values read from it
-      (prices added up over the legs of a trip; times as listed). The two options the actions pick are labelled.
-      Click a column header to sort by it.</p>
+      (prices added up over the legs of a trip; dates and times as listed). The two options the actions pick are labelled.
+      Click a column header to sort by it. <span class="unavail-key">Grey rows</span> cannot be chosen as listed
+      (not available, or no seats left in this cabin).</p>
       <div class="opt-wrap"><table class="opts"><thead><tr><th>Picked by</th>${head}</tr></thead><tbody>${body}</tbody></table></div></section>`;
   }
   function sortKey(v) {
