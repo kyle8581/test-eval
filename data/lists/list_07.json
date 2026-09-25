@@ -2,8 +2,8 @@
  "list": 7,
  "rows": [
   {
-   "row": "66ca7224a9",
-   "instruction": "For your upcoming trip from ATL to PHL, you want to change for the earliest departing flight in Economy cabin class (not Basic Economy) and for the day after the original reservation. Your name is Aarav Garcia.\n\nYour user id is aarav_garcia_1177. You are happy with original payment for refund.",
+   "row": "e8302d5d84",
+   "instruction": "For your upcoming trip from ATL to PHL, you want to change for the cheapest flight in Economy cabin class (not Basic Economy) and for the day after the original reservation. Your name is Aarav Garcia.\n\nYour user id is aarav_garcia_1177. You are happy with original payment for refund.",
    "history": [
     {
      "kind": "agent",
@@ -20,552 +20,260 @@
    ],
    "candidates": [
     {
-     "id": "429ffbe5",
-     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT164\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT132\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})"
+     "id": "ca8a54db",
+     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT110\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT172\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})"
     },
     {
-     "id": "54c12d0d",
+     "id": "beaf9a60",
      "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT110\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT132\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})"
     }
    ]
   },
   {
-   "row": "4fd5a3c079",
-   "instruction": "You mistakenly ordered a Wireless Earbud with an IPX7 water resistance level, but you don't require this feature. You wish to exchange it for one with the same water resistance level as the other Wireless Earbuds that you've purchased. In fact, you want to exchange it to the cheapest earbud item from the rest of that order. You are Aarav Anderson, residing in Philadelphia 19031. You do not remember your email address You are polite and concise, yet assertive.",
+   "row": "05086baf8f",
+   "instruction": "You want to fly from New York to Seattle on May 20 (one way). Your name is Mia Li.\nYour user id is mia_li_3668. You do not want to fly before 11am est.\n\nYou want to fly in economy.\n\nYou prefer direct flights but one stopover also fine.\n\nIf there are multiple options, you prefer the one with the earliest departure. \n\nYou have 3 baggages.\n\nYou do not want insurance.\n\nYou want to use your two certificates to pay. \n\nIf only one certificate can be used, you prefer using the larger one, and pay the rest with your 7447 card.\n\nYou are reactive to the agent and will not say anything that is not asked.\n\nYour birthday is in your user profile so you do not prefer to provide it.",
    "history": [
     {
      "kind": "agent",
      "step": 0,
-     "action": "find_user_id_by_name_zip({\"first_name\": \"Aarav\", \"last_name\": \"Anderson\", \"zip\": \"19031\"})",
-     "observation": "aarav_anderson_8794"
+     "action": "search_direct_flight({\"origin\": \"JFK\", \"destination\": \"SEA\", \"date\": \"2024-05-20\"})",
+     "observation": "[\n  {\"flight_number\": \"HAT069\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"06:00:00\", \"scheduled_arrival_time_est\": \"12:00:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 17, \"economy\": 12, \"business\": 3}, \"prices\": {\"basic_economy\": 51, \"economy\": 121, \"business\": 239}},\n  {\"flight_number\": \"HAT083\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"01:00:00\", \"scheduled_arrival_time_est\": \"07:00:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 16, \"economy\": 7, \"business\": 3}, \"prices\": {\"basic_economy\": 87, \"economy\": 100, \"business\": 276}}\n]"
     },
     {
      "kind": "agent",
      "step": 1,
-     "action": "get_user_details({\"user_id\": \"aarav_anderson_8794\"})",
-     "observation": "{\n  \"user_id\": \"aarav_anderson_8794\",\n  \"name\": {\"first_name\": \"Aarav\", \"last_name\": \"Anderson\"},\n  \"address\": {\"address1\": \"931 Maple Drive\", \"address2\": \"Suite 985\", \"city\": \"Philadelphia\", \"country\": \"USA\", \"state\": \"PA\", \"zip\": \"19031\"},\n  \"email\": \"aarav.anderson9752@example.com\",\n  \"payment_methods\": {\"gift_card_7245904\": {\"source\": \"gift_card\", \"id\": \"gift_card_7245904\", \"balance\": 17.0}},\n  \"orders\": [\"#W4316152\", \"#W9311069\", \"#W9300146\", \"#W3220203\", \"#W3470184\"]\n}"
-    },
-    {
-     "kind": "agent",
-     "step": 2,
-     "action": "get_order_details({\"order_id\": \"#W4316152\"})",
-     "observation": "{\n  \"order_id\": \"#W4316152\",\n  \"user_id\": \"aarav_anderson_8794\",\n  \"address\": {\"address1\": \"931 Maple Drive\", \"address2\": \"Suite 985\", \"city\": \"Philadelphia\", \"country\": \"USA\", \"state\": \"PA\", \"zip\": \"19031\"},\n  \"items\": [{\"name\": \"Tea Kettle\", \"product_id\": \"9832717871\", \"item_id\": \"7292993796\", \"price\": 94.8, \"options\": {\"material\": \"glass\", \"capacity\": \"2 liters\", \"stovetop compatibility\": \"induction\"}}, {\"name\": \"Tea Kettle\", \"product_id\": \"9832717871\", \"item_id\": \"7292993796\", \"price\": 94.8, \"options\": {\"material\": \"glass\", \"capacity\": \"2 liters\", \"stovetop compatibility\": \"induction\"}}],\n  \"status\": \"delivered\",\n  \"fulfillments\": [{\"tracking_id\": [\"555227871167\"], \"item_ids\": [\"7292993796\", \"7292993796\"]}],\n  \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 189.6, \"payment_method_id\": \"gift_card_7245904\"}],\n  \"cancel_reason\": null,\n  \"exchange_items\": null,\n  \"exchange_new_items\": null,\n  \"exchange_payment_method_id\": null,\n  \"exchange_price_difference\": null,\n  \"return_items\": null,\n  \"return_payment_method_id\": null\n}"
-    },
-    {
-     "kind": "agent",
-     "step": 3,
-     "action": "get_order_details({\"order_id\": \"#W9311069\"})",
-     "observation": "{\n  \"order_id\": \"#W9311069\",\n  \"user_id\": \"aarav_anderson_8794\",\n  \"address\": {\"address1\": \"931 Maple Drive\", \"address2\": \"Suite 985\", \"city\": \"Philadelphia\", \"country\": \"USA\", \"state\": \"PA\", \"zip\": \"19031\"},\n  \"items\": [{\"name\": \"Bookshelf\", \"product_id\": \"8600330539\", \"item_id\": \"7154215719\", \"price\": 505.62, \"options\": {\"material\": \"wood\", \"color\": \"brown\", \"height\": \"6 ft\"}}, {\"name\": \"Espresso Machine\", \"product_id\": \"4354588079\", \"item_id\": \"7407838442\", \"price\": 3081.91, \"options\": {\"pressure\": \"9 bar\", \"capacity\": \"1L\", \"type\": \"manual\"}}, {\"name\": \"Garden Hose\", \"product_id\": \"6679515468\", \"item_id\": \"9829827210\", \"price\": 90.43, \"options\": {\"length\": \"25ft\", \"material\": \"vinyl\", \"color\": \"blue\"}}, {\"name\": \"Vacuum Cleaner\", \"product_id\": \"1762337868\", \"item_id\": \"1304426904\", \"price\": 565.79, \"options\": {\"type\": \"canister\", \"bagged/bagless\": \"bagless\", \"features\": \"HEPA filter\"}}, {\"name\": \"Tea Kettle\", \"product_id\": \"9832717871\", \"item_id\": \"4238115171\", \"price\": 91.78, \"options\": {\"material\": \"stainless steel\", \"capacity\": \"2 liters\", \"stovetop compatibility\": \"gas\"}}],\n  \"status\": \"delivered\",\n  \"fulfillments\": [{\"tracking_id\": [\"739892591834\"], \"item_ids\": [\"7154215719\", \"7407838442\", \"9829827210\", \"1304426904\", \"4238115171\"]}],\n  \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 4335.53, \"payment_method_id\": \"gift_card_7245904\"}],\n  \"cancel_reason\": null,\n  \"exchange_items\": null,\n  \"exchange_new_items\": null,\n  \"exchange_payment_method_id\": null,\n  \"exchange_price_difference\": null,\n  \"return_items\": null,\n  \"return_payment_method_id\": null\n}"
-    },
-    {
-     "kind": "agent",
-     "step": 4,
-     "action": "get_order_details({\"order_id\": \"#W9300146\"})",
-     "observation": "{\n  \"order_id\": \"#W9300146\",\n  \"user_id\": \"aarav_anderson_8794\",\n  \"address\": {\"address1\": \"931 Maple Drive\", \"address2\": \"Suite 985\", \"city\": \"Philadelphia\", \"country\": \"USA\", \"state\": \"PA\", \"zip\": \"19031\"},\n  \"items\": [{\"name\": \"Desk Lamp\", \"product_id\": \"6817146515\", \"item_id\": \"9190635437\", \"price\": 153.23, \"options\": {\"color\": \"black\", \"brightness\": \"low\", \"power source\": \"USB\"}}],\n  \"status\": \"pending\",\n  \"fulfillments\": [],\n  \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 153.23, \"payment_method_id\": \"gift_card_7245904\"}],\n  \"cancel_reason\": null,\n  \"exchange_items\": null,\n  \"exchange_new_items\": null,\n  \"exchange_payment_method_id\": null,\n  \"exchange_price_difference\": null,\n  \"return_items\": null,\n  \"return_payment_method_id\": null\n}"
-    },
-    {
-     "kind": "agent",
-     "step": 5,
-     "action": "get_order_details({\"order_id\": \"#W3220203\"})",
-     "observation": "{\n  \"order_id\": \"#W3220203\",\n  \"user_id\": \"aarav_anderson_8794\",\n  \"address\": {\"address1\": \"931 Maple Drive\", \"address2\": \"Suite 985\", \"city\": \"Philadelphia\", \"country\": \"USA\", \"state\": \"PA\", \"zip\": \"19031\"},\n  \"items\": [{\"name\": \"Bluetooth Speaker\", \"product_id\": \"4768869376\", \"item_id\": \"5650803029\", \"price\": 324.63, \"options\": {\"color\": \"black\", \"battery life\": \"20 hours\", \"water resistance\": \"no\"}}],\n  \"status\": \"processed\",\n  \"fulfillments\": [{\"tracking_id\": [\"235384470799\"], \"item_ids\": [\"5650803029\"]}],\n  \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 324.63, \"payment_method_id\": \"gift_card_7245904\"}],\n  \"cancel_reason\": null,\n  \"exchange_items\": null,\n  \"exchange_new_items\": null,\n  \"exchange_payment_method_id\": null,\n  \"exchange_price_difference\": null,\n  \"return_items\": null,\n  \"return_payment_method_id\": null\n}"
-    },
-    {
-     "kind": "agent",
-     "step": 6,
-     "action": "get_order_details({\"order_id\": \"#W3470184\"})",
-     "observation": "{\n  \"order_id\": \"#W3470184\",\n  \"user_id\": \"aarav_anderson_8794\",\n  \"address\": {\"address1\": \"931 Maple Drive\", \"address2\": \"Suite 985\", \"city\": \"Philadelphia\", \"country\": \"USA\", \"state\": \"PA\", \"zip\": \"19031\"},\n  \"items\": [{\"name\": \"Wireless Earbuds\", \"product_id\": \"9924732112\", \"item_id\": \"6452271382\", \"price\": 258.84, \"options\": {\"color\": \"blue\", \"battery life\": \"4 hours\", \"water resistance\": \"IPX4\"}}, {\"name\": \"Water Bottle\", \"product_id\": \"8310926033\", \"item_id\": \"2366567022\", \"price\": 54.04, \"options\": {\"capacity\": \"1000ml\", \"material\": \"stainless steel\", \"color\": \"blue\"}}, {\"name\": \"Wireless Earbuds\", \"product_id\": \"9924732112\", \"item_id\": \"1646531091\", \"price\": 232.49, \"options\": {\"color\": \"blue\", \"battery life\": \"6 hours\", \"water resistance\": \"IPX4\"}}, {\"name\": \"Wireless Earbuds\", \"product_id\": \"9924732112\", \"item_id\": \"2757705742\", \"price\": 258.97, \"options\": {\"color\": \"blue\", \"battery life\": \"4 hours\", \"water resistance\": \"IPX7\"}}, {\"name\": \"Bookshelf\", \"product_id\": \"8600330539\", \"item_id\": \"1768466237\", \"price\": 549.84, \"options\": {\"material\": \"glass\", \"color\": \"black\", \"height\": \"3 ft\"}}],\n  \"status\": \"delivered\",\n  \"fulfillments\": [{\"tracking_id\": [\"326433164179\"], \"item_ids\": [\"6452271382\", \"2366567022\", \"1646531091\", \"2757705742\", \"1768466237\"]}],\n  \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 1354.18, \"payment_method_id\": \"gift_card_7245904\"}],\n  \"cancel_reason\": null,\n  \"exchange_items\": null,\n  \"exchange_new_items\": null,\n  \"exchange_payment_method_id\": null,\n  \"exchange_price_difference\": null,\n  \"return_items\": null,\n  \"return_payment_method_id\": null\n}"
-    },
-    {
-     "kind": "agent",
-     "step": 7,
-     "action": "get_product_details({\"product_id\": \"9924732112\"})",
-     "observation": "{\n  \"name\": \"Wireless Earbuds\",\n  \"product_id\": \"9924732112\",\n  \"variants\": {\"9580569596\": {\"item_id\": \"9580569596\", \"options\": {\"color\": \"black\", \"battery life\": \"4 hours\", \"water resistance\": \"IPX7\"}, \"available\": true, \"price\": 257.38}, \"2499294441\": {\"item_id\": \"2499294441\", \"options\": {\"color\": \"black\", \"battery life\": \"8 hours\", \"water resistance\": \"IPX7\"}, \"available\": false, \"price\": 258.36}, \"1646531091\": {\"item_id\": \"1646531091\", \"options\": {\"color\": \"blue\", \"battery life\": \"6 hours\", \"water resistance\": \"IPX4\"}, \"available\": true, \"price\": 232.49}, \"8555936349\": {\"item_id\": \"8555936349\", \"options\": {\"color\": \"blue\", \"battery life\": \"8 hours\", \"water resistance\": \"IPX4\"}, \"available\": true, \"price\": 226.49}, \"5565631513\": {\"item_id\": \"5565631513\", \"options\": {\"color\": \"black\", \"battery life\": \"6 hours\", \"water resistance\": \"IPX7\"}, \"available\": false, \"price\": 267.9}, \"6077640618\": {\"item_id\": \"6077640618\", \"options\": {\"color\": \"blue\", \"battery life\": \"8 hours\", \"water resistance\": \"not resistant\"}, \"available\": true, \"price\": 242.92}, \"9270970345\": {\"item_id\": \"9270970345\", \"options\": {\"color\": \"black\", \"battery life\": \"6 hours\", \"water resistance\": \"not resistant\"}, \"available\": false, \"price\": 259.03}, \"4063058357\": {\"item_id\": \"4063058357\", \"options\": {\"color\": \"black\", \"battery life\": \"4 hours\", \"water resistance\": \"not resistant\"}, \"available\": true, \"price\": 243.34}, \"3694871183\": {\"item_id\": \"3694871183\", \"options\": {\"color\": \"white\", \"battery life\": \"8 hours\", \"water resistance\": \"IPX4\"}, \"available\": false, \"price\": 256.67}, \"6452271382\": {\"item_id\": \"6452271382\", \"options\": {\"color\": \"blue\", \"battery life\": \"4 hours\", \"water resistance\": \"IPX4\"}, \"available\": true, \"price\": 258.84}, \"2052249669\": {\"item_id\": \"2052249669\", \"options\": {\"color\": \"white\", \"battery life\": \"4 hours\", \"water resistance\": \"not resistant\"}, \"available\": true, \"price\": 237.14}, \"2757705742\": {\"item_id\": \"2757705742\", \"options\": {\"color\": \"blue\", \"battery life\": \"4 hours\", \"water resistance\": \"IPX7\"}, \"available\": false, \"price\": 258.97}}\n}"
-    },
-    {
-     "kind": "agent",
-     "step": 8,
-     "action": "calculate({\"expression\": \"258.97 - 232.49\"})",
-     "observation": "26.48"
+     "action": "search_onestop_flight({\"origin\": \"JFK\", \"destination\": \"SEA\", \"date\": \"2024-05-20\"})",
+     "observation": "[\n  [{\"flight_number\": \"HAT057\", \"origin\": \"JFK\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"07:00:00\", \"scheduled_arrival_time_est\": \"09:30:00\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 3, \"business\": 9}, \"prices\": {\"basic_economy\": 76, \"economy\": 141, \"business\": 477}}, {\"flight_number\": \"HAT039\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"03:00:00+1\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 18, \"economy\": 10, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 103, \"business\": 283}}],\n  [{\"flight_number\": \"HAT136\", \"origin\": \"JFK\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"19:00:00\", \"scheduled_arrival_time_est\": \"21:30:00\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 15, \"economy\": 14, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 152, \"business\": 277}}, {\"flight_number\": \"HAT039\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"03:00:00+1\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 18, \"economy\": 10, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 103, \"business\": 283}}],\n  [{\"flight_number\": \"HAT218\", \"origin\": \"JFK\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"18:00:00\", \"scheduled_arrival_time_est\": \"20:30:00\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 1, \"business\": 4}, \"prices\": {\"basic_economy\": 76, \"economy\": 158, \"business\": 342}}, {\"flight_number\": \"HAT039\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"03:00:00+1\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 18, \"economy\": 10, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 103, \"business\": 283}}],\n  [{\"flight_number\": \"HAT268\", \"origin\": \"JFK\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"07:00:00\", \"scheduled_arrival_time_est\": \"09:30:00\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 17, \"economy\": 19, \"business\": 12}, \"prices\": {\"basic_economy\": 91, \"economy\": 101, \"business\": 453}}, {\"flight_number\": \"HAT039\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"03:00:00+1\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 18, \"economy\": 10, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 103, \"business\": 283}}]\n]"
     }
    ],
    "candidates": [
     {
-     "id": "95241165",
-     "action": "exchange_delivered_order_items({\"order_id\": \"#W3470184\", \"item_ids\": [\"2757705742\"], \"new_item_ids\": [\"1646531091\"], \"payment_method_id\": \"gift_card_7245904\"})"
+     "id": "5f55404b",
+     "action": "book_reservation({\"user_id\": \"mia_li_3668\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"flight_type\": \"one_way\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT136\", \"date\": \"2024-05-20\"}, {\"flight_number\": \"HAT039\", \"date\": \"2024-05-20\"}], \"passengers\": [{\"first_name\": \"Mia\", \"last_name\": \"Li\", \"dob\": \"1990-04-05\"}], \"payment_methods\": [{\"payment_id\": \"certificate_7504069\", \"amount\": 250}, {\"payment_id\": \"credit_card_4421486\", \"amount\": 5}], \"total_baggages\": 3, \"nonfree_baggages\": 0, \"insurance\": \"no\"})"
     },
     {
-     "id": "3ed674a2",
-     "action": "exchange_delivered_order_items({\"order_id\": \"#W3470184\", \"item_ids\": [\"2757705742\"], \"new_item_ids\": [\"6452271382\"], \"payment_method_id\": \"gift_card_7245904\"})"
+     "id": "1721327c",
+     "action": "book_reservation({\"user_id\": \"mia_li_3668\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"flight_type\": \"one_way\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT218\", \"date\": \"2024-05-20\"}, {\"flight_number\": \"HAT039\", \"date\": \"2024-05-20\"}], \"passengers\": [{\"first_name\": \"Mia\", \"last_name\": \"Li\", \"dob\": \"1990-04-05\"}], \"payment_methods\": [{\"payment_id\": \"certificate_7504069\", \"amount\": 250.0}, {\"payment_id\": \"credit_card_4421486\", \"amount\": 11.0}], \"total_baggages\": 3, \"nonfree_baggages\": 0, \"insurance\": \"no\"})"
     }
    ]
   },
   {
-   "row": "ba4f604afc",
-   "instruction": "You want to change your upcoming reservation LJM636 (LAS to SFO on May 19) to the latest departing flight on the same day, in the same cabin. Your user id is lucas_nguyen_6408. If there is a fare difference, pay it with your gift card. You do not want to change anything else about the reservation.",
+   "row": "c68d540d43",
+   "instruction": "Postpone my oldest reminder to tomorrow 5PM.",
    "history": [
     {
      "kind": "agent",
      "step": 0,
-     "action": "get_reservation_details({\"reservation_id\": \"LJM636\"})",
-     "observation": "{\n  \"reservation_id\": \"LJM636\",\n  \"user_id\": \"lucas_nguyen_6408\",\n  \"origin\": \"LAS\",\n  \"destination\": \"SFO\",\n  \"flight_type\": \"one_way\",\n  \"cabin\": \"economy\",\n  \"flights\": [{\"flight_number\": \"HAT242\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"date\": \"2024-05-19\", \"price\": 140}, {\"flight_number\": \"HAT159\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"date\": \"2024-05-19\", \"price\": 163}],\n  \"passengers\": [{\"first_name\": \"Lucas\", \"last_name\": \"Nguyen\", \"dob\": \"1962-12-13\"}],\n  \"payment_history\": [{\"payment_id\": \"gift_card_2684964\", \"amount\": 333}],\n  \"created_at\": \"2024-05-09T09:22:56\",\n  \"total_baggages\": 0,\n  \"nonfree_baggages\": 0,\n  \"insurance\": \"yes\",\n  \"status\": null\n}"
+     "action": "chatcmpl_tool_ac2c6b68176e3c1b_parameters = {}\nchatcmpl_tool_ac2c6b68176e3c1b_response = search_reminder(**chatcmpl_tool_ac2c6b68176e3c1b_parameters)\nprint(repr(chatcmpl_tool_ac2c6b68176e3c1b_response))",
+     "observation": "ValueError: No search criteria are given. At least one search criteria should be provided among ('reminder_id', 'content', 'creation_timestamp', 'creation_timestamp', 'reminder_timestamp', 'reminder_timestamp', 'latitude', 'longitude')"
     },
     {
      "kind": "agent",
      "step": 1,
-     "action": "search_direct_flight({\"origin\": \"LAS\", \"destination\": \"SFO\", \"date\": \"2024-05-19\"})",
-     "observation": "[]"
+     "action": "chatcmpl_tool_b2e9d9e941620a6c_parameters = {}\nchatcmpl_tool_b2e9d9e941620a6c_response = get_current_timestamp(**chatcmpl_tool_b2e9d9e941620a6c_parameters)\nprint(repr(chatcmpl_tool_b2e9d9e941620a6c_response))",
+     "observation": "1789578005.025087"
     },
     {
      "kind": "agent",
      "step": 2,
-     "action": "search_onestop_flight({\"origin\": \"LAS\", \"destination\": \"SFO\", \"date\": \"2024-05-19\"})",
-     "observation": "[\n  [{\"flight_number\": \"HAT040\", \"origin\": \"LAS\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 4, \"economy\": 19, \"business\": 4}, \"prices\": {\"basic_economy\": 64, \"economy\": 174, \"business\": 368}}, {\"flight_number\": \"HAT011\", \"origin\": \"SEA\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"13:00:00\", \"scheduled_arrival_time_est\": \"15:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 13, \"business\": 1}, \"prices\": {\"basic_economy\": 69, \"economy\": 104, \"business\": 462}}],\n  [{\"flight_number\": \"HAT040\", \"origin\": \"LAS\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 4, \"economy\": 19, \"business\": 4}, \"prices\": {\"basic_economy\": 64, \"economy\": 174, \"business\": 368}}, {\"flight_number\": \"HAT107\", \"origin\": \"SEA\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"09:00:00\", \"scheduled_arrival_time_est\": \"11:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 2, \"business\": 15}, \"prices\": {\"basic_economy\": 51, \"economy\": 186, \"business\": 338}}],\n  [{\"flight_number\": \"HAT040\", \"origin\": \"LAS\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 4, \"economy\": 19, \"business\": 4}, \"prices\": {\"basic_economy\": 64, \"economy\": 174, \"business\": 368}}, {\"flight_number\": \"HAT258\", \"origin\": \"SEA\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 15, \"business\": 1}, \"prices\": {\"basic_economy\": 71, \"economy\": 165, \"business\": 320}}],\n  [{\"flight_number\": \"HAT040\", \"origin\": \"LAS\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 4, \"economy\": 19, \"business\": 4}, \"prices\": {\"basic_economy\": 64, \"economy\": 174, \"business\": 368}}, {\"flight_number\": \"HAT274\", \"origin\": \"SEA\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"20:00:00\", \"scheduled_arrival_time_est\": \"22:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 17, \"economy\": 18, \"business\": 14}, \"prices\": {\"basic_economy\": 63, \"economy\": 107, \"business\": 371}}],\n  [{\"flight_number\": \"HAT047\", \"origin\": \"LAS\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"13:00:00\", \"scheduled_arrival_time_est\": \"15:30:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 9, \"business\": 7}, \"prices\": {\"basic_economy\": 100, \"economy\": 183, \"business\": 392}}, {\"flight_number\": \"HAT258\", \"origin\": \"SEA\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 15, \"business\": 1}, \"prices\": {\"basic_economy\": 71, \"economy\": 165, \"business\": 320}}],\n  [{\"flight_number\": \"HAT047\", \"origin\": \"LAS\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"13:00:00\", \"scheduled_arrival_time_est\": \"15:30:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 9, \"business\": 7}, \"prices\": {\"basic_economy\": 100, \"economy\": 183, \"business\": 392}}, {\"flight_number\": \"HAT274\", \"origin\": \"SEA\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"20:00:00\", \"scheduled_arrival_time_est\": \"22:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 17, \"economy\": 18, \"business\": 14}, \"prices\": {\"basic_economy\": 63, \"economy\": 107, \"business\": 371}}],\n  [{\"flight_number\": \"HAT095\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"18:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 19, \"economy\": 14, \"business\": 18}, \"prices\": {\"basic_economy\": 53, \"economy\": 163, \"business\": 332}}, {\"flight_number\": \"HAT283\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"20:00:00\", \"scheduled_arrival_time_est\": \"22:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 6, \"economy\": 19, \"business\": 7}, \"prices\": {\"basic_economy\": 55, \"economy\": 113, \"business\": 466}}],\n  [{\"flight_number\": \"HAT242\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"12:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 17, \"business\": 11}, \"prices\": {\"basic_economy\": 98, \"economy\": 126, \"business\": 448}}, {\"flight_number\": \"HAT009\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 17, \"business\": 13}, \"prices\": {\"basic_economy\": 82, \"economy\": 177, \"business\": 478}}],\n  [{\"flight_number\": \"HAT242\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"12:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 17, \"business\": 11}, \"prices\": {\"basic_economy\": 98, \"economy\": 126, \"business\": 448}}, {\"flight_number\": \"HAT159\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 13, \"economy\": 14, \"business\": 4}, \"prices\": {\"basic_economy\": 92, \"economy\": 198, \"business\": 492}}],\n  [{\"flight_number\": \"HAT242\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"12:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 17, \"business\": 11}, \"prices\": {\"basic_economy\": 98, \"economy\": 126, \"business\": 448}}, {\"flight_number\": \"HAT283\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"20:00:00\", \"scheduled_arrival_time_est\": \"22:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 6, \"economy\": 19, \"business\": 7}, \"prices\": {\"basic_economy\": 55, \"economy\": 113, \"business\": 466}}],\n  [{\"flight_number\": \"HAT244\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"10:00:00\", \"scheduled_arrival_time_est\": \"11:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 2, \"business\": 9}, \"prices\": {\"basic_economy\": 90, \"economy\": 116, \"business\": 414}}, {\"flight_number\": \"HAT009\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 17, \"business\": 13}, \"prices\": {\"basic_economy\": 82, \"economy\": 177, \"business\": 478}}],\n  [{\"flight_number\": \"HAT244\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"10:00:00\", \"scheduled_arrival_time_est\": \"11:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 2, \"business\": 9}, \"prices\": {\"basic_economy\": 90, \"economy\": 116, \"business\": 414}}, {\"flight_number\": \"HAT032\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 20, \"economy\": 3, \"business\": 0}, \"prices\": {\"basic_economy\": 66, \"economy\": 119, \"business\": 354}}],\n  [{\"flight_number\": \"HAT244\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"10:00:00\", \"scheduled_arrival_time_est\": \"11:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 2, \"business\": 9}, \"prices\": {\"basic_economy\": 90, \"economy\": 116, \"business\": 414}}, {\"flight_number\": \"HAT159\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 13, \"economy\": 14, \"business\": 4}, \"prices\": {\"basic_economy\": 92, \"economy\": 198, \"business\": 492}}],\n  [{\"flight_number\": \"HAT244\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"10:00:00\", \"scheduled_arrival_time_est\": \"11:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 2, \"business\": 9}, \"prices\": {\"basic_economy\": 90, \"economy\": 116, \"business\": 414}}, {\"flight_number\": \"HAT283\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"20:00:00\", \"scheduled_arrival_time_est\": \"22:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 6, \"economy\": 19, \"business\": 7}, \"prices\": {\"basic_economy\": 55, \"economy\": 113, \"business\": 466}}],\n  [{\"flight_number\": \"HAT284\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"03:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 4, \"economy\": 4, \"business\": 9}, \"prices\": {\"basic_economy\": 96, \"economy\": 141, \"business\": 326}}, {\"flight_number\": \"HAT009\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 17, \"business\": 13}, \"prices\": {\"basic_economy\": 82, \"economy\": 177, \"business\": 478}}],\n  [{\"flight_number\": \"HAT284\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"03:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 4, \"economy\": 4, \"business\": 9}, \"prices\": {\"basic_economy\": 96, \"economy\": 141, \"business\": 326}}, {\"flight_number\": \"HAT032\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 20, \"economy\": 3, \"business\": 0}, \"prices\": {\"basic_economy\": 66, \"economy\": 119, \"business\": 354}}],\n  [{\"flight_number\": \"HAT284\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"03:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 4, \"economy\": 4, \"business\": 9}, \"prices\": {\"basic_economy\": 96, \"economy\": 141, \"business\": 326}}, {\"flight_number\": \"HAT159\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 13, \"economy\": 14, \"business\": 4}, \"prices\": {\"basic_economy\": 92, \"economy\": 198, \"business\": 492}}],\n  [{\"flight_number\": \"HAT284\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"03:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 4, \"economy\": 4, \"business\": 9}, \"prices\": {\"basic_economy\": 96, \"economy\": 141, \"business\": 326}}, {\"flight_number\": \"HAT283\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"20:00:00\", \"scheduled_arrival_time_est\": \"22:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 6, \"economy\": 19, \"business\": 7}, \"prices\": {\"basic_economy\": 55, \"economy\": 113, \"business\": 466}}]\n]"
-    }
-   ],
-   "candidates": [
-    {
-     "id": "ca720670",
-     "action": "update_reservation_flights({\"reservation_id\": \"LJM636\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT040\", \"date\": \"2024-05-19\"}, {\"flight_number\": \"HAT011\", \"date\": \"2024-05-19\"}], \"payment_id\": \"gift_card_2684964\"})"
-    },
-    {
-     "id": "9ddbca69",
-     "action": "update_reservation_flights({\"reservation_id\": \"LJM636\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT095\", \"date\": \"2024-05-19\"}, {\"flight_number\": \"HAT283\", \"date\": \"2024-05-19\"}], \"payment_id\": \"gift_card_2684964\"})"
-    }
-   ]
-  },
-  {
-   "row": "85ccf476ff",
-   "instruction": "Turn 0: First cd within the 'ResearchDocs' directory and then locate any files titled 'report.csv'.\nTurn 1: Once you locate 'report.csv' in the 'ResearchDocs' directory, delve into it to find lines that reference the 'budget analysis'.\nTurn 2: Extract and display the last five lines from the 'report.csv' file in the 'ResearchDocs' directory, as these need to be emphasized for recent updates.\nTurn 3: Logging in as USR001. Lastly, upon completion of our file review, kindly message my colleague, John Levy, add him as new contact, that 'Latest Quarter Performance has been well.'",
-   "history": [
-    {
-     "kind": "user",
-     "text": "First cd within the 'ResearchDocs' directory and then locate any files titled 'report.csv'."
-    },
-    {
-     "kind": "agent",
-     "step": 0,
-     "action": "cd(folder='ResearchDocs'); find(path='.',name='report.csv')",
-     "observation": "{\"current_working_directory\": \"ResearchDocs\"}; {\"matches\": [\"./report.csv\"]}"
-    },
-    {
-     "kind": "user",
-     "text": "Once you locate 'report.csv' in the 'ResearchDocs' directory, delve into it to find lines that reference the 'budget analysis'."
-    }
-   ],
-   "candidates": [
-    {
-     "id": "0afbf346",
-     "action": "grep(file_name='report.csv',pattern='Quarterly Financial Overview')"
-    },
-    {
-     "id": "77348338",
-     "action": "grep(file_name='report.csv',pattern='budget analysis')"
-    }
-   ]
-  },
-  {
-   "row": "359a59f4d2",
-   "instruction": "Turn 0: I need you to draft a comprehensive guide for our new initiative, and let's name it 'Project_Guide_1.md'. Put 'Comprehensive guide for the new initiative.' in it.\nTurn 1: I would love to get the human-readable disk usage of the current working directory.\nTurn 2: There's a minor snag in our ticketing system. Ticket #7423 is still unresolved, but with our recent brainstorming feedback, just go ahead and check it off as resolved. Leave it empty for resolve description.",
-   "history": [
-    {
-     "kind": "user",
-     "text": "I need you to draft a comprehensive guide for our new initiative, and let's name it 'Project_Guide_1.md'. Put 'Comprehensive guide for the new initiative.' in it."
-    }
-   ],
-   "candidates": [
-    {
-     "id": "1a8d77bc",
-     "action": "touch(file_name='Project_Guide_1.md'); echo(content='Comprehensive guide for the new initiative.',file_name='Project_Guide_1.md')"
-    },
-    {
-     "id": "96f2da40",
-     "action": "touch(file_name='summary.txt'); echo(content='Comprehensive guide for the new initiative.',file_name='summary.txt')"
-    }
-   ]
-  },
-  {
-   "row": "275c9498a4",
-   "instruction": "Turn 0: I'd like to take a look at the finance_report.txt. Would you send me the content of the last line.\nTurn 1: According to the whole financial report, what's the mean of revenue and expense and profit. Round to nearest integer and write it in a new file called statistics.txt. Note that only write the integer and nothing else to the text file",
-   "history": [
-    {
-     "kind": "user",
-     "text": "I'd like to take a look at the finance_report.txt. Would you send me the content of the last line."
-    },
-    {
-     "kind": "agent",
-     "step": 0,
-     "action": "tail(file_name='finance_report.txt',lines=1)",
-     "observation": "{\n  \"last_lines\": \"Revenue: $5000Expenses: $3000Profit: $2000Deadline: Q1Deadline: Q2Deadline: Q3Deadline: Q4Deadline: Q1Deadline: Q2Deadline: Q3Deadline: Q4\"\n}"
-    },
-    {
-     "kind": "user",
-     "text": "According to the whole financial report, what's the mean of revenue and expense and profit. Round to nearest integer and write it in a new file called statistics.txt. Note that only write the integer and nothing else to the text file"
-    }
-   ],
-   "candidates": [
-    {
-     "id": "60d6c2db",
-     "action": "cat(file_name='finance_report.txt'); mean(numbers=[5000,3000,2000]); touch(file_name='statistics.txt'); echo(content='3333',file_name='statistics.txt')"
-    },
-    {
-     "id": "bc62e919",
-     "action": "cat(file_name='finance_report.txt'); mean(numbers=[5000,3000,2000]); touch(file_name='summary.txt'); echo(content='3333',file_name='summary.txt')"
-    }
-   ]
-  },
-  {
-   "row": "cc6178b146",
-   "instruction": "Turn 0: I've noticed that some of my car doors are slightly ajar while others seem to be securely locked. Would you be able to verify and make sure all doors are properly locked for safety?\nTurn 1: I'm all set to start my drive. Would you initiate the engine's ignition in START mode?\nTurn 2: Before setting off, I'm keen to ensure my tire pressures are as they should be. Could you provide an update on the current tire pressure status? If it's below 40, point me to nearest tire shop.\nTurn 3: I'd appreciate it if you could send a quick message 'I am on my way to your place.' to my cousin (user id USR002), updating them my status. If you need, my user id is USR001.",
-   "history": [
-    {
-     "kind": "user",
-     "text": "I've noticed that some of my car doors are slightly ajar while others seem to be securely locked. Would you be able to verify and make sure all doors are properly locked for safety?"
-    },
-    {
-     "kind": "agent",
-     "step": 0,
-     "action": "lockDoors(unlock=False, door=['driver', 'passenger', 'rear_left', 'rear_right'])",
-     "observation": "{\n  \"lockStatus\": \"locked\",\n  \"remainingUnlockedDoors\": 0\n}"
-    },
-    {
-     "kind": "user",
-     "text": "I'm all set to start my drive. Would you initiate the engine's ignition in START mode?"
-    },
-    {
-     "kind": "agent",
-     "step": 1,
-     "action": "pressBrakePedal(pedalPosition=1.0); startEngine(ignitionMode='START')",
-     "observation": "{\"brakePedalStatus\": \"pressed\", \"brakePedalForce\": 1000.0}; {\"engineState\": \"running\", \"fuelLevel\": 15.5, \"batteryVoltage\": 12.8}"
-    },
-    {
-     "kind": "user",
-     "text": "Before setting off, I'm keen to ensure my tire pressures are as they should be. Could you provide an update on the current tire pressure status? If it's below 40, point me to nearest tire shop."
-    },
-    {
-     "kind": "agent",
-     "step": 2,
-     "action": "check_tire_pressure(); find_nearest_tire_shop()",
-     "observation": "{\"frontLeftTirePressure\": 35.0, \"frontRightTirePressure\": 35.0, \"rearLeftTirePressure\": 33.0, \"rearRightTirePressure\": 33.0, \"healthy_tire_pressure\": true, \"car_info\": {}}; {\"shopLocation\": \"456 Oakwood Avenue, Rivermist, 83214\"}"
-    },
-    {
-     "kind": "user",
-     "text": "I'd appreciate it if you could send a quick message 'I am on my way to your place.' to my cousin (user id USR002), updating them my status. If you need, my user id is USR001."
-    }
-   ],
-   "candidates": [
-    {
-     "id": "8704205e",
-     "action": "message_login('USR001'); send_message(receiver_id='USR002', message='I am on my way to your place.')"
-    },
-    {
-     "id": "09b0dac8",
-     "action": "message_login('USR001'); send_message(receiver_id='USR003', message='I am on my way to your place.')"
-    }
-   ]
-  },
-  {
-   "row": "c47599c07d",
-   "instruction": "Turn 0: In attempting to log into my travel account using both my established client id 'client_520', secret 'rise_to_sky' and refresh token 'token990125', I seem to be at a bit of an impasse, allow for read_write. My first name is Michael, last name Thompson. Assistance with the authentication process would be immensely appreciated.\nTurn 1: I've recently linked a newly registered credit card with the ID 'card_4455', set to expire in 2026, and it's under my name. Accessing my account to ascertain my current balance is my next goal. Could this information be retrieved for me?\nTurn 2: Having reviewed my financial standing, I now need to compute the average amount spent in my last quintet of purchases, which are 45.99, 78.25, 102.50, 38.75, and 92.10. Guidance in deriving this mean value would be beneficial.",
-   "history": [
-    {
-     "kind": "user",
-     "text": "In attempting to log into my travel account using both my established client id 'client_520', secret 'rise_to_sky' and refresh token 'token990125', I seem to be at a bit of an impasse, allow for read_write. My first name is Michael, last name Thompson. Assistance with the authentication process would be immensely appreciated."
-    }
-   ],
-   "candidates": [
-    {
-     "id": "ac8dd40a",
-     "action": "authenticate_travel(client_id='client_520', client_secret='rise_to_sky', refresh_token='token990125', grant_type='read_write', user_first_name='Michael', user_last_name='Thompson')"
-    },
-    {
-     "id": "495c98d1",
-     "action": "authenticate_travel(client_id='client_520', client_secret='rise_to_sky', refresh_token='token990125', grant_type='read_write', user_first_name='Maxwell', user_last_name='Thompson')"
-    }
-   ]
-  },
-  {
-   "row": "d396a7617f",
-   "instruction": "Turn 0: I'm planning a business class trip from JFK in New York to LAX in Los Angeles on December 15, 2026. Alex Johnson will be my traveling companion. I intend to use my credit card with label 'id_1234' to cover the $4500 trip cost. I've got my access token here: ABCD1234.\nTurn 1: I'll need to cancel the trip immediately due to unexpected changes in my schedule. Additionally, I must file a priority 5 support ticket concerning the flight cancellation, labeled 'Urgent Flight Cancellation'. The ticket should thoroughly explain the abrupt changes leading to the cancellation and put description as Due to unexpected changes in schedule, the flight from JFK to LAX on December 15, 2026, needs to be canceled immediately.",
-   "history": [
-    {
-     "kind": "user",
-     "text": "I'm planning a business class trip from JFK in New York to LAX in Los Angeles on December 15, 2026. Alex Johnson will be my traveling companion. I intend to use my credit card with label 'id_1234' to cover the $4500 trip cost. I've got my access token here: ABCD1234."
-    }
-   ],
-   "candidates": [
-    {
-     "id": "a493ad7e",
-     "action": "book_flight(access_token='ABCD1234', card_id='id_1234', travel_date='2026-12-15', travel_from='JFK', travel_to='LAX', travel_class='business')"
-    },
-    {
-     "id": "2de162c4",
-     "action": "book_flight(access_token='ABCD1234', card_id='id_1234', travel_date='2026-12-15', travel_from='JFK', travel_to='LAX', travel_class='first')"
-    }
-   ]
-  },
-  {
-   "row": "b323cd0c48",
-   "instruction": "Turn 0: For trip id flight_001, it seems that I booked my flight from Rome to New York without considering travel protection, especially given the uncertainties of winter travel. Would you assist in registering my new credit card, with access token 'abc123xyz' and card number 4012888888881881, expiring in December 2028 and a CVV of 465, to facilitate the purchase of a comprehensive travel insurance at the price $200 for this journey? My last name is Smith, first name is Michael.\nTurn 1: I need to verify the specifics and total costs of the travel insurance and booking I recently arranged, as the details escape me at the moment. Is it possible for you to provide me with the invoice linked to the insurance purchase?\nTurn 2: I’ve encountered some problems requiring immediate help regarding my upcoming trip to New York. Could you facilitate fast contact with customer support to address these insurance-related issues that haven’t been resolved?\nTurn 3: The response from customer support didn't resolve my issues, and I'm quite frustrated with the assistance I received. Would you mind drafting a formal complaint titled 'Unsatisfactory Customer Support' outlining the shortcomings of their service? My ticket username is msmith, password is SecurePass123. Left ticket description as empty string.\nTurn 4: I’ve reached the decision to cancel my New York trip due to unforeseen personal circumstances. Could you proceed with the cancellation process as soon as possible?",
-   "history": [
-    {
-     "kind": "user",
-     "text": "For trip id flight_001, it seems that I booked my flight from Rome to New York without considering travel protection, especially given the uncertainties of winter travel. Would you assist in registering my new credit card, with access token 'abc123xyz' and card number 4012888888881881, expiring in December 2028 and a CVV of 465, to facilitate the purchase of a comprehensive travel insurance at the price $200 for this journey? My last name is Smith, first name is Michael."
-    }
-   ],
-   "candidates": [
-    {
-     "id": "1f695212",
-     "action": "register_credit_card(access_token='abc123xyz', card_number='4012888888881881', expiration_date='12/2028', card_verification_number=465, cardholder_name='Michael Smith'); purchase_insurance(access_token='abc123xyz', insurance_type='comprehensive', booking_id='flight_001', insurance_cost=200.0, card_id='262919693687')"
-    },
-    {
-     "id": "866f4976",
-     "action": "register_credit_card(access_token='abc123xyz', card_number='2345-6789-1234-5678', expiration_date='12/2028', card_verification_number=465, cardholder_name='Michael Smith'); purchase_insurance(access_token='abc123xyz', insurance_type='comprehensive', booking_id='flight_001', insurance_cost=200.0, card_id='262919693687')"
-    }
-   ]
-  },
-  {
-   "row": "bbac0ea912",
-   "instruction": "Find whoever I contacted last, change his cell to +10293847563.",
-   "history": [
-    {
-     "kind": "agent",
-     "step": 0,
-     "action": "chatcmpl_tool_bdc71b4a3962a435_parameters = {}\nchatcmpl_tool_bdc71b4a3962a435_response = get_current_timestamp(**chatcmpl_tool_bdc71b4a3962a435_parameters)\nprint(repr(chatcmpl_tool_bdc71b4a3962a435_response))",
-     "observation": "1789637466.469573"
-    },
-    {
-     "kind": "agent",
-     "step": 1,
-     "action": "chatcmpl_tool_90dd1633db3b0bc8_parameters = {}\nchatcmpl_tool_90dd1633db3b0bc8_response = search_messages(**chatcmpl_tool_90dd1633db3b0bc8_parameters)\nprint(repr(chatcmpl_tool_90dd1633db3b0bc8_response))",
-     "observation": "ValueError: No search criteria are given. At least one search criteria should be provided among ('message_id', 'sender_person_id', 'sender_phone_number', 'recipient_person_id', 'recipient_phone_number', 'content', 'creation_timestamp', 'creation_timestamp')"
-    },
-    {
-     "kind": "agent",
-     "step": 2,
-     "action": "chatcmpl_tool_865c17c3543c7953_parameters = {'creation_timestamp_lowerbound': 0}\nchatcmpl_tool_865c17c3543c7953_response = search_messages(**chatcmpl_tool_865c17c3543c7953_parameters)\nprint(repr(chatcmpl_tool_865c17c3543c7953_response))",
+     "action": "chatcmpl_tool_a00fdbe121b3c7cd_parameters = {'creation_timestamp_lowerbound': 0}\nchatcmpl_tool_a00fdbe121b3c7cd_response = search_reminder(**chatcmpl_tool_a00fdbe121b3c7cd_parameters)\nprint(repr(chatcmpl_tool_a00fdbe121b3c7cd_response))",
      "observation": "ValueError: Parameter 'creation_timestamp_lowerbound' is smaller than its valid range minimum of 315529200.0."
     },
     {
      "kind": "agent",
      "step": 3,
-     "action": "chatcmpl_tool_91ee4bffc6bb9cbb_parameters = {'creation_timestamp_lowerbound': 315529200}\nchatcmpl_tool_91ee4bffc6bb9cbb_response = search_messages(**chatcmpl_tool_91ee4bffc6bb9cbb_parameters)\nprint(repr(chatcmpl_tool_91ee4bffc6bb9cbb_response))",
-     "observation": "[{'message_id': '0d25dbb9-3737-5e0e-b0f0-7c1e359baccc', 'sender_person_id': None, 'sender_phone_number': '+18307976530', 'recipient_person_id': '3815cac9-3cab-5d75-89e2-fe12fe19779e', 'recipient_phone_number': '+11233344455', 'content': 'Hey kid, you want some GPU?', 'creation_timestamp': 1789363552.015556}, {'message_id': 'caaca9e8-7aa9-55a6-9d32-4b4aefed40d1', 'sender_person_id': '3815cac9-3cab-5d75-89e2-fe12fe19779e', 'sender_phone_number': '+11233344455', 'recipient_person_id': None, 'recipient_phone_number': '+18307976530', 'content': 'No leave me alone', 'creation_timestamp': 1789367152.015575}, {'message_id': '0a0102dc-ceaf-5ebb-a665-63da99bf7c47', 'sender_person_id': 'e3570ab6-0819-5032-be1e-2b366390c8ef', 'sender_phone_number': '+10000000000', 'recipient_person_id': '3815cac9-3cab-5d75-89e2-fe12fe19779e', 'recipient_phone_number': '+11233344455', 'content': \"How's it going\", 'creation_timestamp': 1789633675.015585}, {'message_id': '6c9382cb-720e-5f2c-8ac0-77e7ebdea446', 'sender_person_id': '3815cac9-3cab-5d75-89e2-fe12fe19779e', 'sender_phone_number': '+11233344455', 'recipient_person_id': 'e3570ab6-0819-5032-be1e-2b366390c8ef', 'recipient_phone_number': '+10000000000', 'content': 'Things are proceeding as expected', 'creation_timestamp': 1789633735.015594}, {'message_id': '0a0102dc-ceaf-5ebb-a665-63da99bf7c47', 'sender_person_id': 'e3570ab6-0819-5032-be1e-2b366390c8ef', 'sender_phone_number': '+10000000000', 'recipient_person_id': '3815cac9-3cab-5d75-89e2-fe12fe19779e', 'recipient_phone_number': '+11233344455', 'content': 'Good, keep me posted', 'creation_timestamp': 1789637396.015603}]"
+     "action": "chatcmpl_tool_a74f8c51de012909_parameters = {'creation_timestamp_lowerbound': 315529200}\nchatcmpl_tool_a74f8c51de012909_response = search_reminder(**chatcmpl_tool_a74f8c51de012909_parameters)\nprint(repr(chatcmpl_tool_a74f8c51de012909_response))",
+     "observation": "[{'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'content': 'Look for Company SF tickets', 'creation_timestamp': 1789318800.157737, 'reminder_timestamp': 1789491600.157745, 'latitude': None, 'longitude': None}, {'reminder_id': 'da2b856e-9390-511f-bcbe-7005f72cbf5e', 'content': 'Buy tickets for Merrily next week', 'creation_timestamp': 1789491600.157753, 'reminder_timestamp': 1789577940.157756, 'latitude': None, 'longitude': None}, {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'content': 'Buy a nice rich navy bathing dress', 'creation_timestamp': 1789574400.157762, 'reminder_timestamp': 1789581600.157765, 'latitude': 37.3237926356735, 'longitude': -122.03961770355414}]"
     },
     {
      "kind": "agent",
      "step": 4,
-     "action": "chatcmpl_tool_b79876de35881ce5_parameters = {'person_id': 'e3570ab6-0819-5032-be1e-2b366390c8ef'}\nchatcmpl_tool_b79876de35881ce5_response = search_contacts(**chatcmpl_tool_b79876de35881ce5_parameters)\nprint(repr(chatcmpl_tool_b79876de35881ce5_response))",
-     "observation": "[{'person_id': 'e3570ab6-0819-5032-be1e-2b366390c8ef', 'name': 'Homer S', 'phone_number': '+10000000000', 'relationship': 'boss', 'is_self': False}]"
+     "action": "chatcmpl_tool_bacb7b2c35b6c6a5_parameters = {'timestamp': 1789564904.9}\nchatcmpl_tool_bacb7b2c35b6c6a5_response = timestamp_to_datetime_info(**chatcmpl_tool_bacb7b2c35b6c6a5_parameters)\nprint(repr(chatcmpl_tool_bacb7b2c35b6c6a5_response))",
+     "observation": "{'year': 2026, 'month': 9, 'day': 16, 'hour': 8, 'minute': 21, 'second': 44, 'isoweekday': 3}"
+    },
+    {
+     "kind": "agent",
+     "step": 5,
+     "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))",
+     "observation": "1789682400.0"
     }
    ],
    "candidates": [
     {
-     "id": "20611624",
-     "action": "chatcmpl_tool_92a4d87dbd588c82_parameters = {'person_id': 'e3570ab6-0819-5032-be1e-2b366390c8ef', 'phone_number': '+10293847563'}\nchatcmpl_tool_92a4d87dbd588c82_response = modify_contact(**chatcmpl_tool_92a4d87dbd588c82_parameters)\nprint(repr(chatcmpl_tool_92a4d87dbd588c82_response))"
+     "id": "7ccea85d",
+     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))"
     },
     {
-     "id": "c3142347",
-     "action": "chatcmpl_tool_92a4d87dbd588c82_parameters = {'person_id': 'e3570ab6-0819-5032-be1e-2b366390c8ef', 'phone_number': '+12453344098'}\nchatcmpl_tool_92a4d87dbd588c82_response = modify_contact(**chatcmpl_tool_92a4d87dbd588c82_parameters)\nprint(repr(chatcmpl_tool_92a4d87dbd588c82_response))"
+     "id": "d9487063",
+     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))"
     }
    ]
   },
   {
-   "row": "b775daaf44",
-   "instruction": "Add a todo to buy chocolate milk tomorrow 8AM",
+   "row": "1edae5f75d",
+   "instruction": "You want to change your upcoming reservation 672VDE (LAX to PHL on May 17) to the cheapest flight on the same day, in the same cabin. Your user id is mei_hernandez_9827. If there is a fare difference, pay it with your credit card ending in 1382. You do not want to change anything else about the reservation.",
+   "history": [
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "get_reservation_details({\"reservation_id\": \"672VDE\"})",
+     "observation": "{\n  \"reservation_id\": \"672VDE\",\n  \"user_id\": \"mei_hernandez_9827\",\n  \"origin\": \"LAX\",\n  \"destination\": \"PHL\",\n  \"flight_type\": \"one_way\",\n  \"cabin\": \"economy\",\n  \"flights\": [{\"flight_number\": \"HAT103\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"date\": \"2024-05-17\", \"price\": 195}, {\"flight_number\": \"HAT271\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"date\": \"2024-05-17\", \"price\": 187}],\n  \"passengers\": [{\"first_name\": \"Mei\", \"last_name\": \"Hernandez\", \"dob\": \"1960-04-13\"}],\n  \"payment_history\": [{\"payment_id\": \"credit_card_9355028\", \"amount\": 412}],\n  \"created_at\": \"2024-05-13T07:14:37\",\n  \"total_baggages\": 0,\n  \"nonfree_baggages\": 0,\n  \"insurance\": \"yes\",\n  \"status\": null\n}"
+    },
+    {
+     "kind": "agent",
+     "step": 1,
+     "action": "search_direct_flight({\"origin\": \"LAX\", \"destination\": \"PHL\", \"date\": \"2024-05-17\"})",
+     "observation": "[]"
+    },
+    {
+     "kind": "agent",
+     "step": 2,
+     "action": "search_onestop_flight({\"origin\": \"LAX\", \"destination\": \"PHL\", \"date\": \"2024-05-17\"})",
+     "observation": "[\n  [{\"flight_number\": \"HAT030\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"20:00:00\", \"scheduled_arrival_time_est\": \"00:00:00+1\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 20, \"economy\": 14, \"business\": 12}, \"prices\": {\"basic_economy\": 66, \"economy\": 200, \"business\": 244}}, {\"flight_number\": \"HAT139\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-18\", \"available_seats\": {\"basic_economy\": 9, \"economy\": 2, \"business\": 19}, \"prices\": {\"basic_economy\": 91, \"economy\": 169, \"business\": 371}}],\n  [{\"flight_number\": \"HAT030\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"20:00:00\", \"scheduled_arrival_time_est\": \"00:00:00+1\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 20, \"economy\": 14, \"business\": 12}, \"prices\": {\"basic_economy\": 66, \"economy\": 200, \"business\": 244}}, {\"flight_number\": \"HAT271\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"19:00:00\", \"scheduled_arrival_time_est\": \"21:00:00\", \"date\": \"2024-05-18\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 9}, \"prices\": {\"basic_economy\": 96, \"economy\": 146, \"business\": 390}}],\n  [{\"flight_number\": \"HAT030\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"20:00:00\", \"scheduled_arrival_time_est\": \"00:00:00+1\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 20, \"economy\": 14, \"business\": 12}, \"prices\": {\"basic_economy\": 66, \"economy\": 200, \"business\": 244}}, {\"flight_number\": \"HAT289\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"05:00:00\", \"scheduled_arrival_time_est\": \"07:00:00\", \"date\": \"2024-05-18\", \"available_seats\": {\"basic_economy\": 6, \"economy\": 1, \"business\": 18}, \"prices\": {\"basic_economy\": 76, \"economy\": 109, \"business\": 330}}],\n  [{\"flight_number\": \"HAT090\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"01:00:00\", \"scheduled_arrival_time_est\": \"05:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 16, \"economy\": 18, \"business\": 19}, \"prices\": {\"basic_economy\": 91, \"economy\": 113, \"business\": 424}}, {\"flight_number\": \"HAT139\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 7, \"business\": 4}, \"prices\": {\"basic_economy\": 68, \"economy\": 124, \"business\": 339}}],\n  [{\"flight_number\": \"HAT090\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"01:00:00\", \"scheduled_arrival_time_est\": \"05:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 16, \"economy\": 18, \"business\": 19}, \"prices\": {\"basic_economy\": 91, \"economy\": 113, \"business\": 424}}, {\"flight_number\": \"HAT271\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"19:00:00\", \"scheduled_arrival_time_est\": \"21:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 14, \"business\": 1}, \"prices\": {\"basic_economy\": 93, \"economy\": 116, \"business\": 361}}],\n  [{\"flight_number\": \"HAT090\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"01:00:00\", \"scheduled_arrival_time_est\": \"05:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 16, \"economy\": 18, \"business\": 19}, \"prices\": {\"basic_economy\": 91, \"economy\": 113, \"business\": 424}}, {\"flight_number\": \"HAT289\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"05:00:00\", \"scheduled_arrival_time_est\": \"07:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 11, \"business\": 17}, \"prices\": {\"basic_economy\": 85, \"economy\": 166, \"business\": 277}}],\n  [{\"flight_number\": \"HAT094\", \"origin\": \"LAX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"04:00:00\", \"scheduled_arrival_time_est\": \"05:30:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 4, \"business\": 0}, \"prices\": {\"basic_economy\": 82, \"economy\": 185, \"business\": 438}}, {\"flight_number\": \"HAT042\", \"origin\": \"SFO\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"06:00:00\", \"scheduled_arrival_time_est\": \"12:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 13, \"business\": 19}, \"prices\": {\"basic_economy\": 95, \"economy\": 147, \"business\": 255}}],\n  [{\"flight_number\": \"HAT103\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"06:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 19, \"business\": 13}, \"prices\": {\"basic_economy\": 87, \"economy\": 115, \"business\": 372}}, {\"flight_number\": \"HAT139\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 7, \"business\": 4}, \"prices\": {\"basic_economy\": 68, \"economy\": 124, \"business\": 339}}],\n  [{\"flight_number\": \"HAT103\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"06:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 19, \"business\": 13}, \"prices\": {\"basic_economy\": 87, \"economy\": 115, \"business\": 372}}, {\"flight_number\": \"HAT271\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"19:00:00\", \"scheduled_arrival_time_est\": \"21:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 14, \"business\": 1}, \"prices\": {\"basic_economy\": 93, \"economy\": 116, \"business\": 361}}],\n  [{\"flight_number\": \"HAT104\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"10:00:00\", \"scheduled_arrival_time_est\": \"14:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 4, \"economy\": 19, \"business\": 12}, \"prices\": {\"basic_economy\": 96, \"economy\": 173, \"business\": 279}}, {\"flight_number\": \"HAT139\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 7, \"business\": 4}, \"prices\": {\"basic_economy\": 68, \"economy\": 124, \"business\": 339}}],\n  [{\"flight_number\": \"HAT104\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"10:00:00\", \"scheduled_arrival_time_est\": \"14:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 4, \"economy\": 19, \"business\": 12}, \"prices\": {\"basic_economy\": 96, \"economy\": 173, \"business\": 279}}, {\"flight_number\": \"HAT271\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"19:00:00\", \"scheduled_arrival_time_est\": \"21:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 14, \"business\": 1}, \"prices\": {\"basic_economy\": 93, \"economy\": 116, \"business\": 361}}],\n  [{\"flight_number\": \"HAT109\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 17, \"economy\": 2, \"business\": 1}, \"prices\": {\"basic_economy\": 96, \"economy\": 182, \"business\": 492}}, {\"flight_number\": \"HAT139\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"19:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 7, \"business\": 4}, \"prices\": {\"basic_economy\": 68, \"economy\": 124, \"business\": 339}}],\n  [{\"flight_number\": \"HAT109\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 17, \"economy\": 2, \"business\": 1}, \"prices\": {\"basic_economy\": 96, \"economy\": 182, \"business\": 492}}, {\"flight_number\": \"HAT271\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"19:00:00\", \"scheduled_arrival_time_est\": \"21:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 14, \"business\": 1}, \"prices\": {\"basic_economy\": 93, \"economy\": 116, \"business\": 361}}],\n  [{\"flight_number\": \"HAT109\", \"origin\": \"LAX\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 17, \"economy\": 2, \"business\": 1}, \"prices\": {\"basic_economy\": 96, \"economy\": 182, \"business\": 492}}, {\"flight_number\": \"HAT289\", \"origin\": \"ORD\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"05:00:00\", \"scheduled_arrival_time_est\": \"07:00:00\", \"date\": \"2024-05-17\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 11, \"business\": 17}, \"prices\": {\"basic_economy\": 85, \"economy\": 166, \"business\": 277}}]\n]"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "0b51d7b6",
+     "action": "update_reservation_flights({\"reservation_id\": \"672VDE\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT090\", \"date\": \"2024-05-17\"}, {\"flight_number\": \"HAT271\", \"date\": \"2024-05-17\"}], \"payment_id\": \"credit_card_9355028\"})"
+    },
+    {
+     "id": "4865a597",
+     "action": "update_reservation_flights({\"reservation_id\": \"672VDE\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT109\", \"date\": \"2024-05-17\"}, {\"flight_number\": \"HAT139\", \"date\": \"2024-05-17\"}], \"payment_id\": \"credit_card_9355028\"})"
+    }
+   ]
+  },
+  {
+   "row": "2cb0e3e143",
+   "instruction": "You want to change your upcoming reservation P22235 (ORD to LAS on May 24) to the fastest flight on the same day, in the same cabin. Your user id is harper_wilson_8866. If there is a fare difference, pay it with your credit card ending in 2730. You do not want to change anything else about the reservation.",
+   "history": [
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "get_reservation_details({\"reservation_id\": \"P22235\"})",
+     "observation": "{\n  \"reservation_id\": \"P22235\",\n  \"user_id\": \"harper_wilson_8866\",\n  \"origin\": \"ORD\",\n  \"destination\": \"LAS\",\n  \"flight_type\": \"one_way\",\n  \"cabin\": \"economy\",\n  \"flights\": [{\"flight_number\": \"HAT093\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"date\": \"2024-05-24\", \"price\": 125}, {\"flight_number\": \"HAT102\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"date\": \"2024-05-24\", \"price\": 125}],\n  \"passengers\": [{\"first_name\": \"Harper\", \"last_name\": \"Wilson\", \"dob\": \"1971-01-02\"}, {\"first_name\": \"Yusuf\", \"last_name\": \"Lee\", \"dob\": \"1967-09-25\"}],\n  \"payment_history\": [{\"payment_id\": \"gift_card_2397458\", \"amount\": 500}],\n  \"created_at\": \"2024-05-07T21:02:03\",\n  \"total_baggages\": 2,\n  \"nonfree_baggages\": 0,\n  \"insurance\": \"no\",\n  \"status\": null\n}"
+    },
+    {
+     "kind": "agent",
+     "step": 1,
+     "action": "search_direct_flight({\"origin\": \"ORD\", \"destination\": \"LAS\", \"date\": \"2024-05-24\"})",
+     "observation": "[]"
+    },
+    {
+     "kind": "agent",
+     "step": 2,
+     "action": "search_onestop_flight({\"origin\": \"ORD\", \"destination\": \"LAS\", \"date\": \"2024-05-24\"})",
+     "observation": "[\n  [{\"flight_number\": \"HAT093\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 7, \"business\": 3}, \"prices\": {\"basic_economy\": 70, \"economy\": 178, \"business\": 364}}, {\"flight_number\": \"HAT102\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"21:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 9, \"economy\": 1, \"business\": 20}, \"prices\": {\"basic_economy\": 80, \"economy\": 110, \"business\": 254}}],\n  [{\"flight_number\": \"HAT093\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 7, \"business\": 3}, \"prices\": {\"basic_economy\": 70, \"economy\": 178, \"business\": 364}}, {\"flight_number\": \"HAT178\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"08:00:00\", \"scheduled_arrival_time_est\": \"12:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 3, \"business\": 19}, \"prices\": {\"basic_economy\": 68, \"economy\": 192, \"business\": 210}}],\n  [{\"flight_number\": \"HAT093\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 7, \"business\": 3}, \"prices\": {\"basic_economy\": 70, \"economy\": 178, \"business\": 364}}, {\"flight_number\": \"HAT281\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"02:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 5, \"business\": 2}, \"prices\": {\"basic_economy\": 62, \"economy\": 169, \"business\": 244}}],\n  [{\"flight_number\": \"HAT118\", \"origin\": \"ORD\", \"destination\": \"DEN\", \"status\": \"available\", \"scheduled_departure_time_est\": \"04:00:00\", \"scheduled_arrival_time_est\": \"06:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 3, \"economy\": 11, \"business\": 8}, \"prices\": {\"basic_economy\": 94, \"economy\": 200, \"business\": 330}}, {\"flight_number\": \"HAT229\", \"origin\": \"DEN\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 11, \"business\": 15}, \"prices\": {\"basic_economy\": 87, \"economy\": 121, \"business\": 247}}],\n  [{\"flight_number\": \"HAT118\", \"origin\": \"ORD\", \"destination\": \"DEN\", \"status\": \"available\", \"scheduled_departure_time_est\": \"04:00:00\", \"scheduled_arrival_time_est\": \"06:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 3, \"economy\": 11, \"business\": 8}, \"prices\": {\"basic_economy\": 94, \"economy\": 200, \"business\": 330}}, {\"flight_number\": \"HAT290\", \"origin\": \"DEN\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 15, \"business\": 7}, \"prices\": {\"basic_economy\": 61, \"economy\": 171, \"business\": 476}}],\n  [{\"flight_number\": \"HAT147\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"09:00:00\", \"scheduled_arrival_time_est\": \"11:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 2, \"business\": 12}, \"prices\": {\"basic_economy\": 93, \"economy\": 118, \"business\": 220}}, {\"flight_number\": \"HAT112\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 11, \"business\": 19}, \"prices\": {\"basic_economy\": 54, \"economy\": 135, \"business\": 404}}],\n  [{\"flight_number\": \"HAT147\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"09:00:00\", \"scheduled_arrival_time_est\": \"11:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 2, \"business\": 12}, \"prices\": {\"basic_economy\": 93, \"economy\": 118, \"business\": 220}}, {\"flight_number\": \"HAT131\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"18:00:00\", \"scheduled_arrival_time_est\": \"21:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 7, \"business\": 11}, \"prices\": {\"basic_economy\": 79, \"economy\": 184, \"business\": 228}}],\n  [{\"flight_number\": \"HAT147\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"09:00:00\", \"scheduled_arrival_time_est\": \"11:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 2, \"business\": 12}, \"prices\": {\"basic_economy\": 93, \"economy\": 118, \"business\": 220}}, {\"flight_number\": \"HAT286\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 3, \"economy\": 6, \"business\": 11}, \"prices\": {\"basic_economy\": 60, \"economy\": 114, \"business\": 399}}],\n  [{\"flight_number\": \"HAT165\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 11, \"business\": 13}, \"prices\": {\"basic_economy\": 52, \"economy\": 147, \"business\": 419}}, {\"flight_number\": \"HAT112\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 11, \"business\": 19}, \"prices\": {\"basic_economy\": 54, \"economy\": 135, \"business\": 404}}],\n  [{\"flight_number\": \"HAT165\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 11, \"business\": 13}, \"prices\": {\"basic_economy\": 52, \"economy\": 147, \"business\": 419}}, {\"flight_number\": \"HAT131\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"18:00:00\", \"scheduled_arrival_time_est\": \"21:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 7, \"business\": 11}, \"prices\": {\"basic_economy\": 79, \"economy\": 184, \"business\": 228}}],\n  [{\"flight_number\": \"HAT165\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 11, \"business\": 13}, \"prices\": {\"basic_economy\": 52, \"economy\": 147, \"business\": 419}}, {\"flight_number\": \"HAT286\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 3, \"economy\": 6, \"business\": 11}, \"prices\": {\"basic_economy\": 60, \"economy\": 114, \"business\": 399}}],\n  [{\"flight_number\": \"HAT223\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 9}, \"prices\": {\"basic_economy\": 89, \"economy\": 146, \"business\": 276}}, {\"flight_number\": \"HAT102\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"21:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 9, \"economy\": 1, \"business\": 20}, \"prices\": {\"basic_economy\": 80, \"economy\": 110, \"business\": 254}}],\n  [{\"flight_number\": \"HAT223\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 9}, \"prices\": {\"basic_economy\": 89, \"economy\": 146, \"business\": 276}}, {\"flight_number\": \"HAT281\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"02:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 5, \"business\": 2}, \"prices\": {\"basic_economy\": 62, \"economy\": 169, \"business\": 244}}],\n  [{\"flight_number\": \"HAT238\", \"origin\": \"ORD\", \"destination\": \"DEN\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 13, \"business\": 3}, \"prices\": {\"basic_economy\": 53, \"economy\": 185, \"business\": 286}}, {\"flight_number\": \"HAT084\", \"origin\": \"DEN\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"04:00:00\", \"scheduled_arrival_time_est\": \"06:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 16, \"business\": 0}, \"prices\": {\"basic_economy\": 88, \"economy\": 179, \"business\": 274}}],\n  [{\"flight_number\": \"HAT238\", \"origin\": \"ORD\", \"destination\": \"DEN\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 13, \"business\": 3}, \"prices\": {\"basic_economy\": 53, \"economy\": 185, \"business\": 286}}, {\"flight_number\": \"HAT229\", \"origin\": \"DEN\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 11, \"business\": 15}, \"prices\": {\"basic_economy\": 87, \"economy\": 121, \"business\": 247}}],\n  [{\"flight_number\": \"HAT238\", \"origin\": \"ORD\", \"destination\": \"DEN\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"04:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 5, \"economy\": 13, \"business\": 3}, \"prices\": {\"basic_economy\": 53, \"economy\": 185, \"business\": 286}}, {\"flight_number\": \"HAT290\", \"origin\": \"DEN\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 15, \"business\": 7}, \"prices\": {\"basic_economy\": 61, \"economy\": 171, \"business\": 476}}]\n]"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "e930d3e1",
+     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT147\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT286\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})"
+    },
+    {
+     "id": "d975d754",
+     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT238\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT084\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})"
+    }
+   ]
+  },
+  {
+   "row": "f59d23b2ba",
+   "instruction": "You want to change the action camera in your order #W1006327 for the most expensive available action camera option. You are James Johnson, zip code 60625. You do not remember your email address. Settle any price difference with your credit card ending in 2429. You do not want to change anything else.",
+   "history": [
+    {
+     "kind": "agent",
+     "step": 0,
+     "action": "find_user_id_by_name_zip({\"first_name\": \"James\", \"last_name\": \"Johnson\", \"zip\": \"60625\"})",
+     "observation": "james_johnson_9321"
+    },
+    {
+     "kind": "agent",
+     "step": 1,
+     "action": "get_order_details({\"order_id\": \"#W1006327\"})",
+     "observation": "{\n  \"order_id\": \"#W1006327\",\n  \"user_id\": \"james_johnson_9321\",\n  \"address\": {\"address1\": \"593 Cedar Avenue\", \"address2\": \"Suite 826\", \"city\": \"Chicago\", \"country\": \"USA\", \"state\": \"IL\", \"zip\": \"60625\"},\n  \"items\": [{\"name\": \"Action Camera\", \"product_id\": \"3377618313\", \"item_id\": \"5925362855\", \"price\": 503.51, \"options\": {\"resolution\": \"1080p\", \"waterproof\": \"yes\", \"color\": \"black\"}}, {\"name\": \"Wristwatch\", \"product_id\": \"6066914160\", \"item_id\": \"1994478369\", \"price\": 2025.51, \"options\": {\"strap material\": \"silicone\", \"dial color\": \"black\"}}, {\"name\": \"Jigsaw Puzzle\", \"product_id\": \"1808611083\", \"item_id\": \"5172162216\", \"price\": 48.51, \"options\": {\"pieces\": \"2000\", \"theme\": \"landscape\", \"difficulty level\": \"intermediate\"}}],\n  \"status\": \"pending\",\n  \"fulfillments\": [],\n  \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 2577.53, \"payment_method_id\": \"credit_card_4998749\"}],\n  \"cancel_reason\": null,\n  \"exchange_items\": null,\n  \"exchange_new_items\": null,\n  \"exchange_payment_method_id\": null,\n  \"exchange_price_difference\": null,\n  \"return_items\": null,\n  \"return_payment_method_id\": null\n}"
+    },
+    {
+     "kind": "agent",
+     "step": 2,
+     "action": "get_product_details({\"product_id\": \"3377618313\"})",
+     "observation": "{\n  \"name\": \"Action Camera\",\n  \"product_id\": \"3377618313\",\n  \"variants\": {\"6700049080\": {\"item_id\": \"6700049080\", \"options\": {\"resolution\": \"4K\", \"waterproof\": \"yes\", \"color\": \"black\"}, \"available\": true, \"price\": 466.75}, \"4859937227\": {\"item_id\": \"4859937227\", \"options\": {\"resolution\": \"5K\", \"waterproof\": \"no\", \"color\": \"silver\"}, \"available\": false, \"price\": 503.58}, \"1586641416\": {\"item_id\": \"1586641416\", \"options\": {\"resolution\": \"5K\", \"waterproof\": \"yes\", \"color\": \"silver\"}, \"available\": false, \"price\": 497.39}, \"5925362855\": {\"item_id\": \"5925362855\", \"options\": {\"resolution\": \"1080p\", \"waterproof\": \"yes\", \"color\": \"black\"}, \"available\": true, \"price\": 503.51}, \"8725040869\": {\"item_id\": \"8725040869\", \"options\": {\"resolution\": \"4K\", \"waterproof\": \"no\", \"color\": \"black\"}, \"available\": false, \"price\": 522.86}, \"6117189161\": {\"item_id\": \"6117189161\", \"options\": {\"resolution\": \"4K\", \"waterproof\": \"yes\", \"color\": \"silver\"}, \"available\": true, \"price\": 481.5}, \"7523669277\": {\"item_id\": \"7523669277\", \"options\": {\"resolution\": \"5K\", \"waterproof\": \"no\", \"color\": \"black\"}, \"available\": true, \"price\": 523.66}, \"9168994198\": {\"item_id\": \"9168994198\", \"options\": {\"resolution\": \"1080p\", \"waterproof\": \"no\", \"color\": \"black\"}, \"available\": false, \"price\": 466.76}, \"1810466394\": {\"item_id\": \"1810466394\", \"options\": {\"resolution\": \"1080p\", \"waterproof\": \"no\", \"color\": \"silver\"}, \"available\": false, \"price\": 502.28}, \"6571567889\": {\"item_id\": \"6571567889\", \"options\": {\"resolution\": \"5K\", \"waterproof\": \"yes\", \"color\": \"black\"}, \"available\": false, \"price\": 507.06}, \"9391733462\": {\"item_id\": \"9391733462\", \"options\": {\"resolution\": \"4K\", \"waterproof\": \"no\", \"color\": \"silver\"}, \"available\": true, \"price\": 521.07}, \"5436236388\": {\"item_id\": \"5436236388\", \"options\": {\"resolution\": \"1080p\", \"waterproof\": \"yes\", \"color\": \"silver\"}, \"available\": false, \"price\": 538.6}}\n}"
+    }
+   ],
+   "candidates": [
+    {
+     "id": "62285ffc",
+     "action": "modify_pending_order_items({\"order_id\": \"#W1006327\", \"item_ids\": [\"5925362855\"], \"new_item_ids\": [\"6700049080\"], \"payment_method_id\": \"credit_card_4998749\"})"
+    },
+    {
+     "id": "d39e69e4",
+     "action": "modify_pending_order_items({\"order_id\": \"#W1006327\", \"item_ids\": [\"5925362855\"], \"new_item_ids\": [\"7523669277\"], \"payment_method_id\": \"credit_card_4998749\"})"
+    }
+   ]
+  },
+  {
+   "row": "7046c28cd6",
+   "instruction": "Add a todo to buy chocolate milk the day after tomorrow 5PM",
    "history": [
     {
      "kind": "agent",
      "step": 0,
      "action": "chatcmpl_tool_f7058092205514de_parameters = {}\nchatcmpl_tool_f7058092205514de_response = get_current_timestamp(**chatcmpl_tool_f7058092205514de_parameters)\nprint(repr(chatcmpl_tool_f7058092205514de_response))",
-     "observation": "1789637473.512355"
+     "observation": "1789578009.665956"
     }
    ],
    "candidates": [
     {
-     "id": "dbb8cde3",
+     "id": "d798a20f",
      "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))"
     },
     {
-     "id": "48d071b1",
-     "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 8, 'minute': 0, 'second': 0}\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))"
+     "id": "d072a76c",
+     "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))"
     }
    ]
   },
   {
-   "row": "4c0d0da2f7",
-   "instruction": "Add a todo to buy chocolate milk tomorrow 5PM",
-   "history": [
-    {
-     "kind": "agent",
-     "step": 0,
-     "action": "chatcmpl_tool_f7058092205514de_parameters = {}\nchatcmpl_tool_f7058092205514de_response = get_current_timestamp(**chatcmpl_tool_f7058092205514de_parameters)\nprint(repr(chatcmpl_tool_f7058092205514de_response))",
-     "observation": "1789578008.367789"
-    }
-   ],
-   "candidates": [
-    {
-     "id": "eb7d4567",
-     "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))"
-    },
-    {
-     "id": "d47a6f4d",
-     "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 23, 'minute': 0, 'second': 0}\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))"
-    }
-   ]
-  },
-  {
-   "row": "d5e0619398",
-   "instruction": "Add a todo to buy chocolate milk tomorrow 5PM",
-   "history": [
-    {
-     "kind": "agent",
-     "step": 0,
-     "action": "chatcmpl_tool_f7058092205514de_parameters = {}\nchatcmpl_tool_f7058092205514de_response = get_current_timestamp(**chatcmpl_tool_f7058092205514de_parameters)\nprint(repr(chatcmpl_tool_f7058092205514de_response))",
-     "observation": "1789578009.026126"
-    }
-   ],
-   "candidates": [
-    {
-     "id": "2d8aa85c",
-     "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))"
-    },
-    {
-     "id": "7252e336",
-     "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 12, 'minute': 0, 'second': 0}\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))"
-    }
-   ]
-  },
-  {
-   "row": "8166acee89",
-   "instruction": "Remind me to buy chocolate milk next Sunday 5PM",
+   "row": "304207a5a4",
+   "instruction": "Remind me to buy chocolate milk next Saturday 5PM",
    "history": [
     {
      "kind": "agent",
      "step": 0,
      "action": "chatcmpl_tool_9b8ac26c65e04b6f_parameters = {}\nchatcmpl_tool_9b8ac26c65e04b6f_response = get_current_timestamp(**chatcmpl_tool_9b8ac26c65e04b6f_parameters)\nprint(repr(chatcmpl_tool_9b8ac26c65e04b6f_response))",
-     "observation": "1789578013.46775"
+     "observation": "1789578014.244652"
     }
    ],
    "candidates": [
     {
-     "id": "acf1742d",
+     "id": "0823bfae",
      "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))"
     },
     {
-     "id": "0da48432",
-     "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 20, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))"
+     "id": "1351febc",
+     "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 19, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))"
     }
    ]
   },
   {
-   "row": "dac43b3db6",
-   "instruction": "Add a todo to buy chocolate milk next Friday 12PM",
+   "row": "d98d71eea7",
+   "instruction": "You want to change your upcoming outgoing flight in reservation HXDUBJ to a nonstop flight on the next day (i.e. delay by one day).\n\nYou also want to move back your return from SFO by one day. You are Yara Garcia.\nYour user id is yara_garcia_1905. You only want flights departing after 8am and before 9pm. \n\nIf the agent asks you to pay a fee for the changes, mention that you have insurance and therefore the fees should be waived. \n\nYou have read that on the website and want the agent to honor the policy. \n\nBe persistent.\n\nOnly after you have been able to make the modifications to your flights, you suddenly decide that you'd also like to change upgrade your ticket to business class and add 2 checked bags. \n\nYou are willing to pay up to $200 for that. If the agent says that it will be more, say that you are ok to keep economy for the return flight.\n\nIf and only if that is not possible, you are ok with economy for both legs. But you do want to add the 2 bags.\n\nYou are ok with paying for it using the original form of payment.",
    "history": [
     {
      "kind": "agent",
      "step": 0,
-     "action": "chatcmpl_tool_91df8bfa51137cdf_parameters = {}\nchatcmpl_tool_91df8bfa51137cdf_response = get_current_timestamp(**chatcmpl_tool_91df8bfa51137cdf_parameters)\nprint(repr(chatcmpl_tool_91df8bfa51137cdf_response))",
-     "observation": "1789578014.88177"
+     "action": "get_reservation_details({\"reservation_id\": \"HXDUBJ\"})",
+     "observation": "{\n  \"reservation_id\": \"HXDUBJ\",\n  \"user_id\": \"yara_garcia_1905\",\n  \"origin\": \"IAH\",\n  \"destination\": \"SFO\",\n  \"flight_type\": \"round_trip\",\n  \"cabin\": \"economy\",\n  \"flights\": [{\"flight_number\": \"HAT085\", \"origin\": \"IAH\", \"destination\": \"JFK\", \"date\": \"2024-05-18\", \"price\": 177}, {\"flight_number\": \"HAT023\", \"origin\": \"JFK\", \"destination\": \"SFO\", \"date\": \"2024-05-18\", \"price\": 146}, {\"flight_number\": \"HAT278\", \"origin\": \"SFO\", \"destination\": \"IAH\", \"date\": \"2024-05-22\", \"price\": 180}],\n  \"passengers\": [{\"first_name\": \"Yara\", \"last_name\": \"Garcia\", \"dob\": \"1974-08-15\"}],\n  \"payment_history\": [{\"payment_id\": \"gift_card_6941833\", \"amount\": 533}],\n  \"created_at\": \"2024-05-04T06:04:48\",\n  \"total_baggages\": 0,\n  \"nonfree_baggages\": 0,\n  \"insurance\": \"yes\",\n  \"status\": null\n}"
     }
    ],
    "candidates": [
     {
-     "id": "a875da1a",
-     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))"
+     "id": "9a702128",
+     "action": "search_direct_flight({\"origin\": \"IAH\", \"destination\": \"SFO\", \"date\": \"2024-05-19\"})"
     },
     {
-     "id": "4fe04c51",
-     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 12, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))"
-    }
-   ]
-  },
-  {
-   "row": "acffb80d17",
-   "instruction": "I need a break. How far are we from Christmas Day?",
-   "history": [
-    {
-     "kind": "agent",
-     "step": 0,
-     "action": "now_params = {}\nnow_response = get_current_timestamp(**now_params)\nprint(repr(now_response))",
-     "observation": "1789578011.125428"
-    }
-   ],
-   "candidates": [
-    {
-     "id": "3634607b",
-     "action": "hol_params = {'holiday_name': 'Christmas Day'}\nhol_response = search_holiday(**hol_params)\nprint(repr(hol_response))"
-    },
-    {
-     "id": "232dced8",
-     "action": "hol_params = {'holiday_name': \"New Year's Day\"}\nhol_response = search_holiday(**hol_params)\nprint(repr(hol_response))"
-    }
-   ]
-  },
-  {
-   "row": "60b05399e1",
-   "instruction": "You want to make modifications to your upcoming one-stop flight from LAS to IAH (HAT266, mention only the flight number if the agent shows it to you first). You are James Taylor.\n\nYour user id is james_taylor_7043. \n\nYour reservation ID is 1N99U6. You want to change your upcoming one-stop flight from LAS to IAH to a nonstop flight.\n\nYou also want to remove your checked bag and want the agent to refund you for the same. If agent says that you cannot remove bags, accept it and move on.\n\nYou want to use the gift card (do not mention this unless the agent asks) for payment.\n\nYou also want the whole trip moved one day later than the dates the reservation has right now.",
-   "history": [
-    {
-     "kind": "agent",
-     "step": 0,
-     "action": "get_reservation_details({\"reservation_id\": \"1N99U6\"})",
-     "observation": "{\n  \"reservation_id\": \"1N99U6\",\n  \"user_id\": \"james_taylor_7043\",\n  \"origin\": \"LAS\",\n  \"destination\": \"IAH\",\n  \"flight_type\": \"round_trip\",\n  \"cabin\": \"economy\",\n  \"flights\": [{\"flight_number\": \"HAT284\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"date\": \"2024-05-19\", \"price\": 161}, {\"flight_number\": \"HAT152\", \"origin\": \"PHX\", \"destination\": \"IAH\", \"date\": \"2024-05-19\", \"price\": 192}, {\"flight_number\": \"HAT112\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"date\": \"2024-05-27\", \"price\": 184}],\n  \"passengers\": [{\"first_name\": \"James\", \"last_name\": \"Taylor\", \"dob\": \"1997-01-23\"}, {\"first_name\": \"Ivan\", \"last_name\": \"Taylor\", \"dob\": \"1975-09-15\"}],\n  \"payment_history\": [{\"payment_id\": \"gift_card_5634230\", \"amount\": 1134}],\n  \"created_at\": \"2024-05-08T11:37:17\",\n  \"total_baggages\": 1,\n  \"nonfree_baggages\": 0,\n  \"insurance\": \"yes\",\n  \"status\": null\n}"
-    }
-   ],
-   "candidates": [
-    {
-     "id": "6c8600fa",
-     "action": "search_direct_flight({\"origin\": \"LAS\", \"destination\": \"IAH\", \"date\": \"2024-05-20\"})"
-    },
-    {
-     "id": "139fd893",
-     "action": "search_direct_flight({\"origin\": \"LAS\", \"destination\": \"IAH\", \"date\": \"2024-05-22\"})"
-    }
-   ]
-  },
-  {
-   "row": "4da20da546",
-   "instruction": "You want to modify two items in an order you just received: a coffee machine and a laptop. For the coffee machine, you want to keep the capacity and type but change the pressure lower to 8 bar. If 8 bar is not possible, you want 9 bar. If 9 bar is not possible, you want 7 bar. If 7, 8, 9 are not possible, no exchange for the coffee machine. For the laptop, you want to exchange to the cheapest i7 or above, and you do not care about other specs. If a price difference is needed to pay, you would be angry but prefer gift card payment. If that is not possible, you would use the credit card. You are ivan_hernandez_6923 living in San Diego, 92133. You do not remember your email address You are polite but brief and firm.",
-   "history": [
-    {
-     "kind": "agent",
-     "step": 0,
-     "action": "find_user_id_by_name_zip({\"first_name\": \"Ivan\", \"last_name\": \"Hernandez\", \"zip\": \"92133\"})",
-     "observation": "ivan_hernandez_6923"
-    },
-    {
-     "kind": "agent",
-     "step": 1,
-     "action": "get_user_details({\"user_id\": \"ivan_hernandez_6923\"})",
-     "observation": "{\n  \"user_id\": \"ivan_hernandez_6923\",\n  \"name\": {\"first_name\": \"Ivan\", \"last_name\": \"Hernandez\"},\n  \"address\": {\"address1\": \"894 Hickory Lane\", \"address2\": \"Suite 665\", \"city\": \"San Diego\", \"country\": \"USA\", \"state\": \"CA\", \"zip\": \"92133\"},\n  \"email\": \"ivan.hernandez1120@example.com\",\n  \"payment_methods\": {\"gift_card_9368765\": {\"source\": \"gift_card\", \"id\": \"gift_card_9368765\", \"balance\": 85.0}, \"credit_card_7455506\": {\"source\": \"credit_card\", \"id\": \"credit_card_7455506\", \"brand\": \"mastercard\", \"last_four\": \"4127\"}},\n  \"orders\": [\"#W5838674\", \"#W4284542\", \"#W2782744\"]\n}"
-    },
-    {
-     "kind": "agent",
-     "step": 2,
-     "action": "get_order_details({\"order_id\": \"#W5838674\"})",
-     "observation": "{\n  \"order_id\": \"#W5838674\",\n  \"user_id\": \"ivan_hernandez_6923\",\n  \"address\": {\"address1\": \"894 Hickory Lane\", \"address2\": \"Suite 665\", \"city\": \"San Diego\", \"country\": \"USA\", \"state\": \"CA\", \"zip\": \"92133\"},\n  \"items\": [{\"name\": \"Espresso Machine\", \"product_id\": \"4354588079\", \"item_id\": \"7441167885\", \"price\": 2866.37, \"options\": {\"pressure\": \"15 bar\", \"capacity\": \"1.5L\", \"type\": \"capsule\"}}, {\"name\": \"Vacuum Cleaner\", \"product_id\": \"1762337868\", \"item_id\": \"1304426904\", \"price\": 565.79, \"options\": {\"type\": \"canister\", \"bagged/bagless\": \"bagless\", \"features\": \"HEPA filter\"}}, {\"name\": \"Wall Clock\", \"product_id\": \"2344688344\", \"item_id\": \"6534134392\", \"price\": 196.15, \"options\": {\"diameter\": \"10 inches\", \"color\": \"wood\", \"type\": \"analog\"}}, {\"name\": \"Desk Lamp\", \"product_id\": \"6817146515\", \"item_id\": \"7453605304\", \"price\": 150.01, \"options\": {\"color\": \"silver\", \"brightness\": \"low\", \"power source\": \"battery\"}}, {\"name\": \"Laptop\", \"product_id\": \"4760268021\", \"item_id\": \"3478699712\", \"price\": 2291.87, \"options\": {\"screen size\": \"15-inch\", \"processor\": \"i5\", \"ram\": \"16GB\", \"storage\": \"512GB SSD\", \"color\": \"space grey\"}}],\n  \"status\": \"delivered\",\n  \"fulfillments\": [{\"tracking_id\": [\"495912972743\"], \"item_ids\": [\"7441167885\", \"1304426904\", \"6534134392\", \"7453605304\", \"3478699712\"]}],\n  \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 6070.19, \"payment_method_id\": \"credit_card_7455506\"}],\n  \"cancel_reason\": null,\n  \"exchange_items\": null,\n  \"exchange_new_items\": null,\n  \"exchange_payment_method_id\": null,\n  \"exchange_price_difference\": null,\n  \"return_items\": null,\n  \"return_payment_method_id\": null\n}"
-    },
-    {
-     "kind": "agent",
-     "step": 3,
-     "action": "get_product_details({\"product_id\": \"4354588079\"})",
-     "observation": "{\n  \"name\": \"Espresso Machine\",\n  \"product_id\": \"4354588079\",\n  \"variants\": {\"3709608322\": {\"item_id\": \"3709608322\", \"options\": {\"pressure\": \"9 bar\", \"capacity\": \"2L\", \"type\": \"automatic\"}, \"available\": true, \"price\": 2744.7}, \"7407838442\": {\"item_id\": \"7407838442\", \"options\": {\"pressure\": \"9 bar\", \"capacity\": \"1L\", \"type\": \"manual\"}, \"available\": true, \"price\": 3081.91}, \"6324294385\": {\"item_id\": \"6324294385\", \"options\": {\"pressure\": \"9 bar\", \"capacity\": \"1L\", \"type\": \"automatic\"}, \"available\": false, \"price\": 2719.01}, \"1157853815\": {\"item_id\": \"1157853815\", \"options\": {\"pressure\": \"19 bar\", \"capacity\": \"2L\", \"type\": \"capsule\"}, \"available\": true, \"price\": 3096.7}, \"2190871011\": {\"item_id\": \"2190871011\", \"options\": {\"pressure\": \"9 bar\", \"capacity\": \"1.5L\", \"type\": \"manual\"}, \"available\": true, \"price\": 3105.6}, \"3714494375\": {\"item_id\": \"3714494375\", \"options\": {\"pressure\": \"15 bar\", \"capacity\": \"1L\", \"type\": \"manual\"}, \"available\": true, \"price\": 2709.83}, \"4875647558\": {\"item_id\": \"4875647558\", \"options\": {\"pressure\": \"15 bar\", \"capacity\": \"1L\", \"type\": \"capsule\"}, \"available\": false, \"price\": 2805.77}, \"7441167885\": {\"item_id\": \"7441167885\", \"options\": {\"pressure\": \"15 bar\", \"capacity\": \"1.5L\", \"type\": \"capsule\"}, \"available\": false, \"price\": 2866.37}, \"3815173328\": {\"item_id\": \"3815173328\", \"options\": {\"pressure\": \"9 bar\", \"capacity\": \"1.5L\", \"type\": \"capsule\"}, \"available\": true, \"price\": 2908.42}, \"5839483328\": {\"item_id\": \"5839483328\", \"options\": {\"pressure\": \"15 bar\", \"capacity\": \"2L\", \"type\": \"automatic\"}, \"available\": false, \"price\": 2929.06}, \"7806008610\": {\"item_id\": \"7806008610\", \"options\": {\"pressure\": \"9 bar\", \"capacity\": \"1L\", \"type\": \"capsule\"}, \"available\": true, \"price\": 2742.67}, \"7774234341\": {\"item_id\": \"7774234341\", \"options\": {\"pressure\": \"9 bar\", \"capacity\": \"2L\", \"type\": \"manual\"}, \"available\": true, \"price\": 2719.16}, \"3951031513\": {\"item_id\": \"3951031513\", \"options\": {\"pressure\": \"19 bar\", \"capacity\": \"1.5L\", \"type\": \"automatic\"}, \"available\": true, \"price\": 3289.46}, \"6242772310\": {\"item_id\": \"6242772310\", \"options\": {\"pressure\": \"19 bar\", \"capacity\": \"1L\", \"type\": \"automatic\"}, \"available\": false, \"price\": 2996.03}, \"6200867091\": {\"item_id\": \"6200867091\", \"options\": {\"pressure\": \"19 bar\", \"capacity\": \"1L\", \"type\": \"capsule\"}, \"available\": true, \"price\": 2955.17}, \"9884666842\": {\"item_id\": \"9884666842\", \"options\": {\"pressure\": \"19 bar\", \"capacity\": \"1L\", \"type\": \"manual\"}, \"available\": true, \"price\": 2794.7}, \"3379843752\": {\"item_id\": \"3379843752\", \"options\": {\"pressure\": \"19 bar\", \"capacity\": \"2L\", \"type\": \"manual\"}, \"available\": true, \"price\": 3203.76}}\n}"
-    },
-    {
-     "kind": "agent",
-     "step": 4,
-     "action": "get_product_details({\"product_id\": \"4760268021\"})",
-     "observation": "{\n  \"name\": \"Laptop\",\n  \"product_id\": \"4760268021\",\n  \"variants\": {\"8997785118\": {\"item_id\": \"8997785118\", \"options\": {\"screen size\": \"13-inch\", \"processor\": \"i7\", \"ram\": \"32GB\", \"storage\": \"256GB SSD\", \"color\": \"space grey\"}, \"available\": false, \"price\": 2674.4}, \"2216662955\": {\"item_id\": \"2216662955\", \"options\": {\"screen size\": \"15-inch\", \"processor\": \"i5\", \"ram\": \"32GB\", \"storage\": \"256GB SSD\", \"color\": \"space grey\"}, \"available\": true, \"price\": 2520.52}, \"2768401027\": {\"item_id\": \"2768401027\", \"options\": {\"screen size\": \"13-inch\", \"processor\": \"i7\", \"ram\": \"32GB\", \"storage\": \"256GB SSD\", \"color\": \"silver\"}, \"available\": false, \"price\": 2346.49}, \"1684786391\": {\"item_id\": \"1684786391\", \"options\": {\"screen size\": \"17-inch\", \"processor\": \"i7\", \"ram\": \"32GB\", \"storage\": \"1TB SSD\", \"color\": \"black\"}, \"available\": true, \"price\": 2508.06}, \"3778566150\": {\"item_id\": \"3778566150\", \"options\": {\"screen size\": \"13-inch\", \"processor\": \"i5\", \"ram\": \"32GB\", \"storage\": \"256GB SSD\", \"color\": \"silver\"}, \"available\": false, \"price\": 2372.97}, \"8193934556\": {\"item_id\": \"8193934556\", \"options\": {\"screen size\": \"13-inch\", \"processor\": \"i9\", \"ram\": \"8GB\", \"storage\": \"1TB SSD\", \"color\": \"space grey\"}, \"available\": false, \"price\": 2548.73}, \"2913673670\": {\"item_id\": \"2913673670\", \"options\": {\"screen size\": \"15-inch\", \"processor\": \"i9\", \"ram\": \"32GB\", \"storage\": \"512GB SSD\", \"color\": \"black\"}, \"available\": true, \"price\": 2701.89}, \"3478699712\": {\"item_id\": \"3478699712\", \"options\": {\"screen size\": \"15-inch\", \"processor\": \"i5\", \"ram\": \"16GB\", \"storage\": \"512GB SSD\", \"color\": \"space grey\"}, \"available\": false, \"price\": 2291.87}, \"6056040996\": {\"item_id\": \"6056040996\", \"options\": {\"screen size\": \"13-inch\", \"processor\": \"i5\", \"ram\": \"16GB\", \"storage\": \"512GB SSD\", \"color\": \"space grey\"}, \"available\": true, \"price\": 2609.37}, \"6017636844\": {\"item_id\": \"6017636844\", \"options\": {\"screen size\": \"15-inch\", \"processor\": \"i7\", \"ram\": \"32GB\", \"storage\": \"1TB SSD\", \"color\": \"space grey\"}, \"available\": true, \"price\": 2292.37}, \"1657832319\": {\"item_id\": \"1657832319\", \"options\": {\"screen size\": \"13-inch\", \"processor\": \"i7\", \"ram\": \"32GB\", \"storage\": \"512GB SSD\", \"color\": \"black\"}, \"available\": true, \"price\": 2729.32}, \"5052031638\": {\"item_id\": \"5052031638\", \"options\": {\"screen size\": \"13-inch\", \"processor\": \"i5\", \"ram\": \"16GB\", \"storage\": \"1TB SSD\", \"color\": \"silver\"}, \"available\": true, \"price\": 2621.77}, \"3265035808\": {\"item_id\": \"3265035808\", \"options\": {\"screen size\": \"17-inch\", \"processor\": \"i9\", \"ram\": \"8GB\", \"storage\": \"256GB SSD\", \"color\": \"silver\"}, \"available\": true, \"price\": 2530.72}, \"3334537816\": {\"item_id\": \"3334537816\", \"options\": {\"screen size\": \"17-inch\", \"processor\": \"i5\", \"ram\": \"8GB\", \"storage\": \"1TB SSD\", \"color\": \"space grey\"}, \"available\": false, \"price\": 2749.56}, \"9844888101\": {\"item_id\": \"9844888101\", \"options\": {\"screen size\": \"15-inch\", \"processor\": \"i7\", \"ram\": \"8GB\", \"storage\": \"1TB SSD\", \"color\": \"black\"}, \"available\": true, \"price\": 2459.74}, \"4241599783\": {\"item_id\": \"4241599783\", \"options\": {\"screen size\": \"15-inch\", \"processor\": \"i7\", \"ram\": \"16GB\", \"storage\": \"1TB SSD\", \"color\": \"black\"}, \"available\": false, \"price\": 2324.61}, \"2611676054\": {\"item_id\": \"2611676054\", \"options\": {\"screen size\": \"15-inch\", \"processor\": \"i7\", \"ram\": \"16GB\", \"storage\": \"256GB SSD\", \"color\": \"silver\"}, \"available\": false, \"price\": 2743.08}}\n}"
-    }
-   ],
-   "candidates": [
-    {
-     "id": "e88334d9",
-     "action": "exchange_delivered_order_items({\"order_id\": \"#W5838674\", \"item_ids\": [\"7441167885\", \"3478699712\"], \"new_item_ids\": [\"3815173328\", \"6017636844\"], \"payment_method_id\": \"gift_card_9368765\"})"
-    },
-    {
-     "id": "c18ab771",
-     "action": "exchange_delivered_order_items({\"order_id\": \"#W5838674\", \"item_ids\": [\"7441167885\", \"3478699712\"], \"new_item_ids\": [\"3815173328\", \"6017636844\"], \"payment_method_id\": \"credit_card_7455506\"})"
+     "id": "33369147",
+     "action": "search_direct_flight({\"origin\": \"IAH\", \"destination\": \"SFO\", \"date\": \"2024-05-21\"})"
     }
    ]
   }

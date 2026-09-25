@@ -1,6 +1,7 @@
 {
- "version": "a25e138a1246",
- "n_lists": 21,
- "n_rows": 412,
+ "version": "045a49109429",
+ "subset": "headline50",
+ "n_lists": 10,
+ "n_rows": 100,
  "raters_per_row": 3
 }
