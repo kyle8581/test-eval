@@ -39,7 +39,157 @@
       }
      ]
     }
-   ]
+   ],
+   "options": {
+    "kind": "flights",
+    "columns": [
+     "Flights (route)",
+     "Stops",
+     "Departs (EST)",
+     "Arrives (EST)",
+     "Duration incl. stopover",
+     "Total price, economy",
+     "Seats left, economy",
+     "Status"
+    ],
+    "numeric": [
+     1,
+     5,
+     6
+    ],
+    "rows": [
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT132 (LGA–PHL)",
+       1,
+       "14:00",
+       "18:00",
+       "4h00m",
+       295,
+       8,
+       "available"
+      ],
+      "cand": "46c922be"
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT172 (LGA–PHL)",
+       1,
+       "14:00",
+       "00:00 (+1 day)",
+       "10h00m",
+       207,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT206 (LGA–PHL)",
+       1,
+       "14:00",
+       "19:00",
+       "5h00m",
+       250,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT264 (LGA–PHL)",
+       1,
+       "14:00",
+       "00:00 (+1 day)",
+       "10h00m",
+       261,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT132 (LGA–PHL)",
+       1,
+       "11:00",
+       "18:00",
+       "7h00m",
+       335,
+       8,
+       "available"
+      ],
+      "cand": "2d22db9e"
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT172 (LGA–PHL)",
+       1,
+       "11:00",
+       "00:00 (+1 day)",
+       "13h00m",
+       247,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT206 (LGA–PHL)",
+       1,
+       "11:00",
+       "19:00",
+       "8h00m",
+       290,
+       15,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT264 (LGA–PHL)",
+       1,
+       "11:00",
+       "00:00 (+1 day)",
+       "13h00m",
+       301,
+       15,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT227 (ATL–ORD) → HAT139 (ORD–PHL)",
+       1,
+       "11:00",
+       "19:00",
+       "8h00m",
+       216,
+       5,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT227 (ATL–ORD) → HAT271 (ORD–PHL)",
+       1,
+       "11:00",
+       "21:00",
+       "10h00m",
+       250,
+       5,
+       "available"
+      ],
+      "cand": null
+     }
+    ]
+   }
   },
   {
    "row": "4fd5a3c079",
@@ -121,7 +271,155 @@
       }
      ]
     }
-   ]
+   ],
+   "options": {
+    "kind": "variants",
+    "columns": [
+     "Item id",
+     "Battery Life",
+     "Color",
+     "Water Resistance",
+     "Available",
+     "Price"
+    ],
+    "numeric": [
+     5
+    ],
+    "rows": [
+     {
+      "cells": [
+       "9580569596",
+       "4 hours",
+       "black",
+       "IPX7",
+       "yes",
+       257.38
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "2499294441",
+       "8 hours",
+       "black",
+       "IPX7",
+       "no",
+       258.36
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "1646531091",
+       "6 hours",
+       "blue",
+       "IPX4",
+       "yes",
+       232.49
+      ],
+      "cand": "95241165"
+     },
+     {
+      "cells": [
+       "8555936349",
+       "8 hours",
+       "blue",
+       "IPX4",
+       "yes",
+       226.49
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "5565631513",
+       "6 hours",
+       "black",
+       "IPX7",
+       "no",
+       267.9
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "6077640618",
+       "8 hours",
+       "blue",
+       "not resistant",
+       "yes",
+       242.92
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "9270970345",
+       "6 hours",
+       "black",
+       "not resistant",
+       "no",
+       259.03
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "4063058357",
+       "4 hours",
+       "black",
+       "not resistant",
+       "yes",
+       243.34
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "3694871183",
+       "8 hours",
+       "white",
+       "IPX4",
+       "no",
+       256.67
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "6452271382",
+       "4 hours",
+       "blue",
+       "IPX4",
+       "yes",
+       258.84
+      ],
+      "cand": "3ed674a2"
+     },
+     {
+      "cells": [
+       "2052249669",
+       "4 hours",
+       "white",
+       "not resistant",
+       "yes",
+       237.14
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "2757705742",
+       "4 hours",
+       "blue",
+       "IPX7",
+       "no",
+       258.97
+      ],
+      "cand": null
+     }
+    ]
+   }
   },
   {
    "row": "a9b97de632",
@@ -137,7 +435,7 @@
      "kind": "agent",
      "step": 1,
      "action": "chatcmpl_tool_b2e9d9e941620a6c_parameters = {}\nchatcmpl_tool_b2e9d9e941620a6c_response = get_current_timestamp(**chatcmpl_tool_b2e9d9e941620a6c_parameters)\nprint(repr(chatcmpl_tool_b2e9d9e941620a6c_response))",
-     "observation": "1789578002.826375"
+     "observation": "1789578002.826375 [= Wed Sep 16 2026, 12:00:02 PM]"
     },
     {
      "kind": "agent",
@@ -149,25 +447,25 @@
      "kind": "agent",
      "step": 3,
      "action": "chatcmpl_tool_a74f8c51de012909_parameters = {'creation_timestamp_lowerbound': 315529200}\nchatcmpl_tool_a74f8c51de012909_response = search_reminder(**chatcmpl_tool_a74f8c51de012909_parameters)\nprint(repr(chatcmpl_tool_a74f8c51de012909_response))",
-     "observation": "[{'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'content': 'Look for Company SF tickets', 'creation_timestamp': 1789318800.157737, 'reminder_timestamp': 1789491600.157745, 'latitude': None, 'longitude': None}, {'reminder_id': 'da2b856e-9390-511f-bcbe-7005f72cbf5e', 'content': 'Buy tickets for Merrily next week', 'creation_timestamp': 1789491600.157753, 'reminder_timestamp': 1789577940.157756, 'latitude': None, 'longitude': None}, {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'content': 'Buy a nice rich navy bathing dress', 'creation_timestamp': 1789574400.157762, 'reminder_timestamp': 1789581600.157765, 'latitude': 37.3237926356735, 'longitude': -122.03961770355414}]"
+     "observation": "[{'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'content': 'Look for Company SF tickets', 'creation_timestamp': 1789318800.157737 [= Sun Sep 13 2026, 12:00:00 PM], 'reminder_timestamp': 1789491600.157745 [= Tue Sep 15 2026, 12:00:00 PM], 'latitude': None, 'longitude': None}, {'reminder_id': 'da2b856e-9390-511f-bcbe-7005f72cbf5e', 'content': 'Buy tickets for Merrily next week', 'creation_timestamp': 1789491600.157753 [= Tue Sep 15 2026, 12:00:00 PM], 'reminder_timestamp': 1789577940.157756 [= Wed Sep 16 2026, 11:59:00 AM], 'latitude': None, 'longitude': None}, {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'content': 'Buy a nice rich navy bathing dress', 'creation_timestamp': 1789574400.157762 [= Wed Sep 16 2026, 11:00:00 AM], 'reminder_timestamp': 1789581600.157765 [= Wed Sep 16 2026, 1:00:00 PM], 'latitude': 37.3237926356735, 'longitude': -122.03961770355414}]"
     },
     {
      "kind": "agent",
      "step": 4,
-     "action": "chatcmpl_tool_bacb7b2c35b6c6a5_parameters = {'timestamp': 1789564904.9}\nchatcmpl_tool_bacb7b2c35b6c6a5_response = timestamp_to_datetime_info(**chatcmpl_tool_bacb7b2c35b6c6a5_parameters)\nprint(repr(chatcmpl_tool_bacb7b2c35b6c6a5_response))",
+     "action": "chatcmpl_tool_bacb7b2c35b6c6a5_parameters = {'timestamp': 1789564904.9 [= Wed Sep 16 2026, 8:21:44 AM]}\nchatcmpl_tool_bacb7b2c35b6c6a5_response = timestamp_to_datetime_info(**chatcmpl_tool_bacb7b2c35b6c6a5_parameters)\nprint(repr(chatcmpl_tool_bacb7b2c35b6c6a5_response))",
      "observation": "{'year': 2026, 'month': 9, 'day': 16, 'hour': 8, 'minute': 21, 'second': 44, 'isoweekday': 3}"
     },
     {
      "kind": "agent",
      "step": 5,
      "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))",
-     "observation": "1789682400.0"
+     "observation": "1789682400.0 [= Thu Sep 17 2026, 5:00:00 PM]"
     }
    ],
    "candidates": [
     {
      "id": "cce73db4",
-     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))",
+     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'reminder_timestamp': 1789682400 [= Thu Sep 17 2026, 5:00:00 PM]}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))",
      "evidence": [
       {
        "step": 3,
@@ -177,7 +475,7 @@
     },
     {
      "id": "5f21938f",
-     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))",
+     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'reminder_timestamp': 1789682400 [= Thu Sep 17 2026, 5:00:00 PM]}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))",
      "evidence": [
       {
        "step": 3,
@@ -185,7 +483,50 @@
       }
      ]
     }
-   ]
+   ],
+   "options": {
+    "kind": "reminders",
+    "columns": [
+     "Reminder",
+     "Content",
+     "Created",
+     "Reminder time",
+     "Has location"
+    ],
+    "numeric": [],
+    "rows": [
+     {
+      "cells": [
+       "8f5b6fc6…",
+       "Look for Company SF tickets",
+       "2026-09-13 Sun 12:00",
+       "2026-09-15 Tue 12:00",
+       "no"
+      ],
+      "cand": "5f21938f"
+     },
+     {
+      "cells": [
+       "da2b856e…",
+       "Buy tickets for Merrily next week",
+       "2026-09-15 Tue 12:00",
+       "2026-09-16 Wed 11:59",
+       "no"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "54f20be9…",
+       "Buy a nice rich navy bathing dress",
+       "2026-09-16 Wed 11:00",
+       "2026-09-16 Wed 13:00",
+       "yes"
+      ],
+      "cand": "cce73db4"
+     }
+    ]
+   }
   },
   {
    "row": "7366d35fd7",
@@ -231,7 +572,261 @@
       }
      ]
     }
-   ]
+   ],
+   "options": {
+    "kind": "flights",
+    "columns": [
+     "Flights (route)",
+     "Stops",
+     "Departs (EST)",
+     "Arrives (EST)",
+     "Duration incl. stopover",
+     "Total price, economy",
+     "Seats left, economy",
+     "Status"
+    ],
+    "numeric": [
+     1,
+     5,
+     6
+    ],
+    "rows": [
+     {
+      "cells": [
+       "HAT040 (LAS–SEA) → HAT011 (SEA–SFO)",
+       1,
+       "00:00",
+       "15:00",
+       "15h00m",
+       278,
+       13,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT040 (LAS–SEA) → HAT107 (SEA–SFO)",
+       1,
+       "00:00",
+       "11:00",
+       "11h00m",
+       360,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT040 (LAS–SEA) → HAT258 (SEA–SFO)",
+       1,
+       "00:00",
+       "19:00",
+       "19h00m",
+       339,
+       15,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT040 (LAS–SEA) → HAT274 (SEA–SFO)",
+       1,
+       "00:00",
+       "22:00",
+       "22h00m",
+       281,
+       18,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT047 (LAS–SEA) → HAT258 (SEA–SFO)",
+       1,
+       "13:00",
+       "19:00",
+       "6h00m",
+       348,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT047 (LAS–SEA) → HAT274 (SEA–SFO)",
+       1,
+       "13:00",
+       "22:00",
+       "9h00m",
+       290,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT095 (LAS–PHX) → HAT283 (PHX–SFO)",
+       1,
+       "17:00",
+       "22:00",
+       "5h00m",
+       276,
+       14,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT242 (LAS–PHX) → HAT009 (PHX–SFO)",
+       1,
+       "11:00",
+       "19:00",
+       "8h00m",
+       303,
+       17,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT242 (LAS–PHX) → HAT159 (PHX–SFO)",
+       1,
+       "11:00",
+       "16:00",
+       "5h00m",
+       324,
+       14,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT242 (LAS–PHX) → HAT283 (PHX–SFO)",
+       1,
+       "11:00",
+       "22:00",
+       "11h00m",
+       239,
+       17,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT244 (LAS–PHX) → HAT009 (PHX–SFO)",
+       1,
+       "10:00",
+       "19:00",
+       "9h00m",
+       293,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT244 (LAS–PHX) → HAT032 (PHX–SFO)",
+       1,
+       "10:00",
+       "13:00",
+       "3h00m",
+       235,
+       2,
+       "available"
+      ],
+      "cand": "ab00d5f4"
+     },
+     {
+      "cells": [
+       "HAT244 (LAS–PHX) → HAT159 (PHX–SFO)",
+       1,
+       "10:00",
+       "16:00",
+       "6h00m",
+       314,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT244 (LAS–PHX) → HAT283 (PHX–SFO)",
+       1,
+       "10:00",
+       "22:00",
+       "12h00m",
+       229,
+       2,
+       "available"
+      ],
+      "cand": "8badfb2e"
+     },
+     {
+      "cells": [
+       "HAT284 (LAS–PHX) → HAT009 (PHX–SFO)",
+       1,
+       "03:00",
+       "19:00",
+       "16h00m",
+       318,
+       4,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT284 (LAS–PHX) → HAT032 (PHX–SFO)",
+       1,
+       "03:00",
+       "13:00",
+       "10h00m",
+       260,
+       3,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT284 (LAS–PHX) → HAT159 (PHX–SFO)",
+       1,
+       "03:00",
+       "16:00",
+       "13h00m",
+       339,
+       4,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT284 (LAS–PHX) → HAT283 (PHX–SFO)",
+       1,
+       "03:00",
+       "22:00",
+       "19h00m",
+       254,
+       4,
+       "available"
+      ],
+      "cand": null
+     }
+    ]
+   }
   },
   {
    "row": "8de82bc54c",
@@ -277,7 +872,155 @@
       }
      ]
     }
-   ]
+   ],
+   "options": {
+    "kind": "variants",
+    "columns": [
+     "Item id",
+     "Color",
+     "Resolution",
+     "Waterproof",
+     "Available",
+     "Price"
+    ],
+    "numeric": [
+     5
+    ],
+    "rows": [
+     {
+      "cells": [
+       "6700049080",
+       "black",
+       "4K",
+       "yes",
+       "yes",
+       466.75
+      ],
+      "cand": "62285ffc"
+     },
+     {
+      "cells": [
+       "4859937227",
+       "silver",
+       "5K",
+       "no",
+       "no",
+       503.58
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "1586641416",
+       "silver",
+       "5K",
+       "yes",
+       "no",
+       497.39
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "5925362855",
+       "black",
+       "1080p",
+       "yes",
+       "yes",
+       503.51
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "8725040869",
+       "black",
+       "4K",
+       "no",
+       "no",
+       522.86
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "6117189161",
+       "silver",
+       "4K",
+       "yes",
+       "yes",
+       481.5
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "7523669277",
+       "black",
+       "5K",
+       "no",
+       "yes",
+       523.66
+      ],
+      "cand": "d39e69e4"
+     },
+     {
+      "cells": [
+       "9168994198",
+       "black",
+       "1080p",
+       "no",
+       "no",
+       466.76
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "1810466394",
+       "silver",
+       "1080p",
+       "no",
+       "no",
+       502.28
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "6571567889",
+       "black",
+       "5K",
+       "yes",
+       "no",
+       507.06
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "9391733462",
+       "silver",
+       "4K",
+       "no",
+       "yes",
+       521.07
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "5436236388",
+       "silver",
+       "1080p",
+       "yes",
+       "no",
+       538.6
+      ],
+      "cand": null
+     }
+    ]
+   }
   }
  ]
 }

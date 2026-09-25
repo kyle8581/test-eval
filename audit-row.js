@@ -19,7 +19,7 @@ var jsPsychAuditRow = (function (jspsych) {
       choice: { type: P.STRING }, choice_slot: { type: P.STRING }, prefix_ok: { type: P.STRING },
       confidence: { type: P.STRING }, note: { type: P.STRING }, rt: { type: P.INT },
       correct: { type: P.BOOL }, converter_uses: { type: P.INT }, calculator_uses: { type: P.INT },
-      expanded_outputs: { type: P.INT },
+      expanded_outputs: { type: P.INT }, table_sorts: { type: P.INT },
     },
   };
 
@@ -70,6 +70,41 @@ var jsPsychAuditRow = (function (jspsych) {
       `<pre class="ev-entry">${esc(e.entry)}</pre></div>`).join("");
   }
 
+  // Selection rows: every listed option in one sortable table; the two actions' options are labelled.
+  function optionsHtml(o, order) {
+    if (!o) return "";
+    const lab = (id) => id === order[0].id ? "Action 1" : id === order[1].id ? "Action 2" : "";
+    const head = o.columns.map((c, j) => `<th data-col="${j}" title="Click to sort">${esc(c)} <span class="sort">⇅</span></th>`).join("");
+    const body = o.rows.map((r) => `<tr class="${r.cand ? "picked" : ""}"><td class="pick">${lab(r.cand)}</td>` +
+      r.cells.map((c) => `<td>${esc(c)}</td>`).join("") + "</tr>").join("");
+    return `<section class="card"><h2>All listed options</h2>
+      <p class="muted small">Every option from the tool output, one per row, with values read from it
+      (prices added up over the legs of a trip; times as listed). The two options the actions pick are labelled.
+      Click a column header to sort by it.</p>
+      <div class="opt-wrap"><table class="opts"><thead><tr><th>Picked by</th>${head}</tr></thead><tbody>${body}</tbody></table></div></section>`;
+  }
+  function sortKey(v) {
+    const s = String(v).trim();
+    if (s !== "" && !isNaN(Number(s))) return [0, Number(s)];
+    let m = s.match(/^(\d+)h(\d+)m$/); if (m) return [0, +m[1] * 60 + +m[2]];
+    m = s.match(/^(\d\d):(\d\d)( \(\+1 day\))?$/); if (m) return [0, +m[1] * 60 + +m[2] + (m[3] ? 1440 : 0)];
+    return [1, s];
+  }
+  function wireSort(el) {
+    const t = el.querySelector("table.opts"); if (!t) return 0;
+    let sorts = 0; const state = {};
+    t.querySelectorAll("th[data-col]").forEach((th) => th.addEventListener("click", () => {
+      const j = +th.dataset.col + 1, dir = state[j] = -(state[j] || -1), tb = t.tBodies[0];
+      [...tb.rows].sort((a, b) => {
+        const x = sortKey(a.cells[j].textContent), y = sortKey(b.cells[j].textContent);
+        return (x[0] - y[0]) || (x[1] < y[1] ? -dir : x[1] > y[1] ? dir : 0);
+      }).forEach((r) => tb.appendChild(r));
+      t.querySelectorAll(".sort").forEach((sp) => (sp.textContent = "⇅"));
+      th.querySelector(".sort").textContent = dir > 0 ? "▲" : "▼";
+      sorts++; el.dataset.sorts = sorts;
+    }));
+  }
+
   const Q1 = [
     ["action_1", "Action 1"], ["action_2", "Action 2"], ["both", "Both actions are acceptable"],
     ["neither", "Neither action"], ["cannot_tell", "Cannot be determined from the history"],
@@ -97,6 +132,7 @@ var jsPsychAuditRow = (function (jspsych) {
           ${trial.mode === "practice" ? `<div class="badge">Practice item</div>` : ""}
           <section class="card instr"><h2>Instruction</h2><div class="instr-text">${esc(r.instruction)}</div></section>
           <section class="card"><h2>What the assistant has done so far</h2>${historyHtml(r.history)}</section>
+          ${optionsHtml(r.options, order)}
           <section class="card"><h2>Two possible next actions</h2>
             <p class="muted small">Highlighted text marks where the two actions differ. The order is random.</p>
             <div class="cands">
@@ -129,6 +165,7 @@ var jsPsychAuditRow = (function (jspsych) {
         </aside>
       </div>`;
       window.scrollTo(0, 0);
+      wireSort(el);
 
       el.querySelectorAll(".expand").forEach((b) => b.addEventListener("click", () => {
         b.previousElementSibling.dataset.long = "false"; b.remove(); expanded++;
@@ -171,6 +208,7 @@ var jsPsychAuditRow = (function (jspsych) {
           prefix_ok: q2, confidence: q3, note, rt: Math.round(performance.now() - t0),
           correct: trial.answer == null ? null : choice === trial.answer,
           converter_uses: convUses, calculator_uses: calcUses, expanded_outputs: expanded,
+          table_sorts: +(el.dataset.sorts || 0),
         };
         if (trial.mode !== "practice") { finish(data); return; }
         el.querySelectorAll("input, textarea").forEach((x) => (x.disabled = true));

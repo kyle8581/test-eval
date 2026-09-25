@@ -39,7 +39,157 @@
       }
      ]
     }
-   ]
+   ],
+   "options": {
+    "kind": "flights",
+    "columns": [
+     "Flights (route)",
+     "Stops",
+     "Departs (EST)",
+     "Arrives (EST)",
+     "Duration incl. stopover",
+     "Total price, economy",
+     "Seats left, economy",
+     "Status"
+    ],
+    "numeric": [
+     1,
+     5,
+     6
+    ],
+    "rows": [
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT132 (LGA–PHL)",
+       1,
+       "14:00",
+       "18:00",
+       "4h00m",
+       295,
+       8,
+       "available"
+      ],
+      "cand": "c166c6e4"
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT172 (LGA–PHL)",
+       1,
+       "14:00",
+       "00:00 (+1 day)",
+       "10h00m",
+       207,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT206 (LGA–PHL)",
+       1,
+       "14:00",
+       "19:00",
+       "5h00m",
+       250,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT264 (LGA–PHL)",
+       1,
+       "14:00",
+       "00:00 (+1 day)",
+       "10h00m",
+       261,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT132 (LGA–PHL)",
+       1,
+       "11:00",
+       "18:00",
+       "7h00m",
+       335,
+       8,
+       "available"
+      ],
+      "cand": "c2f06a8b"
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT172 (LGA–PHL)",
+       1,
+       "11:00",
+       "00:00 (+1 day)",
+       "13h00m",
+       247,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT206 (LGA–PHL)",
+       1,
+       "11:00",
+       "19:00",
+       "8h00m",
+       290,
+       15,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT264 (LGA–PHL)",
+       1,
+       "11:00",
+       "00:00 (+1 day)",
+       "13h00m",
+       301,
+       15,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT227 (ATL–ORD) → HAT139 (ORD–PHL)",
+       1,
+       "11:00",
+       "19:00",
+       "8h00m",
+       216,
+       5,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT227 (ATL–ORD) → HAT271 (ORD–PHL)",
+       1,
+       "11:00",
+       "21:00",
+       "10h00m",
+       250,
+       5,
+       "available"
+      ],
+      "cand": null
+     }
+    ]
+   }
   },
   {
    "row": "03ae28ee3f",
@@ -79,7 +229,157 @@
       }
      ]
     }
-   ]
+   ],
+   "options": {
+    "kind": "flights",
+    "columns": [
+     "Flights (route)",
+     "Stops",
+     "Departs (EST)",
+     "Arrives (EST)",
+     "Duration incl. stopover",
+     "Total price, economy",
+     "Seats left, economy",
+     "Status"
+    ],
+    "numeric": [
+     1,
+     5,
+     6
+    ],
+    "rows": [
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT132 (LGA–PHL)",
+       1,
+       "14:00",
+       "18:00",
+       "4h00m",
+       295,
+       8,
+       "available"
+      ],
+      "cand": "beaf9a60"
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT172 (LGA–PHL)",
+       1,
+       "14:00",
+       "00:00 (+1 day)",
+       "10h00m",
+       207,
+       2,
+       "available"
+      ],
+      "cand": "ca8a54db"
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT206 (LGA–PHL)",
+       1,
+       "14:00",
+       "19:00",
+       "5h00m",
+       250,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT264 (LGA–PHL)",
+       1,
+       "14:00",
+       "00:00 (+1 day)",
+       "10h00m",
+       261,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT132 (LGA–PHL)",
+       1,
+       "11:00",
+       "18:00",
+       "7h00m",
+       335,
+       8,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT172 (LGA–PHL)",
+       1,
+       "11:00",
+       "00:00 (+1 day)",
+       "13h00m",
+       247,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT206 (LGA–PHL)",
+       1,
+       "11:00",
+       "19:00",
+       "8h00m",
+       290,
+       15,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT264 (LGA–PHL)",
+       1,
+       "11:00",
+       "00:00 (+1 day)",
+       "13h00m",
+       301,
+       15,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT227 (ATL–ORD) → HAT139 (ORD–PHL)",
+       1,
+       "11:00",
+       "19:00",
+       "8h00m",
+       216,
+       5,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT227 (ATL–ORD) → HAT271 (ORD–PHL)",
+       1,
+       "11:00",
+       "21:00",
+       "10h00m",
+       250,
+       5,
+       "available"
+      ],
+      "cand": null
+     }
+    ]
+   }
   },
   {
    "row": "66ca7224a9",
@@ -119,7 +419,157 @@
       }
      ]
     }
-   ]
+   ],
+   "options": {
+    "kind": "flights",
+    "columns": [
+     "Flights (route)",
+     "Stops",
+     "Departs (EST)",
+     "Arrives (EST)",
+     "Duration incl. stopover",
+     "Total price, economy",
+     "Seats left, economy",
+     "Status"
+    ],
+    "numeric": [
+     1,
+     5,
+     6
+    ],
+    "rows": [
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT132 (LGA–PHL)",
+       1,
+       "14:00",
+       "18:00",
+       "4h00m",
+       295,
+       8,
+       "available"
+      ],
+      "cand": "54c12d0d"
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT172 (LGA–PHL)",
+       1,
+       "14:00",
+       "00:00 (+1 day)",
+       "10h00m",
+       207,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT206 (LGA–PHL)",
+       1,
+       "14:00",
+       "19:00",
+       "5h00m",
+       250,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT110 (ATL–LGA) → HAT264 (LGA–PHL)",
+       1,
+       "14:00",
+       "00:00 (+1 day)",
+       "10h00m",
+       261,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT132 (LGA–PHL)",
+       1,
+       "11:00",
+       "18:00",
+       "7h00m",
+       335,
+       8,
+       "available"
+      ],
+      "cand": "429ffbe5"
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT172 (LGA–PHL)",
+       1,
+       "11:00",
+       "00:00 (+1 day)",
+       "13h00m",
+       247,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT206 (LGA–PHL)",
+       1,
+       "11:00",
+       "19:00",
+       "8h00m",
+       290,
+       15,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT164 (ATL–LGA) → HAT264 (LGA–PHL)",
+       1,
+       "11:00",
+       "00:00 (+1 day)",
+       "13h00m",
+       301,
+       15,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT227 (ATL–ORD) → HAT139 (ORD–PHL)",
+       1,
+       "11:00",
+       "19:00",
+       "8h00m",
+       216,
+       5,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT227 (ATL–ORD) → HAT271 (ORD–PHL)",
+       1,
+       "11:00",
+       "21:00",
+       "10h00m",
+       250,
+       5,
+       "available"
+      ],
+      "cand": null
+     }
+    ]
+   }
   },
   {
    "row": "edbf7d5a79",
@@ -165,7 +615,209 @@
       }
      ]
     }
-   ]
+   ],
+   "options": {
+    "kind": "flights",
+    "columns": [
+     "Flights (route)",
+     "Stops",
+     "Departs (EST)",
+     "Arrives (EST)",
+     "Duration incl. stopover",
+     "Total price, economy",
+     "Seats left, economy",
+     "Status"
+    ],
+    "numeric": [
+     1,
+     5,
+     6
+    ],
+    "rows": [
+     {
+      "cells": [
+       "HAT030 (LAX–ORD) → HAT139 (ORD–PHL)",
+       1,
+       "20:00",
+       "19:00",
+       "23h00m",
+       369,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT030 (LAX–ORD) → HAT271 (ORD–PHL)",
+       1,
+       "20:00",
+       "21:00",
+       "1h00m",
+       346,
+       14,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT030 (LAX–ORD) → HAT289 (ORD–PHL)",
+       1,
+       "20:00",
+       "07:00",
+       "11h00m",
+       309,
+       1,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT090 (LAX–ORD) → HAT139 (ORD–PHL)",
+       1,
+       "01:00",
+       "19:00",
+       "18h00m",
+       237,
+       7,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT090 (LAX–ORD) → HAT271 (ORD–PHL)",
+       1,
+       "01:00",
+       "21:00",
+       "20h00m",
+       229,
+       14,
+       "available"
+      ],
+      "cand": "4e90e6e5"
+     },
+     {
+      "cells": [
+       "HAT090 (LAX–ORD) → HAT289 (ORD–PHL)",
+       1,
+       "01:00",
+       "07:00",
+       "6h00m",
+       279,
+       11,
+       "available"
+      ],
+      "cand": "00b46d29"
+     },
+     {
+      "cells": [
+       "HAT094 (LAX–SFO) → HAT042 (SFO–PHL)",
+       1,
+       "04:00",
+       "12:00",
+       "8h00m",
+       332,
+       4,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT103 (LAX–ORD) → HAT139 (ORD–PHL)",
+       1,
+       "02:00",
+       "19:00",
+       "17h00m",
+       239,
+       7,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT103 (LAX–ORD) → HAT271 (ORD–PHL)",
+       1,
+       "02:00",
+       "21:00",
+       "19h00m",
+       231,
+       14,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT104 (LAX–ORD) → HAT139 (ORD–PHL)",
+       1,
+       "10:00",
+       "19:00",
+       "9h00m",
+       297,
+       7,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT104 (LAX–ORD) → HAT271 (ORD–PHL)",
+       1,
+       "10:00",
+       "21:00",
+       "11h00m",
+       289,
+       14,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT109 (LAX–ORD) → HAT139 (ORD–PHL)",
+       1,
+       "00:00",
+       "19:00",
+       "19h00m",
+       306,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT109 (LAX–ORD) → HAT271 (ORD–PHL)",
+       1,
+       "00:00",
+       "21:00",
+       "21h00m",
+       298,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT109 (LAX–ORD) → HAT289 (ORD–PHL)",
+       1,
+       "00:00",
+       "07:00",
+       "7h00m",
+       348,
+       2,
+       "available"
+      ],
+      "cand": null
+     }
+    ]
+   }
   },
   {
    "row": "18f86cac74",
@@ -211,7 +863,261 @@
       }
      ]
     }
-   ]
+   ],
+   "options": {
+    "kind": "flights",
+    "columns": [
+     "Flights (route)",
+     "Stops",
+     "Departs (EST)",
+     "Arrives (EST)",
+     "Duration incl. stopover",
+     "Total price, economy",
+     "Seats left, economy",
+     "Status"
+    ],
+    "numeric": [
+     1,
+     5,
+     6
+    ],
+    "rows": [
+     {
+      "cells": [
+       "HAT040 (LAS–SEA) → HAT011 (SEA–SFO)",
+       1,
+       "00:00",
+       "15:00",
+       "15h00m",
+       278,
+       13,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT040 (LAS–SEA) → HAT107 (SEA–SFO)",
+       1,
+       "00:00",
+       "11:00",
+       "11h00m",
+       360,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT040 (LAS–SEA) → HAT258 (SEA–SFO)",
+       1,
+       "00:00",
+       "19:00",
+       "19h00m",
+       339,
+       15,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT040 (LAS–SEA) → HAT274 (SEA–SFO)",
+       1,
+       "00:00",
+       "22:00",
+       "22h00m",
+       281,
+       18,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT047 (LAS–SEA) → HAT258 (SEA–SFO)",
+       1,
+       "13:00",
+       "19:00",
+       "6h00m",
+       348,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT047 (LAS–SEA) → HAT274 (SEA–SFO)",
+       1,
+       "13:00",
+       "22:00",
+       "9h00m",
+       290,
+       9,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT095 (LAS–PHX) → HAT283 (PHX–SFO)",
+       1,
+       "17:00",
+       "22:00",
+       "5h00m",
+       276,
+       14,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT242 (LAS–PHX) → HAT009 (PHX–SFO)",
+       1,
+       "11:00",
+       "19:00",
+       "8h00m",
+       303,
+       17,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT242 (LAS–PHX) → HAT159 (PHX–SFO)",
+       1,
+       "11:00",
+       "16:00",
+       "5h00m",
+       324,
+       14,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT242 (LAS–PHX) → HAT283 (PHX–SFO)",
+       1,
+       "11:00",
+       "22:00",
+       "11h00m",
+       239,
+       17,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT244 (LAS–PHX) → HAT009 (PHX–SFO)",
+       1,
+       "10:00",
+       "19:00",
+       "9h00m",
+       293,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT244 (LAS–PHX) → HAT032 (PHX–SFO)",
+       1,
+       "10:00",
+       "13:00",
+       "3h00m",
+       235,
+       2,
+       "available"
+      ],
+      "cand": "ab00d5f4"
+     },
+     {
+      "cells": [
+       "HAT244 (LAS–PHX) → HAT159 (PHX–SFO)",
+       1,
+       "10:00",
+       "16:00",
+       "6h00m",
+       314,
+       2,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT244 (LAS–PHX) → HAT283 (PHX–SFO)",
+       1,
+       "10:00",
+       "22:00",
+       "12h00m",
+       229,
+       2,
+       "available"
+      ],
+      "cand": "8badfb2e"
+     },
+     {
+      "cells": [
+       "HAT284 (LAS–PHX) → HAT009 (PHX–SFO)",
+       1,
+       "03:00",
+       "19:00",
+       "16h00m",
+       318,
+       4,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT284 (LAS–PHX) → HAT032 (PHX–SFO)",
+       1,
+       "03:00",
+       "13:00",
+       "10h00m",
+       260,
+       3,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT284 (LAS–PHX) → HAT159 (PHX–SFO)",
+       1,
+       "03:00",
+       "16:00",
+       "13h00m",
+       339,
+       4,
+       "available"
+      ],
+      "cand": null
+     },
+     {
+      "cells": [
+       "HAT284 (LAS–PHX) → HAT283 (PHX–SFO)",
+       1,
+       "03:00",
+       "22:00",
+       "19h00m",
+       254,
+       4,
+       "available"
+      ],
+      "cand": null
+     }
+    ]
+   }
   },
   {
    "row": "80be5dd3cf",
@@ -221,7 +1127,7 @@
      "kind": "agent",
      "step": 0,
      "action": "chatcmpl_tool_f7058092205514de_parameters = {}\nchatcmpl_tool_f7058092205514de_response = get_current_timestamp(**chatcmpl_tool_f7058092205514de_parameters)\nprint(repr(chatcmpl_tool_f7058092205514de_response))",
-     "observation": "1789578009.665956"
+     "observation": "1789578009.665956 [= Wed Sep 16 2026, 12:00:09 PM]"
     }
    ],
    "candidates": [
@@ -235,7 +1141,8 @@
      "action": "chatcmpl_tool_80711ee850862d4e_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_80711ee850862d4e_response = datetime_info_to_timestamp(**chatcmpl_tool_80711ee850862d4e_parameters)\nprint(repr(chatcmpl_tool_80711ee850862d4e_response))",
      "evidence": []
     }
-   ]
+   ],
+   "options": null
   },
   {
    "row": "6c4c7b04f8",
@@ -245,7 +1152,7 @@
      "kind": "agent",
      "step": 0,
      "action": "chatcmpl_tool_9b8ac26c65e04b6f_parameters = {}\nchatcmpl_tool_9b8ac26c65e04b6f_response = get_current_timestamp(**chatcmpl_tool_9b8ac26c65e04b6f_parameters)\nprint(repr(chatcmpl_tool_9b8ac26c65e04b6f_response))",
-     "observation": "1789578014.244652"
+     "observation": "1789578014.244652 [= Wed Sep 16 2026, 12:00:14 PM]"
     }
    ],
    "candidates": [
@@ -259,7 +1166,8 @@
      "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 19, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))",
      "evidence": []
     }
-   ]
+   ],
+   "options": null
   },
   {
    "row": "f8e3d867e9",
@@ -269,7 +1177,7 @@
      "kind": "agent",
      "step": 0,
      "action": "now_params = {}\nnow_response = get_current_timestamp(**now_params)\nprint(repr(now_response))",
-     "observation": "1789578016.091424"
+     "observation": "1789578016.091424 [= Wed Sep 16 2026, 12:00:16 PM]"
     }
    ],
    "candidates": [
@@ -283,7 +1191,8 @@
      "action": "day_params = {'timestamp': now_response, 'days': -3}\nday_response = shift_timestamp(**day_params)\nprint(repr(day_response))",
      "evidence": []
     }
-   ]
+   ],
+   "options": null
   },
   {
    "row": "dba5ad2570",
@@ -307,7 +1216,8 @@
      "action": "update_reservation_flights({\"reservation_id\": \"FQ8APE\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT056\", \"date\": \"2024-05-28\"}, {\"flight_number\": \"HAT138\", \"date\": \"2024-05-28\"}], \"payment_id\": \"gift_card_8190333\"})",
      "evidence": []
     }
-   ]
+   ],
+   "options": null
   },
   {
    "row": "b255fa6484",
@@ -329,7 +1239,8 @@
      "action": "list_all_airports(); get_flight_cost(travel_from='RMS', travel_to='SHD', travel_date='2026-10-31', travel_class='business')",
      "evidence": []
     }
-   ]
+   ],
+   "options": null
   },
   {
    "row": "6b26b1551d",
@@ -351,7 +1262,8 @@
      "action": "list_all_airports(); get_flight_cost(travel_from='RMS', travel_to='BOS', travel_date='2026-11-15', travel_class='economy')",
      "evidence": []
     }
-   ]
+   ],
+   "options": null
   }
  ]
 }

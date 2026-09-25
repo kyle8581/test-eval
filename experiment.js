@@ -90,11 +90,13 @@
       page(`<h1>Things to know</h1>
         <ul><li>Some answers are stated in the instruction; others must be read from the <b>tool output</b> (for example, which flight is cheapest).
         Long tool outputs scroll; click “Show the whole output” to expand them.</li>
-        <li>When an action picks one option from a list (a flight, a product, a reminder), the entry for that option is copied
-        under the action in a yellow box, so you can compare the two options directly. The full list is still in the history.</li>
+        <li>When an action picks one option from a list (a flight, a product, a reminder), you also get a table of
+        <b>all listed options</b> with their prices, times and features; click a column header to sort it (for example, by price).
+        The rows the two actions pick are labelled, and their original entries are copied under each action in a yellow box.</li>
         <li>Some tool calls are written as short computer code with long random IDs (like <code>chatcmpl_tool_91df…</code>). Ignore the IDs; look at the values.</li>
-        <li>The assistant's clock gives the time as a <b>Unix timestamp</b> (a number such as 1789578016). Use the <b>timestamp converter</b> on the right to read it as a date.
-        A <b>calculator</b> is there too.</li>
+        <li>The assistant's clock gives the time as a <b>Unix timestamp</b> (a number such as 1789578016). Each timestamp is followed by its
+        date and time in square brackets, e.g. <code>1789578016 [= Wed Sep 16 2026, 11:20:16 AM]</code>.
+        A timestamp converter and a calculator are on the right if you need them.</li>
         <li>Judge whether the action does what the <b>user asked for</b>. Ignore politeness, formatting, and company rules.</li>
         <li>The two actions appear in random order. Nothing on the page tells you which is intended.</li></ul>`),
       page(`<h1>Before you start</h1><p>Next come three short questions about these instructions, then four practice items with feedback,
@@ -105,7 +107,7 @@
   const QUIZ = [
     { prompt: "What should you base your answer on?", options: ["What I think the user probably wants in general", "Only the instruction and the history shown on the page", "Which action looks more common"], correct: 1 },
     { prompt: "The history does not contain the information needed to choose. What do you answer?", options: ["Action 1", "Neither action", "Cannot be determined from the history"], correct: 2 },
-    { prompt: "The clock shows 1789578016. How do you find out what day that is?", options: ["Use the timestamp converter", "Guess", "It is always today"], correct: 0 },
+    { prompt: "The clock shows 1789578016 [= Wed Sep 16 2026, 11:20:16 AM]. What day is 'tomorrow'?", options: ["Tuesday, September 15", "Thursday, September 17", "It cannot be known"], correct: 1 },
   ];
   let quizAttempts = 0, quizPassed = false;
   const quiz = {

@@ -49,3 +49,12 @@ textarea, .tool input { width: 100%; box-sizing: border-box; font: inherit; font
 @media (max-width: 900px) { .ar { grid-template-columns: 1fr; } .ar-tools { position: static; } .cands { grid-template-columns: 1fr; } }
 .ev { margin-top: 8px; border-top: 1px dashed var(--line); padding-top: 6px; }
 .ev-entry { background: #fffbea; border: 1px solid #efe2a8; padding: 6px 8px; border-radius: 5px; }
+.opt-wrap { overflow-x: auto; }
+table.opts { border-collapse: collapse; font-size: 13.5px; width: 100%; }
+table.opts th, table.opts td { border-bottom: 1px solid var(--line); padding: 4px 7px; text-align: left; vertical-align: top; }
+table.opts td { white-space: nowrap; }
+table.opts td:nth-child(2) { white-space: normal; min-width: 180px; }
+table.opts th { cursor: pointer; background: #f1f4f2; position: sticky; top: 0; user-select: none; }
+table.opts th .sort { color: var(--muted); font-size: 11px; }
+table.opts tr.picked td { background: #fffbea; font-weight: 600; }
+table.opts td.pick { color: var(--accent); font-weight: 700; }
