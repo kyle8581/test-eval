@@ -21,11 +21,23 @@
    "candidates": [
     {
      "id": "c2f06a8b",
-     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT164\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT132\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT164\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT132\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})",
+     "evidence": [
+      {
+       "step": 1,
+       "entry": "[\n  {\"flight_number\": \"HAT164\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 11}, \"prices\": {\"basic_economy\": 65, \"economy\": 145, \"business\": 224}},\n  {\"flight_number\": \"HAT132\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"18:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 16, \"economy\": 8, \"business\": 10}, \"prices\": {\"basic_economy\": 61, \"economy\": 190, \"business\": 287}}\n]"
+      }
+     ]
     },
     {
      "id": "c166c6e4",
-     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT110\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT132\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT110\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT132\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})",
+     "evidence": [
+      {
+       "step": 1,
+       "entry": "[\n  {\"flight_number\": \"HAT110\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 9, \"business\": 16}, \"prices\": {\"basic_economy\": 62, \"economy\": 105, \"business\": 496}},\n  {\"flight_number\": \"HAT132\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"18:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 16, \"economy\": 8, \"business\": 10}, \"prices\": {\"basic_economy\": 61, \"economy\": 190, \"business\": 287}}\n]"
+      }
+     ]
     }
    ]
   },
@@ -49,11 +61,23 @@
    "candidates": [
     {
      "id": "39a7ba27",
-     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT110\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT172\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT110\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT172\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})",
+     "evidence": [
+      {
+       "step": 1,
+       "entry": "[\n  {\"flight_number\": \"HAT110\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 8, \"economy\": 9, \"business\": 16}, \"prices\": {\"basic_economy\": 62, \"economy\": 105, \"business\": 496}},\n  {\"flight_number\": \"HAT172\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"23:00:00\", \"scheduled_arrival_time_est\": \"00:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 2, \"business\": 15}, \"prices\": {\"basic_economy\": 79, \"economy\": 102, \"business\": 360}}\n]"
+      }
+     ]
     },
     {
      "id": "af7e8591",
-     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT164\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT132\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"M05KNL\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT164\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT132\", \"date\": \"2024-05-24\"}], \"payment_id\": \"gift_card_8887175\"})",
+     "evidence": [
+      {
+       "step": 1,
+       "entry": "[\n  {\"flight_number\": \"HAT164\", \"origin\": \"ATL\", \"destination\": \"LGA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 11}, \"prices\": {\"basic_economy\": 65, \"economy\": 145, \"business\": 224}},\n  {\"flight_number\": \"HAT132\", \"origin\": \"LGA\", \"destination\": \"PHL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"18:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 16, \"economy\": 8, \"business\": 10}, \"prices\": {\"basic_economy\": 61, \"economy\": 190, \"business\": 287}}\n]"
+      }
+     ]
     }
    ]
   },
@@ -101,11 +125,23 @@
    "candidates": [
     {
      "id": "cce73db4",
-     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))"
+     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))",
+     "evidence": [
+      {
+       "step": 3,
+       "entry": "{\"reminder_id\": \"54f20be9-eac3-5e76-8e57-724e48d3d477\", \"content\": \"Buy a nice rich navy bathing dress\", \"creation_timestamp\": 1789574400.157762, \"reminder_timestamp\": 1789581600.157765, \"latitude\": 37.3237926356735, \"longitude\": -122.03961770355414}"
+      }
+     ]
     },
     {
      "id": "5f21938f",
-     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))"
+     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))",
+     "evidence": [
+      {
+       "step": 3,
+       "entry": "{\"reminder_id\": \"8f5b6fc6-1c25-5467-91ba-d4d1e17c7129\", \"content\": \"Look for Company SF tickets\", \"creation_timestamp\": 1789318800.157737, \"reminder_timestamp\": 1789491600.157745, \"latitude\": null, \"longitude\": null}"
+      }
+     ]
     }
    ]
   },
@@ -135,11 +171,23 @@
    "candidates": [
     {
      "id": "d9f42456",
-     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT147\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT286\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT147\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT286\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})",
+     "evidence": [
+      {
+       "step": 2,
+       "entry": "[\n  {\"flight_number\": \"HAT147\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"09:00:00\", \"scheduled_arrival_time_est\": \"11:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 2, \"business\": 12}, \"prices\": {\"basic_economy\": 93, \"economy\": 118, \"business\": 220}},\n  {\"flight_number\": \"HAT286\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 3, \"economy\": 6, \"business\": 11}, \"prices\": {\"basic_economy\": 60, \"economy\": 114, \"business\": 399}}\n]"
+      }
+     ]
     },
     {
      "id": "2faf7515",
-     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT165\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT112\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT165\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT112\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})",
+     "evidence": [
+      {
+       "step": 2,
+       "entry": "[\n  {\"flight_number\": \"HAT165\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 11, \"business\": 13}, \"prices\": {\"basic_economy\": 52, \"economy\": 147, \"business\": 419}},\n  {\"flight_number\": \"HAT112\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 11, \"business\": 19}, \"prices\": {\"basic_economy\": 54, \"economy\": 135, \"business\": 404}}\n]"
+      }
+     ]
     }
    ]
   },
@@ -169,11 +217,23 @@
    "candidates": [
     {
      "id": "ce14beb8",
-     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT165\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT112\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT165\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT112\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})",
+     "evidence": [
+      {
+       "step": 2,
+       "entry": "[\n  {\"flight_number\": \"HAT165\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 11, \"business\": 13}, \"prices\": {\"basic_economy\": 52, \"economy\": 147, \"business\": 419}},\n  {\"flight_number\": \"HAT112\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 11, \"business\": 19}, \"prices\": {\"basic_economy\": 54, \"economy\": 135, \"business\": 404}}\n]"
+      }
+     ]
     },
     {
      "id": "6bfda679",
-     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT223\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT281\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT223\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT281\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})",
+     "evidence": [
+      {
+       "step": 2,
+       "entry": "[\n  {\"flight_number\": \"HAT223\", \"origin\": \"ORD\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"14:00:00\", \"scheduled_arrival_time_est\": \"16:00:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 15, \"business\": 9}, \"prices\": {\"basic_economy\": 89, \"economy\": 146, \"business\": 276}},\n  {\"flight_number\": \"HAT281\", \"origin\": \"ATL\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"02:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 5, \"business\": 2}, \"prices\": {\"basic_economy\": 62, \"economy\": 169, \"business\": 244}}\n]"
+      }
+     ]
     }
    ]
   },
@@ -191,11 +251,13 @@
    "candidates": [
     {
      "id": "28adb84b",
-     "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))"
+     "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))",
+     "evidence": []
     },
     {
      "id": "2c5b7b5b",
-     "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 21, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))"
+     "action": "chatcmpl_tool_9c5ba5ec37b033f4_parameters = {'year': 2026, 'month': 9, 'day': 21, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_9c5ba5ec37b033f4_response = datetime_info_to_timestamp(**chatcmpl_tool_9c5ba5ec37b033f4_parameters)\nprint(repr(chatcmpl_tool_9c5ba5ec37b033f4_response))",
+     "evidence": []
     }
    ]
   },
@@ -237,11 +299,13 @@
    "candidates": [
     {
      "id": "b1d832b6",
-     "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))"
+     "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 17, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))",
+     "evidence": []
     },
     {
      "id": "eb939a3b",
-     "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))"
+     "action": "chatcmpl_tool_b59738d335e1f14f_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_b59738d335e1f14f_response = datetime_info_to_timestamp(**chatcmpl_tool_b59738d335e1f14f_parameters)\nprint(repr(chatcmpl_tool_b59738d335e1f14f_response))",
+     "evidence": []
     }
    ]
   },
@@ -259,11 +323,13 @@
    "candidates": [
     {
      "id": "cfde32fe",
-     "action": "update_reservation_baggages({\"reservation_id\": \"OBUT9V\", \"total_baggages\": 2, \"nonfree_baggages\": 0, \"payment_id\": \"gift_card_6276644\"})"
+     "action": "update_reservation_baggages({\"reservation_id\": \"OBUT9V\", \"total_baggages\": 2, \"nonfree_baggages\": 0, \"payment_id\": \"gift_card_6276644\"})",
+     "evidence": []
     },
     {
      "id": "7ceb1288",
-     "action": "update_reservation_baggages({\"reservation_id\": \"OBUT9V\", \"total_baggages\": 3, \"nonfree_baggages\": 1, \"payment_id\": \"gift_card_6276644\"})"
+     "action": "update_reservation_baggages({\"reservation_id\": \"OBUT9V\", \"total_baggages\": 3, \"nonfree_baggages\": 1, \"payment_id\": \"gift_card_6276644\"})",
+     "evidence": []
     }
    ]
   },
@@ -281,11 +347,13 @@
    "candidates": [
     {
      "id": "6c8600fa",
-     "action": "search_direct_flight({\"origin\": \"LAS\", \"destination\": \"IAH\", \"date\": \"2024-05-20\"})"
+     "action": "search_direct_flight({\"origin\": \"LAS\", \"destination\": \"IAH\", \"date\": \"2024-05-20\"})",
+     "evidence": []
     },
     {
      "id": "139fd893",
-     "action": "search_direct_flight({\"origin\": \"LAS\", \"destination\": \"IAH\", \"date\": \"2024-05-22\"})"
+     "action": "search_direct_flight({\"origin\": \"LAS\", \"destination\": \"IAH\", \"date\": \"2024-05-22\"})",
+     "evidence": []
     }
    ]
   },
@@ -311,11 +379,13 @@
    "candidates": [
     {
      "id": "1b317d27",
-     "action": "sort(file_name='file3.txt'); tail(file_name='file3.txt')"
+     "action": "sort(file_name='file3.txt'); tail(file_name='file3.txt')",
+     "evidence": []
     },
     {
      "id": "91f20fa6",
-     "action": "sort(file_name='file2.txt'); tail(file_name='file2.txt')"
+     "action": "sort(file_name='file2.txt'); tail(file_name='file2.txt')",
+     "evidence": []
     }
    ]
   }

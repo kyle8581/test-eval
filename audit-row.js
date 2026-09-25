@@ -62,6 +62,14 @@ var jsPsychAuditRow = (function (jspsych) {
     }).join("");
   }
 
+  // For selection rows: the entry of the tool output that this action refers to, copied verbatim.
+  function evidenceHtml(c) {
+    if (!c.evidence || !c.evidence.length) return "";
+    return c.evidence.map((e) =>
+      `<div class="ev"><div class="h-label">The option this action picks (from the tool output of assistant action ${e.step + 1})</div>` +
+      `<pre class="ev-entry">${esc(e.entry)}</pre></div>`).join("");
+  }
+
   const Q1 = [
     ["action_1", "Action 1"], ["action_2", "Action 2"], ["both", "Both actions are acceptable"],
     ["neither", "Neither action"], ["cannot_tell", "Cannot be determined from the history"],
@@ -92,8 +100,8 @@ var jsPsychAuditRow = (function (jspsych) {
           <section class="card"><h2>Two possible next actions</h2>
             <p class="muted small">Highlighted text marks where the two actions differ. The order is random.</p>
             <div class="cands">
-              <div class="cand"><div class="cand-h">Action 1</div><pre>${m1}</pre></div>
-              <div class="cand"><div class="cand-h">Action 2</div><pre>${m2}</pre></div>
+              <div class="cand"><div class="cand-h">Action 1</div><pre>${m1}</pre>${evidenceHtml(order[0])}</div>
+              <div class="cand"><div class="cand-h">Action 2</div><pre>${m2}</pre>${evidenceHtml(order[1])}</div>
             </div>
           </section>
           <section class="card qs">

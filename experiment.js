@@ -25,7 +25,12 @@
     if (Number.isInteger(c)) { listIdx = c % manifest.n_lists; listSource = "datapipe"; }
     else { listIdx = Math.floor(Math.random() * manifest.n_lists); listSource = "random_fallback"; }
   } else { listIdx = Math.floor(Math.random() * manifest.n_lists); listSource = "random_debug"; }
-  const list = await getJSON(`data/lists/list_${String(listIdx).padStart(2, "0")}.json`);
+  // Debug preview: index.html?debug=1&sample=select opens a fixed set of selection items directly
+  // (no consent, quiz, practice or attention checks, nothing saved).
+  const SAMPLE = DEBUG ? url("sample") : null;
+  if (SAMPLE) { listIdx = "debug_" + SAMPLE; listSource = "debug_sample"; }
+  const list = await getJSON(SAMPLE ? `data/lists/debug_${SAMPLE}.json`
+                                    : `data/lists/list_${String(listIdx).padStart(2, "0")}.json`);
 
   jsPsych.data.addProperties({ prolific_pid: pid, study_id: study, session_id: session, list: listIdx,
     list_source: listSource, item_version: manifest.version, started_at: new Date().toISOString() });
@@ -85,6 +90,8 @@
       page(`<h1>Things to know</h1>
         <ul><li>Some answers are stated in the instruction; others must be read from the <b>tool output</b> (for example, which flight is cheapest).
         Long tool outputs scroll; click “Show the whole output” to expand them.</li>
+        <li>When an action picks one option from a list (a flight, a product, a reminder), the entry for that option is copied
+        under the action in a yellow box, so you can compare the two options directly. The full list is still in the history.</li>
         <li>Some tool calls are written as short computer code with long random IDs (like <code>chatcmpl_tool_91df…</code>). Ignore the IDs; look at the values.</li>
         <li>The assistant's clock gives the time as a <b>Unix timestamp</b> (a number such as 1789578016). Use the <b>timestamp converter</b> on the right to read it as a date.
         A <b>calculator</b> is there too.</li>
@@ -144,5 +151,10 @@
   const consented = { timeline: [instructions, quiz, screenOut, study_],
     conditional_function: () => consentGiven };
 
+  if (SAMPLE) {
+    const rows = list.rows.map((r, i) => rowTrial(r, "main", { progress: `Debug sample: item ${i + 1} of ${list.rows.length}` }));
+    await jsPsych.run([...rows, endWith(cfg.COMPLETION_CODE, "End of the debug sample.")]);
+    return;
+  }
   await jsPsych.run([browser, consent, noConsent, consented]);
 })();

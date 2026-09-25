@@ -47,3 +47,5 @@ textarea, .tool input { width: 100%; box-sizing: border-box; font: inherit; font
 .page h1 { font-size: 24px; } .page li { margin: 6px 0; }
 .example { border: 1px solid var(--line); border-radius: 8px; background: var(--card); padding: 12px 16px; }
 @media (max-width: 900px) { .ar { grid-template-columns: 1fr; } .ar-tools { position: static; } .cands { grid-template-columns: 1fr; } }
+.ev { margin-top: 8px; border-top: 1px dashed var(--line); padding-top: 6px; }
+.ev-entry { background: #fffbea; border: 1px solid #efe2a8; padding: 6px 8px; border-radius: 5px; }

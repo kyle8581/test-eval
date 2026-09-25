@@ -21,11 +21,23 @@
    "candidates": [
     {
      "id": "5f55404b",
-     "action": "book_reservation({\"user_id\": \"mia_li_3668\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"flight_type\": \"one_way\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT136\", \"date\": \"2024-05-20\"}, {\"flight_number\": \"HAT039\", \"date\": \"2024-05-20\"}], \"passengers\": [{\"first_name\": \"Mia\", \"last_name\": \"Li\", \"dob\": \"1990-04-05\"}], \"payment_methods\": [{\"payment_id\": \"certificate_7504069\", \"amount\": 250}, {\"payment_id\": \"credit_card_4421486\", \"amount\": 5}], \"total_baggages\": 3, \"nonfree_baggages\": 0, \"insurance\": \"no\"})"
+     "action": "book_reservation({\"user_id\": \"mia_li_3668\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"flight_type\": \"one_way\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT136\", \"date\": \"2024-05-20\"}, {\"flight_number\": \"HAT039\", \"date\": \"2024-05-20\"}], \"passengers\": [{\"first_name\": \"Mia\", \"last_name\": \"Li\", \"dob\": \"1990-04-05\"}], \"payment_methods\": [{\"payment_id\": \"certificate_7504069\", \"amount\": 250}, {\"payment_id\": \"credit_card_4421486\", \"amount\": 5}], \"total_baggages\": 3, \"nonfree_baggages\": 0, \"insurance\": \"no\"})",
+     "evidence": [
+      {
+       "step": 1,
+       "entry": "[\n  {\"flight_number\": \"HAT136\", \"origin\": \"JFK\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"19:00:00\", \"scheduled_arrival_time_est\": \"21:30:00\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 15, \"economy\": 14, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 152, \"business\": 277}},\n  {\"flight_number\": \"HAT039\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"03:00:00+1\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 18, \"economy\": 10, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 103, \"business\": 283}}\n]"
+      }
+     ]
     },
     {
      "id": "1721327c",
-     "action": "book_reservation({\"user_id\": \"mia_li_3668\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"flight_type\": \"one_way\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT218\", \"date\": \"2024-05-20\"}, {\"flight_number\": \"HAT039\", \"date\": \"2024-05-20\"}], \"passengers\": [{\"first_name\": \"Mia\", \"last_name\": \"Li\", \"dob\": \"1990-04-05\"}], \"payment_methods\": [{\"payment_id\": \"certificate_7504069\", \"amount\": 250.0}, {\"payment_id\": \"credit_card_4421486\", \"amount\": 11.0}], \"total_baggages\": 3, \"nonfree_baggages\": 0, \"insurance\": \"no\"})"
+     "action": "book_reservation({\"user_id\": \"mia_li_3668\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"flight_type\": \"one_way\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT218\", \"date\": \"2024-05-20\"}, {\"flight_number\": \"HAT039\", \"date\": \"2024-05-20\"}], \"passengers\": [{\"first_name\": \"Mia\", \"last_name\": \"Li\", \"dob\": \"1990-04-05\"}], \"payment_methods\": [{\"payment_id\": \"certificate_7504069\", \"amount\": 250.0}, {\"payment_id\": \"credit_card_4421486\", \"amount\": 11.0}], \"total_baggages\": 3, \"nonfree_baggages\": 0, \"insurance\": \"no\"})",
+     "evidence": [
+      {
+       "step": 1,
+       "entry": "[\n  {\"flight_number\": \"HAT218\", \"origin\": \"JFK\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"18:00:00\", \"scheduled_arrival_time_est\": \"20:30:00\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 1, \"business\": 4}, \"prices\": {\"basic_economy\": 76, \"economy\": 158, \"business\": 342}},\n  {\"flight_number\": \"HAT039\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"03:00:00+1\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 18, \"economy\": 10, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 103, \"business\": 283}}\n]"
+      }
+     ]
     }
    ]
   },
@@ -73,11 +85,23 @@
    "candidates": [
     {
      "id": "cce73db4",
-     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))"
+     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))",
+     "evidence": [
+      {
+       "step": 3,
+       "entry": "{\"reminder_id\": \"54f20be9-eac3-5e76-8e57-724e48d3d477\", \"content\": \"Buy a nice rich navy bathing dress\", \"creation_timestamp\": 1789574400.157762, \"reminder_timestamp\": 1789581600.157765, \"latitude\": 37.3237926356735, \"longitude\": -122.03961770355414}"
+      }
+     ]
     },
     {
      "id": "5f21938f",
-     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))"
+     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))",
+     "evidence": [
+      {
+       "step": 3,
+       "entry": "{\"reminder_id\": \"8f5b6fc6-1c25-5467-91ba-d4d1e17c7129\", \"content\": \"Look for Company SF tickets\", \"creation_timestamp\": 1789318800.157737, \"reminder_timestamp\": 1789491600.157745, \"latitude\": null, \"longitude\": null}"
+      }
+     ]
     }
    ]
   },
@@ -125,11 +149,23 @@
    "candidates": [
     {
      "id": "3a54968b",
-     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))"
+     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))",
+     "evidence": [
+      {
+       "step": 3,
+       "entry": "{\"reminder_id\": \"54f20be9-eac3-5e76-8e57-724e48d3d477\", \"content\": \"Buy a nice rich navy bathing dress\", \"creation_timestamp\": 1789574400.157762, \"reminder_timestamp\": 1789581600.157765, \"latitude\": 37.3237926356735, \"longitude\": -122.03961770355414}"
+      }
+     ]
     },
     {
      "id": "77939747",
-     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))"
+     "action": "chatcmpl_tool_a4262b72b28546f0_parameters = {'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'reminder_timestamp': 1789682400}\nchatcmpl_tool_a4262b72b28546f0_response = modify_reminder(**chatcmpl_tool_a4262b72b28546f0_parameters)\nprint(repr(chatcmpl_tool_a4262b72b28546f0_response))",
+     "evidence": [
+      {
+       "step": 3,
+       "entry": "{\"reminder_id\": \"8f5b6fc6-1c25-5467-91ba-d4d1e17c7129\", \"content\": \"Look for Company SF tickets\", \"creation_timestamp\": 1789318800.157737, \"reminder_timestamp\": 1789491600.157745, \"latitude\": null, \"longitude\": null}"
+      }
+     ]
     }
    ]
   },
@@ -159,11 +195,23 @@
    "candidates": [
     {
      "id": "ca720670",
-     "action": "update_reservation_flights({\"reservation_id\": \"LJM636\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT040\", \"date\": \"2024-05-19\"}, {\"flight_number\": \"HAT011\", \"date\": \"2024-05-19\"}], \"payment_id\": \"gift_card_2684964\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"LJM636\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT040\", \"date\": \"2024-05-19\"}, {\"flight_number\": \"HAT011\", \"date\": \"2024-05-19\"}], \"payment_id\": \"gift_card_2684964\"})",
+     "evidence": [
+      {
+       "step": 2,
+       "entry": "[\n  {\"flight_number\": \"HAT040\", \"origin\": \"LAS\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 4, \"economy\": 19, \"business\": 4}, \"prices\": {\"basic_economy\": 64, \"economy\": 174, \"business\": 368}},\n  {\"flight_number\": \"HAT011\", \"origin\": \"SEA\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"13:00:00\", \"scheduled_arrival_time_est\": \"15:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 0, \"economy\": 13, \"business\": 1}, \"prices\": {\"basic_economy\": 69, \"economy\": 104, \"business\": 462}}\n]"
+      }
+     ]
     },
     {
      "id": "9ddbca69",
-     "action": "update_reservation_flights({\"reservation_id\": \"LJM636\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT095\", \"date\": \"2024-05-19\"}, {\"flight_number\": \"HAT283\", \"date\": \"2024-05-19\"}], \"payment_id\": \"gift_card_2684964\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"LJM636\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT095\", \"date\": \"2024-05-19\"}, {\"flight_number\": \"HAT283\", \"date\": \"2024-05-19\"}], \"payment_id\": \"gift_card_2684964\"})",
+     "evidence": [
+      {
+       "step": 2,
+       "entry": "[\n  {\"flight_number\": \"HAT095\", \"origin\": \"LAS\", \"destination\": \"PHX\", \"status\": \"available\", \"scheduled_departure_time_est\": \"17:00:00\", \"scheduled_arrival_time_est\": \"18:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 19, \"economy\": 14, \"business\": 18}, \"prices\": {\"basic_economy\": 53, \"economy\": 163, \"business\": 332}},\n  {\"flight_number\": \"HAT283\", \"origin\": \"PHX\", \"destination\": \"SFO\", \"status\": \"available\", \"scheduled_departure_time_est\": \"20:00:00\", \"scheduled_arrival_time_est\": \"22:00:00\", \"date\": \"2024-05-19\", \"available_seats\": {\"basic_economy\": 6, \"economy\": 19, \"business\": 7}, \"prices\": {\"basic_economy\": 55, \"economy\": 113, \"business\": 466}}\n]"
+      }
+     ]
     }
    ]
   },
@@ -193,11 +241,23 @@
    "candidates": [
     {
      "id": "d9f42456",
-     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT147\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT286\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT147\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT286\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})",
+     "evidence": [
+      {
+       "step": 2,
+       "entry": "[\n  {\"flight_number\": \"HAT147\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"09:00:00\", \"scheduled_arrival_time_est\": \"11:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 1, \"economy\": 2, \"business\": 12}, \"prices\": {\"basic_economy\": 93, \"economy\": 118, \"business\": 220}},\n  {\"flight_number\": \"HAT286\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 3, \"economy\": 6, \"business\": 11}, \"prices\": {\"basic_economy\": 60, \"economy\": 114, \"business\": 399}}\n]"
+      }
+     ]
     },
     {
      "id": "2faf7515",
-     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT165\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT112\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})"
+     "action": "update_reservation_flights({\"reservation_id\": \"P22235\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT165\", \"date\": \"2024-05-24\"}, {\"flight_number\": \"HAT112\", \"date\": \"2024-05-24\"}], \"payment_id\": \"credit_card_2968427\"})",
+     "evidence": [
+      {
+       "step": 2,
+       "entry": "[\n  {\"flight_number\": \"HAT165\", \"origin\": \"ORD\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"00:00:00\", \"scheduled_arrival_time_est\": \"02:30:00\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 2, \"economy\": 11, \"business\": 13}, \"prices\": {\"basic_economy\": 52, \"economy\": 147, \"business\": 419}},\n  {\"flight_number\": \"HAT112\", \"origin\": \"IAH\", \"destination\": \"LAS\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"01:00:00+1\", \"date\": \"2024-05-24\", \"available_seats\": {\"basic_economy\": 10, \"economy\": 11, \"business\": 19}, \"prices\": {\"basic_economy\": 54, \"economy\": 135, \"business\": 404}}\n]"
+      }
+     ]
     }
    ]
   },
@@ -215,11 +275,13 @@
    "candidates": [
     {
      "id": "3b23b3b0",
-     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))"
+     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))",
+     "evidence": []
     },
     {
      "id": "61511f90",
-     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 22, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))"
+     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 22, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))",
+     "evidence": []
     }
    ]
   },
@@ -237,11 +299,13 @@
    "candidates": [
     {
      "id": "a05fbf0d",
-     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))"
+     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 18, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))",
+     "evidence": []
     },
     {
      "id": "bf72ded5",
-     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 21, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))"
+     "action": "chatcmpl_tool_f78bd033e0bf15f1_parameters = {'year': 2026, 'month': 9, 'day': 21, 'hour': 17, 'minute': 0, 'second': 0}\nchatcmpl_tool_f78bd033e0bf15f1_response = datetime_info_to_timestamp(**chatcmpl_tool_f78bd033e0bf15f1_parameters)\nprint(repr(chatcmpl_tool_f78bd033e0bf15f1_response))",
+     "evidence": []
     }
    ]
   },
@@ -259,11 +323,13 @@
    "candidates": [
     {
      "id": "b2ab18b1",
-     "action": "search_direct_flight({\"origin\": \"IAH\", \"destination\": \"SFO\", \"date\": \"2024-05-19\"})"
+     "action": "search_direct_flight({\"origin\": \"IAH\", \"destination\": \"SFO\", \"date\": \"2024-05-19\"})",
+     "evidence": []
     },
     {
      "id": "4847d266",
-     "action": "search_direct_flight({\"origin\": \"IAH\", \"destination\": \"SFO\", \"date\": \"2024-05-20\"})"
+     "action": "search_direct_flight({\"origin\": \"IAH\", \"destination\": \"SFO\", \"date\": \"2024-05-20\"})",
+     "evidence": []
     }
    ]
   },
@@ -281,11 +347,13 @@
    "candidates": [
     {
      "id": "9a702128",
-     "action": "search_direct_flight({\"origin\": \"IAH\", \"destination\": \"SFO\", \"date\": \"2024-05-19\"})"
+     "action": "search_direct_flight({\"origin\": \"IAH\", \"destination\": \"SFO\", \"date\": \"2024-05-19\"})",
+     "evidence": []
     },
     {
      "id": "33369147",
-     "action": "search_direct_flight({\"origin\": \"IAH\", \"destination\": \"SFO\", \"date\": \"2024-05-21\"})"
+     "action": "search_direct_flight({\"origin\": \"IAH\", \"destination\": \"SFO\", \"date\": \"2024-05-21\"})",
+     "evidence": []
     }
    ]
   },
@@ -311,11 +379,13 @@
    "candidates": [
     {
      "id": "1b317d27",
-     "action": "sort(file_name='file3.txt'); tail(file_name='file3.txt')"
+     "action": "sort(file_name='file3.txt'); tail(file_name='file3.txt')",
+     "evidence": []
     },
     {
      "id": "91f20fa6",
-     "action": "sort(file_name='file2.txt'); tail(file_name='file2.txt')"
+     "action": "sort(file_name='file2.txt'); tail(file_name='file2.txt')",
+     "evidence": []
     }
    ]
   }
